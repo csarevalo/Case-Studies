@@ -3,7 +3,8 @@ By Cristian Arevalo
 Updated July 1, 2023
 
 ## Introduction
-<! here goes logo>
+<img src="https://github.com/csarevalo/Case-Studies/blob/738125ffa491fd84f122dce7df6c09fd9441f499/Cyclistic-Data-Analysis-2020/images/cyclist1.png">
+
 Cyclistic is a bike-share company based in Chicago, USA. 
 
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that
