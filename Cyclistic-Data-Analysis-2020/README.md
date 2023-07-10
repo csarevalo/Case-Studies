@@ -11,7 +11,7 @@ Here, I assume the role of a junior data analyst working in a marketing analyst 
 
 ***Special Notes***: 
 
-All data cleaning and analysis is accomplish through the use of *SQL* in *BigQuery*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files.
+All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files.
 
 The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
@@ -47,11 +47,19 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
 
-* Downloaded all trip data occuring in 2020 (Jan-Dec).
-
 * Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied. Thus, the data is not current. **It mostly ROCCCs**!
 
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
+
+## Prep Work
+
+### Step 1: Collect Data
+
+* Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
+
+* Uploaded Divvy datasets (csv files) through browser in Google Cloud BigQuery (Sandbox)
+
+* Files that were too large were uploaded via python script (not shown here yet)
 
 ### Data CLeaning and Manipulation
 
