@@ -69,11 +69,9 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 ***Notes***:
 
-* Though column names matched, column types differed greatly. The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
+* Though column names matched, column types differed accross tables. The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
 
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used. (this created a need to change column type from integer to string and select a specific id)
-
-* Additionally, manually uploaded data contained... already said in 1.
 
 ### Data CLeaning and Manipulation
 
