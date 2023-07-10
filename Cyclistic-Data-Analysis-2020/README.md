@@ -37,3 +37,21 @@ The marketing team would like to known:
 
 Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
 
+## About Data Sources
+
+* Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different name because Cyclistic is a fictional company).
+
+* The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
+
+* Downloaded all trip data occuring in 2020 (Jan-Dec)
+
+* Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied. Thus, the data is not current. **It mostly ROCCCs**!
+
+* The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
+
+### 
+
+
+
+
+
