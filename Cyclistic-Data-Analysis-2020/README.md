@@ -10,19 +10,10 @@ Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Laun
 <p align="center">
   <img src = "https://github.com/csarevalo/Case-Studies/blob/4d3f62ffda82b91eaf0586ab1a65ab92b10ec643/Cyclistic-Data-Analysis-2020/images/divvy-bicycles.png" alt="Image" width="650">
 </p>
-<h5 align="center">Divvy Bikes Stationed in Chicago</h5>
 
-<p align="center">Divvy Bikes Stationed in Chicago</p>
+<h5 align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</h5>
 
-<h5 align="center">Divvy Bikes Stationed in Chicago | [Divvy](https://divvybikes.com).</h5>
-
-[Divvy](https://divvybikes.com).
-
-<p>
-  I would like to make a <a href="foo.html">link</a> in my Rails app.
-</p>
-
-
+Cyclistic is a fictional company based on [Divvy](https://divvybikes.com) bikes.
 
 Until now, Cyclistic's marketing strategy relied on building general awareness and appealing to broad consumer segments. The flexible pricing plans (single-ride passes, full-day passes, and annual memberships) aided in bringing in new customers. Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships).
 
