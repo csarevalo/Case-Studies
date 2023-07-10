@@ -57,11 +57,27 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
-* Uploaded Divvy datasets (csv files) through browser in Google Cloud BigQuery (Sandbox)
+* Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox)
 
-* Files that were too large were uploaded via python script (not shown here yet)
+* Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py))
+
+### Step 2: Wrangle Data and Combine into a Single File
+
+* Once uploaded, compare schemas (column names, type,...) for each of the tables.
+
+* Inspect the tables (through preview) and look for incongruencies
+
+***Notes***:
+
+* Though column names matched, column types differed greatly. The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
+
+* From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used. (this created a need to change column type from integer to string and select a specific id)
+
+* Additionally, manually uploaded data contained... already said in 1.
 
 ### Data CLeaning and Manipulation
+
+
 
 
 
