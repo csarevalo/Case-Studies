@@ -1,6 +1,8 @@
 # Cyclistic Data Analysis 2020
-By Cristian Arevalo
-Updated July 10, 2023
+
+**By** Cristian Arevalo 
+
+**Last Updated** July 10, 2023
 
 ## About this Project
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
@@ -20,9 +22,18 @@ Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Laun
 
 <h5 align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</h5>
 
-Until now, Cyclistic's marketing strategy relied on building general awareness and appealing to broad consumer segments. The flexible pricing plans (single-ride passes, full-day passes, and annual memberships) aided in bringing in new customers. Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships).
+Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships). 
+
+Until now, Cyclistic's marketing strategy relied on building general awareness and appealing to broad consumer segments. The flexible pricing plans (single-ride passes, full-day passes, and annual memberships) aided in bringing in new customers.
 
 Although pricing flexibility helps in attracking new customers, Cyclistic's finance analyst have concluded that annual members are much more profitable than casual riders. The director of marketting (Lily Moreno) believes that increasing the number of annual members will be the key to future growth. Since casual riders have chosen Cyclistic for their mobility needs and are already aware of the annual membership program, a marketing strategy aimed at converting casual riders into members is to be held.
 
 ### Business Task
+
+The marketing team would like to known:
+* How do annual members and casual riders use Cyclistic bikes differently?
+* Why would casual riders buy Cyclistic annual memberships?
+* How can Cyclistic use digital media to influence casual riders to become members?
+
+Specifically, my focus will revolve around on **how do annual members and casual riders use Cyclistic bikes differently**.
 
