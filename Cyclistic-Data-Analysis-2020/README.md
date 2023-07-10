@@ -73,6 +73,29 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used. (this created a need to change column type from integer to string and select a specific id)
 
+**The following code is run for multiple tables to correct column types.**
+
+```sql
+CREATE OR REPLACE TABLE `project.dataset.table` AS (
+  SELECT * REPLACE (
+    CAST(started_at AS TIMESTAMP) AS started_at, 	
+    CAST(ended_at AS TIMESTAMP) AS ended_at, 
+    CAST(start_station_id AS STRING) AS  start_station_id, 
+    CAST(end_station_id AS STRING) AS end_station_id 
+    )
+  FROM `project.dataset.table`);
+```
+
+**Then, a new table containing all trip data occuring in 2020 is created.**
+
+```sql
+CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
+SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
+```
+
+* This makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
+
+
 ### Data CLeaning and Manipulation
 
 
