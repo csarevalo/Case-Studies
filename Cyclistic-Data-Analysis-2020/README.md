@@ -1,6 +1,11 @@
 # Cyclistic Data Analysis 2020
 By Cristian Arevalo
-Updated July 1, 2023
+Updated July 10, 2023
+
+## About this Project
+This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera). For this project, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes.
+
+The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
 ## Introduction
 <img src="https://github.com/csarevalo/Case-Studies/blob/cbcdc43ae32a54666f73902b52cce8ff2130137c/Cyclistic-Data-Analysis-2020/images/cyclist2.png">
@@ -12,8 +17,6 @@ Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Laun
 </p>
 
 <h5 align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</h5>
-
-Cyclistic is a fictional company based on [Divvy](https://divvybikes.com) bikes.
 
 Until now, Cyclistic's marketing strategy relied on building general awareness and appealing to broad consumer segments. The flexible pricing plans (single-ride passes, full-day passes, and annual memberships) aided in bringing in new customers. Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships).
 
