@@ -9,6 +9,10 @@ This case study is my capstone project for the Google Data Analatics Professiona
 
 Here, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes. The objective is to understand how casual riders and annual members use Cyclistic bikes differently. These insights will help the marketing team to develop new marketting strategies to convert casual riders into annual members. But first, Cyclistic executives must be compelled with data insights and professional data visualizations.
 
+***Special Notes***: 
+
+All data cleaning and analysis is accomplish through the use of *SQL* in *BigQuery*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files.
+
 The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
 ## Introduction
@@ -49,7 +53,8 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
 
-### 
+### Data CLeaning and Manipulation
+
 
 
 
