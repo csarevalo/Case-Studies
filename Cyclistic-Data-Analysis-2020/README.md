@@ -35,5 +35,5 @@ The marketing team would like to known:
 * Why would casual riders buy Cyclistic annual memberships?
 * How can Cyclistic use digital media to influence casual riders to become members?
 
-Specifically, my focus will revolve around on **how do annual members and casual riders use Cyclistic bikes differently**.
+Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
 
