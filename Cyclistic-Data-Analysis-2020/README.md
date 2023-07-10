@@ -30,7 +30,7 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 ### Business Task
 
-The marketing team would like to known:
+The marketing team would like to know:
 * How do annual members and casual riders use Cyclistic bikes differently?
 * Why would casual riders buy Cyclistic annual memberships?
 * How can Cyclistic use digital media to influence casual riders to become members?
