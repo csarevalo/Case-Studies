@@ -95,6 +95,18 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 * This makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
 
+### Step 3: Clean Up and Add Data to Prepare for Analysis
+
+* Inspect the new table that has been created
+
+  * Column names and type look great (they match)
+  
+  - Station names and/or ids (check for and remove duplicates)
+ 
+  - There is no trip duration (create field and scrutinize)
+ 
+  - Check for distinct values across columns (all good here)
+
 
 ### Data CLeaning and Manipulation
 
