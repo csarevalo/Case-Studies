@@ -73,7 +73,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used. (this created a need to change column type from integer to string and select a specific id)
 
-**The following code is run for multiple tables to correct column types.**
+**The following code is ran for multiple tables to correct column types.**
 
 ```sql
 CREATE OR REPLACE TABLE `project.dataset.table` AS (
@@ -99,7 +99,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 * Inspect the new table that has been created
 
-  * Column names and type look great (they match)
+  - Column names and type look great (they match)
   
   - Station names and/or ids (check for and remove duplicates)
  
@@ -107,6 +107,21 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
  
   - Check for distinct values across columns (all good here)
 
+***Notes***
+1. Some station names can have more than one id (create new unique station ids)
+
+  * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
+
+  * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
+
+2. There are some station names that corresponds to quality checks
+
+  * Filter them out when interest on insights only about customers
+
+  * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
+
+3. The data can only be aggregated at the ride-level, which is too granular.
+  * 
 
 ### Data CLeaning and Manipulation
 
