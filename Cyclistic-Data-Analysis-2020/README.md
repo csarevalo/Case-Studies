@@ -34,35 +34,48 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 ### Business Task
 The marketing team would like to know:
+
 * How do annual members and casual riders use Cyclistic bikes differently?
+
 * Why would casual riders buy Cyclistic annual memberships?
+
 * How can Cyclistic use digital media to influence casual riders to become members?
 
 Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
 
 ## About Data Sources
 * Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different names because Cyclistic is a fictional company).
+
 * The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
+
 * Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied. Thus, the data is not current. **It mostly ROCCCs**!
+
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
 
 
 ## Prep Work
 ### Step 1: Collect Data
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
+
 * Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
+
 * Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
 
 
 ### Step 2: Wrangle Data and Combine into a Single File
 * Once uploaded, compare schemas (column names, type,...) for each of the tables.
+
 * Inspect the tables (through preview) and look for incongruencies.
 
 ***Notes***:
 * Though column names matched, column types differed accross tables.
+
   - The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
+
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
+
   - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
+
 
 #### **The following code is ran for multiple tables to correct column types.**
 
@@ -91,21 +104,29 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
 
 * Inspect the new table that has been created
+
   - Column names and type look great (they match)
+
   - Station names and ids (check for and remove duplicates)
+
   - There is no trip duration (create field and scrutinize)
+
   - Check for distinct values across columns (all good here)
+
 * Check for nulls
 
 
 ***Notes***
 1. Some station names can have more than one id (create new unique station ids).
     * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
+
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
 2. There are some station names that corresponds to quality checks or other.
     * *Filter them out* when interest on insights only about customers
+
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
+
       * Hubbard st bike checking (Lbs-wh-test) (id=311),
       * HQ QR (id=310),
       * Watson Testing-divvy (id=631)
@@ -118,6 +139,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 4. There are some rides were trip durations are negative (remove them).
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
+
     * This may also correspond to early cancellation times of rides by users.
   
 5. Note columns with Null values (for data cleaning).
@@ -145,6 +167,7 @@ ORDER BY nulls_count DESC
 
 #### **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
+
 * Code is edited from [stackoverflow](https://stackoverflow.com/questions/51351948/proper-case-in-big-query)
 
 ```sql
@@ -156,7 +179,9 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 
 #### **Select all appropriate trip data from 2020, then filter out unnecessary trips with skewed ride length**
 * This query alone produces 3,475,816 rows.
+
 * Records of trips less than 1 min are removed because they can be **false starts** and are charged the same fee regardless (for a trip duration of 1 min or less).
+
 * Bikes out longer than a day are also removed. During this scenario, bikes can be considered 'stolen' and riders are required to bring rideable back to an eligible station.
 
 ```sql
@@ -173,8 +198,11 @@ WITH
 
 #### **Filter non-distinct duplicates and nulls from station names**
 * This query produces 3,330,296 rows
+
 * Although old station ids can be used to cross reference the start/end station names for trips that are not missing their respective start/end station names. Majority of the cases where the station names are missing occurs in both the start & end of the trip.
+
 * Additionally, 95.81% of the rows from the *previous query* are retained. Only 145,520 rows are eliminated.
+
 * Thus, this issues is negligible. 
 
 ```sql
