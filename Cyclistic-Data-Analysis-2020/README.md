@@ -166,13 +166,14 @@ ORDER BY nulls_count DESC
 
 
 
-### Step 3.1: Create a new table w/o undesirable traits
-
-***Overall Goal: Create a new version of combined 2020 trip data where unnecessary or bias data is removed***
+### Step 3.1: Breakdown of Creating a New Table with SQL
+* Due to various nulls in station names & ids, and notes outlined in **Step 3**, there is a need to create a new table without any of the undesirable traits mentioned above.
 
 * The whole query is available [here](https://github.com/csarevalo/Case-Studies/blob/d4eb3479ac0b2a925180045230226046771f0d9d/Cyclistic-Data-Analysis-2020/sql-queries/step3_create_table_w_clean_data.sql)
 
-#### **Create a function to make station names into Proper Case**
+***Overall Goal: Create a new version of combined 2020 trip data where unnecessary or bias data is removed***.
+
+#### (1.1) **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
 
 * Code is edited from [stackoverflow](https://stackoverflow.com/questions/51351948/proper-case-in-big-query)
@@ -184,7 +185,7 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 )); 
 ```
 
-#### **Begin creating new table for the will-be selected data**
+#### (1.2) **Begin creating new table for the will-be selected data**
 
 ```sql
 -- CREATE OR REPLACE TABLE `divvy_trips_2020_data.divvy_trips_2020_v2`
@@ -197,7 +198,7 @@ OPTIONS(
 
 ```
 
-#### **Select all appropriate trip data from 2020, then filter out unnecessary trips with skewed ride length**
+#### (1.3) **Select all appropriate trip data from 2020, then filter out unnecessary trips with skewed ride length**
 * This query alone produces 3,475,816 rows.
 
 * Records of trips less than 1 min are removed because they can be **false starts** and are charged the same fee regardless (for a trip duration of 1 min or less).
@@ -216,7 +217,7 @@ WITH
   ),
 ```
 
-#### **Filter non-distinct duplicates and nulls from station names**
+#### (1.4) **Filter non-distinct duplicates and nulls from station names**
 * This query produces 3,330,296 rows
 
 * Although old station ids can be used to cross reference the start/end station names for trips that are not missing their respective start/end station names. Majority of the cases where the station names are missing occurs in both the start & end of the trip.
@@ -241,7 +242,7 @@ WITH
     AND end_station_name IS NOT NULL
   ),
 ```
-#### **Get list of distinct station names from start & end stations**
+#### (1.5) **Get list of distinct station names from start & end stations**
 * This query produces 683 rows (or unique station names)
 
 ```sql
@@ -256,7 +257,7 @@ WITH
   ),
 ```
 
-#### **Create unique station ids**
+#### (1.6) **Create unique station ids**
 * This query produces 683 rows (or station names with unique ids)
 
 ```sql
@@ -270,7 +271,7 @@ WITH
   ),
 ```
 
-#### **Update start and end station info **
+#### (1.7) **Update start and end station info **
 * This query produces 3,330,296 rows (with unique station names and ids)
 
 ```sql
@@ -304,7 +305,7 @@ WITH
   ),
 ```
 
-#### **Create final query for the new table**
+#### (1.8)**Create final query for the new table**
 
 ```sql
   ## Create new version of 2020 divvy trip data because we are removing rows
@@ -328,7 +329,7 @@ WITH
 ### END OF WITH CLAUSE & ###
 ### END SUBQUERIES USED TO CREATE TABLE ###
 ```
-#### **Finish creating new table with clean data and additional data**
+#### (1.9) **Finish creating new table with clean data and additional data**
 
 ```sql
 ######## CREATE TABLE STATEMENT ########
