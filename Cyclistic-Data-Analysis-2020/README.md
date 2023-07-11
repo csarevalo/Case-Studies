@@ -101,7 +101,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
   - Column names and type look great (they match)
   
-  - Station names and/or ids (check for and remove duplicates)
+  - Station names and ids (check for and remove duplicates)
  
   - There is no trip duration (create field and scrutinize)
  
@@ -110,18 +110,25 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ***Notes***
 1. Some station names can have more than one id (create new unique station ids)
 
-  * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
+    * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
 
-  * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
+    * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
 2. There are some station names that corresponds to quality checks
 
-  * Filter them out when interest on insights only about customers
+    * *Filter them out* when interest on insights only about customers
 
-  * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
+    * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
 
 3. The data can only be aggregated at the ride-level, which is too granular.
-  * 
+
+    * Add additional columns of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
+
+4. There are some rides were trip durations are negative (remove them)
+
+    * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
+
+    * This may also correspond to early cancellation times of rides by users.
 
 ### Data CLeaning and Manipulation
 
