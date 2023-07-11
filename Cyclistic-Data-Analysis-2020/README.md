@@ -168,7 +168,7 @@ ORDER BY nulls_count DESC
 
 ***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
 
-**Create a function to make station names into Proper Case**
+#### **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
 * Code is edited from [stackoverflow](https://stackoverflow.com/questions/51351948/proper-case-in-big-query)
 
@@ -179,7 +179,7 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 )); 
 ```
 
-**Select all appropriete trip data from 2020, then filter out unnecessary trips with skewed ride length**
+#### **Select all appropriete trip data from 2020, then filter out unnecessary trips with skewed ride length**
 * Records of trips less than 1 min are removed because they can be **false starts** or are charged the same fee regardless (for a trip duration of 1 min).
 * Bikes out longer than a day are also removed. During this scenario, bikes can be considered 'stolen' and riders are required to bring rideable back to an eligible station.
 
@@ -190,8 +190,35 @@ WITH
   ## Filter out when trip duration is less than or equal to zero(0) (~10k rows)
   divvy_trips_2020 AS (
     SELECT* FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
-    WHERE (TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 60)
-    AND (TIMESTAMP_DIFF(ended_at, started_at, SECOND) < 60*60*24)
+    WHERE (TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 60) #60secs
+    AND (TIMESTAMP_DIFF(ended_at, started_at, SECOND) < 60*60*24) #1day
+  ),
+```
+
+#### **Filter non-distinct duplicates and nulls from station names**
+
+```sql
+  ## Filter non-distinct duplicates and nulls from station names
+  station_names AS (SELECT ride_id, --new: start/end station name
+      CASE ENDS_WITH(start_station_name, "(*)")
+        WHEN TRUE THEN RTRIM(start_station_name, " (*)") #removes trailing chars
+        ELSE TRIM(start_station_name, " *") #removes leading & trailing chars
+      END AS new_start_station_name, #--
+      CASE ENDS_WITH(end_station_name, "(*)")
+        WHEN TRUE THEN RTRIM(end_station_name, " (*)")
+        ELSE TRIM(end_station_name, " *") 
+      END AS new_end_station_name #--
+
+    FROM divvy_trips_2020 
+    ############### NOTES #################
+    ## Can old station ids be used to cross reference the name of some of the null cases? Yes, but not very efficiently.
+    #- Consider how many rows were removed? Is it significant? Can this issue be ignored?
+    ## Most of sample is retained --> IGNORE issue
+    #--- Retained ~95.76% of rows (~3.39 million rows)
+    #--- From ~3.54 million rows, ~150k rows were eliminated
+    #######################################
+    WHERE start_station_name IS NOT NULL
+    AND end_station_name IS NOT NULL
   ),
 ```
 
