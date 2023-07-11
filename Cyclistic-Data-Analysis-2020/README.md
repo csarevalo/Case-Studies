@@ -33,7 +33,6 @@ Until now, Cyclistic's marketing strategy relied on building general awareness a
 Although pricing flexibility helps in attracking new customers, Cyclistic's finance analyst have concluded that annual members are much more profitable than casual riders. The director of marketting (Lily Moreno) believes that increasing the number of annual members will be the key to future growth. Since casual riders have chosen Cyclistic for their mobility needs and are already aware of the annual membership program, a marketing strategy aimed at converting casual riders into members is to be held.
 
 ### Business Task
-
 The marketing team would like to know:
 * How do annual members and casual riders use Cyclistic bikes differently?
 * Why would casual riders buy Cyclistic annual memberships?
@@ -42,40 +41,28 @@ The marketing team would like to know:
 Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
 
 ## About Data Sources
-
 * Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different names because Cyclistic is a fictional company).
-
 * The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
-
 * Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied. Thus, the data is not current. **It mostly ROCCCs**!
-
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
 
+
 ## Prep Work
-
 ### Step 1: Collect Data
-
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
-
 * Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
-
 * Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
 
+
 ### Step 2: Wrangle Data and Combine into a Single File
-
 * Once uploaded, compare schemas (column names, type,...) for each of the tables.
-
 * Inspect the tables (through preview) and look for incongruencies.
 
 ***Notes***:
-
 * Though column names matched, column types differed accross tables.
-
-  * The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
-
+  - The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
-
-  * Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
+  - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
 
 **The following code is ran for multiple tables to correct column types.**
 
@@ -101,31 +88,24 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis
 
+***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
+
 * Inspect the new table that has been created
-
   - Column names and type look great (they match)
-  
   - Station names and ids (check for and remove duplicates)
- 
   - There is no trip duration (create field and scrutinize)
- 
   - Check for distinct values across columns (all good here)
-
 * Check for nulls
+
 
 ***Notes***
 1. Some station names can have more than one id (create new unique station ids).
-
     * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
-
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
 2. There are some station names that corresponds to quality checks or other.
-
     * *Filter them out* when interest on insights only about customers
-
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
-  
       * Hubbard st bike checking (Lbs-wh-test) (id=311),
       * HQ QR (id=310),
       * Watson Testing-divvy (id=631)
@@ -134,19 +114,16 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
       * Mt1-Eco5.1-01 (id=455)
 
 3. The data can only be aggregated at the ride-level, which is too granular.
-
     * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
 4. There are some rides were trip durations are negative (remove them).
-
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
-
     * This may also correspond to early cancellation times of rides by users.
   
 5. Note columns with Null values (for data cleaning).
 
 
-**First, check which columns contain NULLS.**
+#### **First, check which columns contain NULLS.**
 
 ```sql
 SELECT column_name, COUNT(1) AS nulls_count
@@ -165,8 +142,6 @@ ORDER BY nulls_count DESC
 | end_lat            | 4255         |
 | end_lng            | 4255         |
 
-
-***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
 
 #### **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
