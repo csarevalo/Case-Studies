@@ -294,9 +294,30 @@ WITH
   ),
 ```
 
-### Data CLeaning and Manipulation
+#### **Create final query for the new table**
 
+```sql
+  ## Create new version of 2020 divvy trip data because we are removing rows
+  divvy_trips_2020_v2 AS (
+    SELECT
+      divvy_trips_2020.* 
+      REPLACE (upd_st.new_start_station_name as start_station_name,
+        upd_st.new_start_station_id as start_station_id,
+        upd_st.new_end_station_name as end_station_name,
+        upd_st.new_end_station_id as end_station_id),
+      EXTRACT(MONTH FROM started_at) as month_num, # [1-12] --> [Jan-Dec]
+      FORMAT_TIMESTAMP('%b', started_at) as starting_month, # [Jan-Dec]
+      EXTRACT(DAYOFWEEK FROM started_at) as weekday_num, # [1-7] -> [Sun-Sat]
+      FORMAT_TIMESTAMP('%a', started_at) as weekday,# [Sun-Sat]
+      TIMESTAMP_DIFF(ended_at, started_at, SECOND) as ride_length
+    FROM divvy_trips_2020_updated_station_info as upd_st
+    LEFT JOIN divvy_trips_2020
+    ON upd_st.ride_id = divvy_trips_2020.ride_id 
+  )
 
+### END OF WITH CLAUSE & ###
+### END SUBQUERIES USED TO CREATE TABLE ###
+```
 
 
 
