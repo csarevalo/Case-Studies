@@ -64,7 +64,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
   - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
 
-**The following code is ran for multiple tables to correct column types.**
+#### **The following code is ran for multiple tables to correct column types.**
 
 ```sql
 CREATE OR REPLACE TABLE `project.dataset.table` AS (
@@ -77,7 +77,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
   FROM `project.dataset.table`);
 ```
 
-**Then, a new table containing all trip data occuring in 2020 is created.**
+#### **Then, a new table containing all trip data occuring in 2020 is created.**
 
 ```sql
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
