@@ -180,7 +180,8 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 ```
 
 #### **Select all appropriete trip data from 2020, then filter out unnecessary trips with skewed ride length**
-* Records of trips less than 1 min are removed because they can be **false starts** or are charged the same fee regardless (for a trip duration of 1 min).
+* This query alone produces 3,475,816 rows.
+* Records of trips less than 1 min are removed because they can be **false starts** and are charged the same fee regardless (for a trip duration of 1 min or less).
 * Bikes out longer than a day are also removed. During this scenario, bikes can be considered 'stolen' and riders are required to bring rideable back to an eligible station.
 
 ```sql
@@ -196,6 +197,7 @@ WITH
 ```
 
 #### **Filter non-distinct duplicates and nulls from station names**
+* This query produces 3,330,296 rows
 
 ```sql
   ## Filter non-distinct duplicates and nulls from station names
