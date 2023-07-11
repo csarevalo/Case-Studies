@@ -117,6 +117,8 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 
 ***Notes***
+* The full query to clean clean and add data is available [here] (0) and is also **progressively detailed below** (in this section).
+
 1. Some station names can have more than one id (create new unique station ids).
     * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
 
@@ -318,7 +320,15 @@ WITH
 ### END OF WITH CLAUSE & ###
 ### END SUBQUERIES USED TO CREATE TABLE ###
 ```
+#### **Finish creating new table with clean data and additional data**
 
+```sql
+######## CREATE TABLE STATEMENT ########
+SELECT*
+FROM divvy_trips_2020_v2
+ORDER BY started_at;
+########################################
+```
 
 
 
