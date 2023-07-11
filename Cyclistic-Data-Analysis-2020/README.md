@@ -101,8 +101,6 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis
 
-***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
-
 * Inspect the new table that has been created
 
   - Column names and type look great (they match)
@@ -166,6 +164,11 @@ ORDER BY nulls_count DESC
 | end_lat            | 4255         |
 | end_lng            | 4255         |
 
+
+
+### Step 3.1: Create a new table w/o undesirable traits
+
+***Overall Goal: Create a new version of combined 2020 trip data where unnecessary or bias data is removed***
 
 #### **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
