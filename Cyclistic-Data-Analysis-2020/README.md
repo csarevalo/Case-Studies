@@ -166,7 +166,7 @@ ORDER BY nulls_count DESC
 | end_lng            | 4255         |
 
 
-***Overall Goal: Create a new version of combined where data that doesn't make sense is filtered out***
+***Overall Goal: Create a new version of combined where unnecessary or bias data is removed***
 
 **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
