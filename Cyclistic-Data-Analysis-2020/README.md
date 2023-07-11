@@ -237,6 +237,7 @@ WITH
   ),
 ```
 #### **Get list of distinct station names from start & end stations**
+* This query produces 683 rows (or unique station names)
 
 ```sql
   ## Get distinct station names in LOWER case ("i want banana!")
@@ -251,6 +252,7 @@ WITH
 ```
 
 #### **Create unique station ids**
+* This query produces 683 rows (or station names with unique ids)
 
 ```sql
   ## Create new station ids for distinct, non-duplicate stations and make station names PROPER case ("I Want Banana!")
@@ -264,6 +266,7 @@ WITH
 ```
 
 #### **Update start and end station info **
+* This query produces 3,330,296 rows (with unique station names and ids)
 
 ```sql
   ## Assign new station ids (and names) to start stations
