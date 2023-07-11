@@ -177,6 +177,19 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 )); 
 ```
 
+#### **Begin creating new table for the will-be selected data**
+
+```sql
+-- CREATE OR REPLACE TABLE `divvy_trips_2020_data.divvy_trips_2020_v2`
+CREATE TABLE IF NOT EXISTS `divvy_trips_2020_data.divvy_trips_2020_v2`
+OPTIONS(
+  description = "Removed cases where station names are missing (null), removed duplicates of station name, removed cases where trip duration is less than or equal to zero(0) [trips shorter than a min remain, as well as those longer than a day]...CAN cast station ids to INT64 but will leave as STRING."
+) AS 
+
+## TODO: INSERT WITH CLAUSE right here
+
+```
+
 #### **Select all appropriate trip data from 2020, then filter out unnecessary trips with skewed ride length**
 * This query alone produces 3,475,816 rows.
 
@@ -218,13 +231,6 @@ WITH
       END AS new_end_station_name #--
 
     FROM divvy_trips_2020 
-    ############### NOTES #################
-    ## Can old station ids be used to cross reference the name of some of the null cases? Yes, but not very efficiently.
-    #- Consider how many rows were removed? Is it significant? Can this issue be ignored?
-    ## Most of sample is retained --> IGNORE issue
-    #--- Retained ~95.76% of rows (~3.39 million rows)
-    #--- From ~3.54 million rows, ~150k rows were eliminated
-    #######################################
     WHERE start_station_name IS NOT NULL
     AND end_station_name IS NOT NULL
   ),
