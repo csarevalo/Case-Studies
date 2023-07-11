@@ -165,6 +165,36 @@ ORDER BY nulls_count DESC
 | end_lat            | 4255         |
 | end_lng            | 4255         |
 
+
+***Create a new version of combined where data that doesn't make sense is filtered out***
+
+**Create a function to make station names into Proper Case**
+* Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
+* Code is edited from [stackoverflow](https://stackoverflow.com/questions/51351948/proper-case-in-big-query)
+
+```sql
+CREATE TEMP FUNCTION PROPER(str STRING) AS ((
+  SELECT STRING_AGG(CONCAT(UPPER(SUBSTR(w,1,1)), LOWER(SUBSTR(w,2))), '' ORDER BY pos) 
+  FROM UNNEST(REGEXP_EXTRACT_ALL(str,  r'[[:^alnum:]]|[[:alnum:]]*')) w WITH OFFSET pos #uppercase alphanumeric substrings 
+)); 
+```
+
+**Select all appropriete trip data from 2020, then filter out unnecessary trips with skewed ride length**
+* Records of trips less than 1 min are removed because they can be **false starts** or are charged the same fee regardless (for a trip duration of 1 min).
+* Bikes out longer than a day are also removed. During this scenario, bikes can be considered 'stolen' and riders are required to bring rideable back to an eligible station.
+
+```sql
+#### START OF WITH CLAUSE ####
+WITH 
+  ### Use combined datasets of all 2020 trip data
+  ## Filter out when trip duration is less than or equal to zero(0) (~10k rows)
+  divvy_trips_2020 AS (
+    SELECT* FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
+    WHERE (TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 60)
+    AND (TIMESTAMP_DIFF(ended_at, started_at, SECOND) < 60*60*24)
+  ),
+```
+
 ### Data CLeaning and Manipulation
 
 
