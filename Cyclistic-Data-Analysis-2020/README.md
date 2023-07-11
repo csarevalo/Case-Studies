@@ -114,15 +114,22 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
-2. There are some station names that corresponds to quality checks
+2. There are some station names that corresponds to quality checks or other.
 
     * *Filter them out* when interest on insights only about customers
 
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
+  
+      * Hubbard st bike checking (Lbs-wh-test) (id=311),
+      * HQ QR (id=310),
+      * Watson Testing-divvy (id=631)
+      * Hubbard_test_lws (id=312)
+      * Base-2132 W Hubbard Warehouse (id=45)
+      * Mt1-Eco5.1-01 (id=455)
 
 3. The data can only be aggregated at the ride-level, which is too granular.
 
-    * Add additional columns of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
+    * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
 4. There are some rides were trip durations are negative (remove them)
 
