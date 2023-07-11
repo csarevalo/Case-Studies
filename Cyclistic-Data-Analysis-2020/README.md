@@ -179,7 +179,7 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 )); 
 ```
 
-#### **Select all appropriete trip data from 2020, then filter out unnecessary trips with skewed ride length**
+#### **Select all appropriate trip data from 2020, then filter out unnecessary trips with skewed ride length**
 * This query alone produces 3,475,816 rows.
 * Records of trips less than 1 min are removed because they can be **false starts** and are charged the same fee regardless (for a trip duration of 1 min or less).
 * Bikes out longer than a day are also removed. During this scenario, bikes can be considered 'stolen' and riders are required to bring rideable back to an eligible station.
@@ -198,10 +198,13 @@ WITH
 
 #### **Filter non-distinct duplicates and nulls from station names**
 * This query produces 3,330,296 rows
+* Although old station ids can be used to cross reference the start/end station names for trips that are not missing their respective start/end station names. Majority of the cases where the station names are missing occurs in both the start & end of the trip.
+* Additionally, 95.81% of the rows from the *previous query* are retained. Only 145,520 rows are eliminated.
+* Thus, this issues is negligible. 
 
 ```sql
   ## Filter non-distinct duplicates and nulls from station names
-  station_names AS (SELECT ride_id, --new: start/end station name
+  station_names AS (SELECT ride_id, --edit: start/end station name
       CASE ENDS_WITH(start_station_name, "(*)")
         WHEN TRUE THEN RTRIM(start_station_name, " (*)") #removes trailing chars
         ELSE TRIM(start_station_name, " *") #removes leading & trailing chars
