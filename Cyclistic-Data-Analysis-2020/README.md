@@ -156,14 +156,14 @@ GROUP BY column_name
 ORDER BY nulls_count DESC
 ```
 
-| column_name	| nulls_count |
-| :---------- | ----------: |
-| end_station_id | 111342 |
-| end_station_name | 110881 |
-| start_station_id | 95282 |
-| start_station_name | 94656 |
-| end_lat | 4255 |
-| end_lng | 4255|
+| column_name	       | nulls_count  |
+| :----------        | ----------:  |
+| end_station_id     | 111342       |
+| end_station_name   | 110881       |
+| start_station_id   | 95282        |
+| start_station_name | 94656        |
+| end_lat            | 4255         |
+| end_lng            | 4255         |
 
 ### Data CLeaning and Manipulation
 
