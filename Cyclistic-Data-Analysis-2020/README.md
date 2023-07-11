@@ -183,7 +183,7 @@ CREATE TEMP FUNCTION PROPER(str STRING) AS ((
 -- CREATE OR REPLACE TABLE `divvy_trips_2020_data.divvy_trips_2020_v2`
 CREATE TABLE IF NOT EXISTS `divvy_trips_2020_data.divvy_trips_2020_v2`
 OPTIONS(
-  description = "Removed cases where station names are missing (null), removed duplicates of station name, removed cases where trip duration is less than or equal to zero(0) [trips shorter than a min remain, as well as those longer than a day]...CAN cast station ids to INT64 but will leave as STRING."
+  description = "Removed cases where station names are missing (null), removed duplicates of station name, removed cases where trip duration is less than or equal to a min (60 secs), and also removed cases where trip duration is more a 24 hours...CAN cast station ids to INT64 but will leave as STRING."
 ) AS 
 
 ## TODO: INSERT WITH CLAUSE right here
@@ -229,10 +229,68 @@ WITH
         WHEN TRUE THEN RTRIM(end_station_name, " (*)")
         ELSE TRIM(end_station_name, " *") 
       END AS new_end_station_name #--
-
     FROM divvy_trips_2020 
     WHERE start_station_name IS NOT NULL
     AND end_station_name IS NOT NULL
+  ),
+```
+#### **Get list of distinct station names from start & end stations**
+
+```sql
+  ## Get distinct station names in LOWER case ("i want banana!")
+  unique_station_names AS (
+    SELECT DISTINCT station_name as unique_station_name
+    FROM (
+      (SELECT DISTINCT LOWER(new_start_station_name) as station_name FROM station_names)
+      UNION ALL
+      (SELECT DISTINCT LOWER(new_end_station_name) as station_name FROM station_names)
+    )
+  ),
+```
+
+#### **Create unique station ids**
+
+```sql
+  ## Create new station ids for distinct, non-duplicate stations and make station names PROPER case ("I Want Banana!")
+  divvy_stations_2020 AS (
+    SELECT
+      IF(st_name='HQ QR', 'HQ QR', PROPER(st_name)) AS new_station_name,
+      ROW_NUMBER() OVER(ORDER BY st_name) as new_station_id 
+    FROM (SELECT DISTINCT unique_station_name as st_name FROM unique_station_names)
+    ORDER BY new_station_id
+  ),
+```
+
+#### **Update start and end station info **
+
+```sql
+  ## Assign new station ids (and names) to start stations
+  new_start_station_info AS (
+    SELECT station_names.ride_id, 
+      divvy_stations_2020.new_station_name as new_start_station_name,
+      divvy_stations_2020.new_station_id as new_start_station_id 
+    #-- LEFT JOIN because station_names filters NULLS in start/end station names
+    FROM station_names LEFT JOIN divvy_stations_2020 
+    ON LOWER(station_names.new_start_station_name) = LOWER(divvy_stations_2020.new_station_name)
+  ),
+
+  ## Assign new station ids (and names) to end stations
+  new_end_station_info AS (
+    SELECT station_names.ride_id, 
+      divvy_stations_2020.new_station_name as new_end_station_name,
+      divvy_stations_2020.new_station_id as new_end_station_id 
+    #-- LEFT JOIN because station_names filters NULLS in start/end station names
+    FROM station_names LEFT JOIN divvy_stations_2020 
+    ON LOWER(station_names.new_end_station_name) = LOWER(divvy_stations_2020.new_station_name)
+  ),
+
+  ## Update new station info for 2020 biketrip data
+  divvy_trips_2020_updated_station_info AS (
+    SELECT st1.ride_id,  
+      st1.new_start_station_name, st1.new_start_station_id,
+      st2.new_end_station_name, st2.new_end_station_id
+    FROM new_start_station_info as st1 INNER JOIN new_end_station_info as st2
+    ON st1.ride_id = st2.ride_id
   ),
 ```
 
