@@ -57,21 +57,25 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
-* Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox)
+* Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
 
-* Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py))
+* Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
 
 ### Step 2: Wrangle Data and Combine into a Single File
 
 * Once uploaded, compare schemas (column names, type,...) for each of the tables.
 
-* Inspect the tables (through preview) and look for incongruencies
+* Inspect the tables (through preview) and look for incongruencies.
 
 ***Notes***:
 
-* Though column names matched, column types differed accross tables. The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
+* Though column names matched, column types differed accross tables.
 
-* From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used. (this created a need to change column type from integer to string and select a specific id)
+  * The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
+
+* From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
+
+  * Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
 
 **The following code is ran for multiple tables to correct column types.**
 
@@ -107,8 +111,10 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
  
   - Check for distinct values across columns (all good here)
 
+* Check for nulls
+
 ***Notes***
-1. Some station names can have more than one id (create new unique station ids)
+1. Some station names can have more than one id (create new unique station ids).
 
     * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
 
@@ -131,11 +137,33 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
     * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
-4. There are some rides were trip durations are negative (remove them)
+4. There are some rides were trip durations are negative (remove them).
 
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
 
     * This may also correspond to early cancellation times of rides by users.
+  
+5. Note columns with Null values (for data cleaning).
+
+
+**First, check which columns contain NULLS.**
+
+```sql
+SELECT column_name, COUNT(1) AS nulls_count
+FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020` as table1,
+UNNEST(REGEXP_EXTRACT_ALL(TO_JSON_STRING(table1), r'"(\w+)":null')) column_name
+GROUP BY column_name
+ORDER BY nulls_count DESC
+```
+
+| column_name	| nulls_count |
+| :---------- | ----------: |
+| end_station_id | 111342 |
+| end_station_name | 110881 |
+| start_station_id | 95282 |
+| start_station_name | 94656 |
+| end_lat | 4255 |
+| end_lng | 4255|
 
 ### Data CLeaning and Manipulation
 
