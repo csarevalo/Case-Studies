@@ -170,6 +170,8 @@ ORDER BY nulls_count DESC
 
 ***Overall Goal: Create a new version of combined 2020 trip data where unnecessary or bias data is removed***
 
+* The whole query is available [here](https://github.com/csarevalo/Case-Studies/blob/d4eb3479ac0b2a925180045230226046771f0d9d/Cyclistic-Data-Analysis-2020/sql-queries/step3_create_table_w_clean_data.sql)
+
 #### **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
 
