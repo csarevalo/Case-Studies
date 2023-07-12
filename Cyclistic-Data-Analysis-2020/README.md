@@ -24,7 +24,7 @@ Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Laun
   <img src = "https://github.com/csarevalo/Case-Studies/blob/4d3f62ffda82b91eaf0586ab1a65ab92b10ec643/Cyclistic-Data-Analysis-2020/images/divvy-bicycles.png" alt="Image" width="650">
 </p>
 
-<p align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</p>
+<p align="center"> <strong> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago </strong></p>
 
 Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships). 
 
