@@ -1,4 +1,4 @@
-# Cyclistic Data Analysis 2020
+![image](https://github.com/csarevalo/Case-Studies/assets/138172548/0bec8a58-d14f-4141-8ae7-dd0758f44ff5)# Cyclistic Data Analysis 2020
 
 **By** Cristian Arevalo 
 
@@ -116,7 +116,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 * Check for nulls
 
 
-***Key Problems and Solutions***
+#### ***Key Problems and Solutions***
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
 1. Some station names can have more than one id.
@@ -126,7 +126,13 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
-2. There are some station names that corresponds to quality checks or other.
+1. Some station names have duplicates that end with a word or symbol in parathesis.
+
+    * *Establish* a single unique name per station.
+  
+    * There are two sources of duplicates: those that end with "(*)" and those that end with "(Temp)".
+
+1. There are some station names that corresponds to quality checks or other.
     * *Filter* these stations when interest on insights only about customers
 
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
@@ -138,17 +144,17 @@ The first part of tidying data is look for issues/concerns regarding the data. H
       - Base-2132 W Hubbard Warehouse (id=45)
       - Mt1-Eco5.1-01 (id=455)
 
-3. The data can only be aggregated at the ride-level, which is too granular.
+1. The data can only be aggregated at the ride-level, which is too granular.
     * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
-4. There are some rides were trip durations are negative.
+1. There are some rides were trip durations are negative.
     * *Remove* bad data.
     
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
 
     * This may also correspond to early cancellation times of rides by users.
   
-5. Some crucial data is missing in columns with Null values.
+1. Some crucial data is missing in columns with Null values.
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
 #### Checking For Missing Data
@@ -162,7 +168,8 @@ GROUP BY column_name
 ORDER BY nulls_count DESC
 ```
 
-##### Results
+**Results**
+
 After checking for nulls or missing data, we discover that some important information is missing from the trips: start/end station names & ids. Without this information we can't track the trips, so we need to *remove these instances* -- not right away though. Before proceeding to do so, we need to identify if there is anything else we need look out for. A common problem is *duplicate data*, which we'll tackle in the next section.
 
 | column_name	       | nulls_count  |
@@ -191,8 +198,24 @@ GROUP BY station_name, station_id
 ORDER BY station_name
 ```
 
-###### Results
+**Results**
+
 Here,
+
+
+| station_name | station_id |
+| ------------ | ---------- | 
+| Wentworth Ave & Cermak Rd | 120 | 
+| Wentworth Ave & Cermak Rd	| 13075
+| Wentworth Ave & Cermak Rd (Temp)	| 120 |
+| Wood St & Taylor St | 317 |
+| Wood St & Taylor St (Temp) | 317 |
+| Wood St & Taylor St (Temp) | 13285 |
+
+
+
+
+
 
 
 
