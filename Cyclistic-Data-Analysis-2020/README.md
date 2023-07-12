@@ -170,7 +170,7 @@ ORDER BY nulls_count DESC
 
 **Results**
 
-After checking for nulls or missing data, we discover that some important information is missing from the trips: start/end station names & ids. Without this information we can't track the trips, so we need to *remove these instances* -- not right away though. Before proceeding to do so, we need to identify if there is anything else we need look out for. 
+After checking for nulls or missing data, we discover that some important information is missing from the trips: *start/end station names & ids*. Without this information we can't track the trips, so we need to *remove these instances* -- not right away though. Before proceeding to do so, we need to identify if there is anything else we need look out for. 
 
 | column_name	       | nulls_count  |
 | :----------        | ----------:  |
@@ -183,7 +183,7 @@ After checking for nulls or missing data, we discover that some important inform
 
 
 #### Checking for duplicate data 
-A common problem is *duplicate data*, which we'll tackle in the next section. 
+A common problem is *duplicate data*, which we'll tackle in this section. 
 
 ```sql
 WITH all_stations AS (
@@ -200,7 +200,7 @@ ORDER BY station_name
 
 **Results**
 
-After querying a list of stations with their respective ids, I download the it as a CSV file to view in EXCEL (some station names are cut off when viewing ing Google Cloud BigQuery). A quick and up-close inspection confirms the source of duplicate data. Below is two primary examples showcasing duplicates by either having the different ids or names.
+After querying a list of stations with their respective ids, I download the outcome as a CSV file to view in EXCEL (because some station names are cut off when viewing in Google Cloud BigQuery). A quick and up-close inspection confirms the source of duplicate data. Below is two primary examples showcasing duplicates by either having the different ids or names.
 
 
 | station_name | station_id |
