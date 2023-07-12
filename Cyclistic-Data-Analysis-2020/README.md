@@ -271,7 +271,7 @@ WITH
   ),
 ```
 
-#### (1.7) **Update start and end station info **
+#### (1.7) **Update start and end station info**
 * This query produces 3,330,296 rows (with unique station names and ids)
 
 ```sql
@@ -305,7 +305,7 @@ WITH
   ),
 ```
 
-#### (1.8)**Create final query for the new table**
+#### (1.8) **Create final query for the new table**
 
 ```sql
   ## Create new version of 2020 divvy trip data because we are removing rows
