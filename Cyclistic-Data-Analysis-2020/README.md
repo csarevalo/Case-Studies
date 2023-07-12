@@ -204,7 +204,7 @@ Here,
 
 
 | station_name | station_id |
-| ------------ | ---------- | 
+| :----------- | ---------: | 
 | Wentworth Ave & Cermak Rd | 120 | 
 | Wentworth Ave & Cermak Rd	| 13075
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
