@@ -62,7 +62,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 * Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
 
 
-### Step 2: Wrangle Data and Combine into a Single File
+### Step 2: Wrangle Data and Combine into a Single Table
 * Once uploaded, compare schemas (column names, type,...) for each of the tables.
 
 * Inspect the tables (through preview) and look for incongruencies.
@@ -77,7 +77,8 @@ Specifically, my focus will revolve around on ***how do annual members and casua
   - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
 
 
-#### **The following code is ran for multiple tables to correct column types.**
+#### Fixing Column Data Type
+**The following code is ran for multiple tables to correct column types.**
 
 ```sql
 CREATE OR REPLACE TABLE `project.dataset.table` AS (
@@ -90,17 +91,18 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
   FROM `project.dataset.table`);
 ```
 
-#### **Then, a new table containing all trip data occuring in 2020 is created.**
+#### Combine Trip Data
+**Then, a new table containing all trip data occuring in 2020 is created.**
+* We'll call this new table **divvy_trips_2020** for reference.
+
+* This makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
 
 ```sql
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
 SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
-* This makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
-
 ### Step 3: Clean Up and Add Data to Prepare for Analysis
-
 * Inspect the new table that has been created
 
   - Column names and type look great (they match)
@@ -114,38 +116,43 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 * Check for nulls
 
 
-***Notes***
-* The full query to clean clean and add data is available [here] (0) and is also **progressively detailed below** (in this section).
+***Key Problems and Solutions***
+The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
-1. Some station names can have more than one id (create new unique station ids).
+1. Some station names can have more than one id.
+    * *Create* new unique station ids.
+    
     * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
 
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
 2. There are some station names that corresponds to quality checks or other.
-    * *Filter them out* when interest on insights only about customers
+    * *Filter* these stations when interest on insights only about customers
 
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45 (hubbard warehouse)
 
-      * Hubbard st bike checking (Lbs-wh-test) (id=311),
-      * HQ QR (id=310),
-      * Watson Testing-divvy (id=631)
-      * Hubbard_test_lws (id=312)
-      * Base-2132 W Hubbard Warehouse (id=45)
-      * Mt1-Eco5.1-01 (id=455)
+      - Hubbard st bike checking (Lbs-wh-test) (id=311),
+      - HQ QR (id=310),
+      - Watson Testing-divvy (id=631)
+      - Hubbard_test_lws (id=312)
+      - Base-2132 W Hubbard Warehouse (id=45)
+      - Mt1-Eco5.1-01 (id=455)
 
 3. The data can only be aggregated at the ride-level, which is too granular.
     * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
-4. There are some rides were trip durations are negative (remove them).
+4. There are some rides were trip durations are negative.
+    * *Remove* bad data.
+    
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
 
     * This may also correspond to early cancellation times of rides by users.
   
-5. Note columns with Null values (for data cleaning).
+5. Some crucial data is missing in columns with Null values.
+    * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
-
-#### **First, check which columns contain NULLS.**
+#### Checking For Missing Data
+First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS.
 
 ```sql
 SELECT column_name, COUNT(1) AS nulls_count
@@ -154,6 +161,9 @@ UNNEST(REGEXP_EXTRACT_ALL(TO_JSON_STRING(table1), r'"(\w+)":null')) column_name
 GROUP BY column_name
 ORDER BY nulls_count DESC
 ```
+
+##### Results
+After checking for nulls or missing data, we discover that some important information is missing from the trips: start/end station names & ids. Without this information we can't track the trips, so we need to *remove these instances* -- not right away though. Before proceeding to do so, we need to identify if there is anything else we need look out for. A common problem is *duplicate data*, which we'll tackle in the next section.
 
 | column_name	       | nulls_count  |
 | :----------        | ----------:  |
@@ -165,13 +175,58 @@ ORDER BY nulls_count DESC
 | end_lng            | 4255         |
 
 
+#### Checking for duplicate data 
+text 
+
+```sql
+WITH all_stations AS (
+  SELECT start_station_name, start_station_id, end_station_name, end_station_id
+  FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020` 
+)
+SELECT DISTINCT station_name, station_id
+FROM ( (SELECT DISTINCT start_station_name AS station_name, start_station_id AS station_id FROM all_stations)
+UNION ALL (SELECT DISTINCT end_station_name AS station_name, end_station_id AS station_id FROM all_stations)
+)
+GROUP BY station_name, station_id
+ORDER BY station_name
+```
+
+###### Results
+Here,
+
+
+
+#### Preparing and Cleaning
+Building on... key problems and solutions.
+
+* After checking for nulls or missing data, we discover that some important information is missing from the trips: start/end station names & ids.
+  - Without this information, we can't track the trips so we need to **remove these instances**.
+
+* Additionally, since we are only interested in bike trips where we have trip durates
+
+* After 
+
+
+
+* The full query to clean clean and add data is available [here] (0) and is also **progressively detailed [here] (link needed)**.
+
+
+
 
 ### Step 3.1: Breakdown of Creating a New Table with SQL
-* Due to various nulls in station names & ids, and notes outlined in **Step 3**, there is a need to create a new table without any of the undesirable traits mentioned above.
+* Due to various nulls in station names & ids, and other concerns outlined in **Step 3**, there is a need to create a new table without any of the undesirable traits mentioned above.
 
 * The whole query is available [here](https://github.com/csarevalo/Case-Studies/blob/d4eb3479ac0b2a925180045230226046771f0d9d/Cyclistic-Data-Analysis-2020/sql-queries/step3_create_table_w_clean_data.sql)
 
-***Overall Goal: Create a new version of combined 2020 trip data where unnecessary or bias data is removed***.
+* Moreover, a breakdown of how to create the desired table is provided [here] (need link)
+ 
+Here, I will provide a brief summary of the steps taken to **Create a new version of combined 2020 trip data where unnecessary or bias data is removed**
+
+1. Create a function to make station names into proper case
+
+    * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
+
+2. Begin the statement to create the specific table with a desp
 
 #### (1.1) **Create a function to make station names into Proper Case**
 * Example: "I wANt Bananas from 23RD ST!" ---> "I Want Bananas From 23rd St!"
