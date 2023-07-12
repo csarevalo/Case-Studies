@@ -205,12 +205,12 @@ Here,
 
 | station_name | station_id |
 | :----------- | ---------: | 
+| Damen Ave & Walnut (Lake) St | 656 |
+| Damen Ave & Walnut (Lake) St | KA17018054 |
+| Damen Ave & Walnut (Lake) St (*) | 656 |
 | Wentworth Ave & Cermak Rd | 120 | 
 | Wentworth Ave & Cermak Rd	| 13075
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
-| Wood St & Taylor St | 317 |
-| Wood St & Taylor St (Temp) | 317 |
-| Wood St & Taylor St (Temp) | 13285 |
 
 
 
