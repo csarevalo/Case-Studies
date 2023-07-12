@@ -183,7 +183,7 @@ After checking for nulls or missing data, we discover that some important inform
 
 
 #### Checking for duplicate data 
-A common problem is *duplicate data*, which we'll tackle in this section. 
+A common problem is *duplicate data*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station.
 
 ```sql
 WITH all_stations AS (
