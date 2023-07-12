@@ -1,4 +1,4 @@
-![image](https://github.com/csarevalo/Case-Studies/assets/138172548/0bec8a58-d14f-4141-8ae7-dd0758f44ff5)# Cyclistic Data Analysis 2020
+# Cyclistic Data Analysis 2020
 
 **By** Cristian Arevalo 
 
