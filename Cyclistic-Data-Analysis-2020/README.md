@@ -24,7 +24,7 @@ Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Laun
   <img src = "https://github.com/csarevalo/Case-Studies/blob/4d3f62ffda82b91eaf0586ab1a65ab92b10ec643/Cyclistic-Data-Analysis-2020/images/divvy-bicycles.png" alt="Image" width="650">
 </p>
 
-<h5 align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</h5>
+<p align="center"> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago</p>
 
 Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships). 
 
@@ -182,7 +182,7 @@ After checking for nulls or missing data, we discover that some important inform
 | end_lng            | 4255         |
 
 
-#### Checking for duplicate data 
+#### Checking For Duplicate Data 
 A common problem is *duplicate data*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station.
 
 ```sql
