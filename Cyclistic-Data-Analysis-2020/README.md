@@ -222,7 +222,6 @@ After querying a list of stations with their respective ids, the outcome is down
 
 Below are two primary examples showcasing duplicates by either having the different ids or names.
 
-
 | station_name | station_id |
 | :----------- | ---------: | 
 | Damen Ave & Walnut (Lake) St | 656 |
@@ -233,24 +232,35 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
+#### Manipulating Data
+After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
+* Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then used to replaced the start and end station lat/long values for each ride.
+
+* 
 
 
+## Data Summary
+
+The data can be summarized as below:
+
+* Total number of stations is **669**.
+
+* Out 3.54 million rows of trip data, **3.3 million rides** remain.
+    - this data was removed (elaborate)
+ 
+    - less than a min (and reason: less than 0 bad and less than 1min is false start or set price) and more than a day (and reason: stolen? must return!)
+ 
+    - what other data was removed and why
+
+* Out of the 3.4 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers.
+
+* Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
 
 
 
 #### Preparing and Cleaning
-Building on... key problems and solutions.
-
-* After checking for nulls or missing data, we discover that some important information is missing from the trips: start/end station names & ids.
-  - Without this information, we can't track the trips so we need to **remove these instances**.
-
-* Additionally, since we are only interested in bike trips where we have trip durates
-
-* After 
-
-
-
+this bullet should go at the top of **STEP 3**
 * The full query to clean clean and add data is available [here] (0) and is also **progressively detailed [here] (link needed)**.
 
 
@@ -264,6 +274,10 @@ Building on... key problems and solutions.
 * Moreover, a breakdown of how to create the desired table is provided [here] (need link)
  
 Here, I will provide a brief summary of the steps taken to **Create a new version of combined 2020 trip data where unnecessary or bias data is removed**
+
+
+
+
 
 
 
