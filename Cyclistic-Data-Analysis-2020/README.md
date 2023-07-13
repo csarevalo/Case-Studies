@@ -215,7 +215,9 @@ ORDER BY station_name
 
 **Results**
 
-After querying a list of stations with their respective ids, I download the outcome as a CSV file to view in EXCEL (because some station names are cut off when viewing in Google Cloud BigQuery). A quick and up-close inspection confirms the source of duplicate data. Below is two primary examples showcasing duplicates by either having the different ids or names.
+After querying a list of stations with their respective id(s), the outcome is downloaded as a csv file to view in EXCEL (unfortunately, some station names were cut off when viewing the table in BigQuery). A quick and up-close inspection confirms the source of duplicate data: "(*)" and "(Temp)". Additionally, multiple ids are often found for the same station.
+
+Below are two primary examples showcasing duplicates by either having the different ids or names.
 
 
 | station_name | station_id |
@@ -224,7 +226,7 @@ After querying a list of stations with their respective ids, I download the outc
 | Damen Ave & Walnut (Lake) St | KA17018054 |
 | Damen Ave & Walnut (Lake) St (*) | 656 |
 | Wentworth Ave & Cermak Rd | 120 | 
-| Wentworth Ave & Cermak Rd	| 13075
+| Wentworth Ave & Cermak Rd	| 13075 |
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
