@@ -170,7 +170,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
 #### Checking For Missing Data
-First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS.
+First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS using the following query.
 
 ```sql
 SELECT column_name, COUNT(1) AS nulls_count
@@ -198,7 +198,7 @@ The table below showcases which columns have missing information and how many ro
 
 
 #### Checking For Duplicate Data 
-A common problem is *duplicate data*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station.
+A common problem often encounter while cleaning data is *duplicate names*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station using the following query.
 
 ```sql
 WITH all_stations AS (
