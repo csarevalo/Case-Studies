@@ -72,7 +72,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 * Inspect the tables (through preview) and look for incongruencies.
 
-***Notes***:
+#### Results
 * Though column names matched, column types differed accross tables.
 
   - The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
@@ -82,7 +82,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
   - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
 
 #### Fixing Column Data Type
-**The following code is ran for multiple tables to correct column types.**
+The following query is ran for multiple tables to correct column types.
 
 ```sql
 CREATE OR REPLACE TABLE `project.dataset.table` AS (
@@ -96,10 +96,12 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 ```
 
 #### Combine Trip Data
-**Then, a new table containing all trip data occuring in 2020 is created.**
-* We'll call this new table **divvy_trips_2020** for reference.
+The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
-* This makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
+The following query is used to create a new table containing all trip data occuring in 2020 is created.
+* The new table will be called **divvy_trips_2020** for reference.
+
+* This query makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
 
 ```sql
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
@@ -107,17 +109,17 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
 #### Inspecting Combined Trip Data
-* Briefly skim the new table that has been created
+Briefly skiming the new table shows that:
 
-  - Column names and type look great (they match)
+- Column names and type look great (they match)
 
-  - Station names and ids (check for and remove duplicates)
+- Station names and ids (check for and remove duplicates)
 
-  - There is no trip duration for comparing casual riders with members (create field and scrutinize)
+- There is no trip duration for comparing casual riders with members (create field and scrutinize)
 
-  - Check for distinct values across columns (all good here)
+- Check for distinct values across columns (all good here)
 
-* There is still a need to check for nulls
+There is still a need to check for nulls or missing values.
 
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis
@@ -127,7 +129,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 1. Some station names can have more than one id.
     * *Create* new unique station ids.
     
-    * Prior to Dec ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
+    * Prior to December ids were unique intergers, afterward alphanumeric ids were added but old ids were still being used.
 
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
@@ -180,7 +182,8 @@ ORDER BY nulls_count DESC
 
 **Results**
 
-After checking for nulls or missing data, we discover that some important information is missing from the trips: *start/end station names & ids*. Without this information we can't track the trips, so we need to *remove these instances* -- not right away though. Before proceeding to do so, we need to identify if there is anything else we need look out for. 
+After checking for nulls or missing data, we discover that some important information is missing from the trips: *start/end station names & ids*. 
+* Without this information we can't track the trips, which means we need to *remove these instances*. Before proceeding to do so however, we need to identify if there is anything else we need look out for. 
 
 | column_name	       | nulls_count  |
 | :----------        | ----------:  |
