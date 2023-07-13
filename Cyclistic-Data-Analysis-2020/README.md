@@ -152,7 +152,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
       - Mt1-Eco5.1-01 (id=455)
 
 1. The data can only be aggregated at the ride-level, which is too granular.
-    * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
+    * *Add additional columns* of data, such as the **weekday** & **month** when trips begin. This provide additional opportunities to aggregate the data.
 
 1. There is no field measuring *trip duration*.
     * *Create* a new column indicating **ride_length** and *Scrutinize* ride duration.
@@ -183,7 +183,9 @@ ORDER BY nulls_count DESC
 **Results**
 
 After checking for nulls or missing data, we discover that some important information is missing from the trips: *start/end station names & ids*. 
-* Without this information we can't track the trips, which means we need to *remove these instances*. Before proceeding to do so however, we need to identify if there is anything else we need look out for. 
+* Without this information we can't track the trips, which means we need to *remove these instances*. Before proceeding to do delete rows, we need to identify if there is anything else we need look out for when cleaning the data.
+
+The table below showcases which columns have missing information and how many rows are missing. 
 
 | column_name	       | nulls_count  |
 | :----------        | ----------:  |
