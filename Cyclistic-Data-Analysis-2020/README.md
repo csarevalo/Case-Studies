@@ -215,7 +215,7 @@ ORDER BY station_name
 
 **Results**
 
-After querying a list of stations with their respective id(s), the outcome is downloaded as a csv file to view in EXCEL (unfortunately, some station names were cut off when viewing the table in BigQuery). 
+After querying a list of stations with their respective ids, the outcome is downloaded as a csv file to view in EXCEL (unfortunately, some station names were cut off when viewing the table in BigQuery). 
 * A quick and up-close inspection confirms the source of duplicate data: "(*)" and "(Temp)". 
 
 * Additionally, multiple ids are often found for the same station.
