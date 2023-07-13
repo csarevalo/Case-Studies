@@ -48,12 +48,17 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 * The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
 
-* Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied. Thus, the data is not current. **It mostly ROCCCs**!
+* Data is reliable, original, comprehensive, and cited. Since only trips occuring in 2020 are studied, the data is not current. **It mostly ROCCCs**! However, it is **not** adviseable to make full business decisions based on this data.
+  - For business decisions, it is recommended to use current data (from 2022/23). 
 
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
 
 
 ## Prep Work
+The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
+
+If you are more interested with the analysis, and results, you can jump ahead to [Data Summary] (link here).
+
 ### Step 1: Collect Data
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
@@ -75,7 +80,6 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
 
   - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
-
 
 #### Fixing Column Data Type
 **The following code is ran for multiple tables to correct column types.**
@@ -101,8 +105,8 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
 SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
-#### Inspecting Combined Trip Data
 
+#### Inspecting Combined Trip Data
 * Briefly skim the new table that has been created
 
   - Column names and type look great (they match)
@@ -115,12 +119,8 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 * There is still a need to check for nulls
 
+
 ### Step 3: Clean Up and Add Data to Prepare for Analysis
-#### Overview
-The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
-
-If you are more interested with the analysis, and results, you can jump ahead to [Data Summary] (link here).
-
 #### ***Key Problems and Solutions***
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
