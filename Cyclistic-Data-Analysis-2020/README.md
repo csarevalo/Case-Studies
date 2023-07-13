@@ -101,20 +101,25 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
 SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
+#### Inspecting Combined Trip Data
 
-### Step 3: Clean Up and Add Data to Prepare for Analysis
-* Inspect the new table that has been created
+* Briefly skim the new table that has been created
 
   - Column names and type look great (they match)
 
   - Station names and ids (check for and remove duplicates)
 
-  - There is no trip duration (create field and scrutinize)
+  - There is no trip duration for comparing casual riders with members (create field and scrutinize)
 
   - Check for distinct values across columns (all good here)
 
-* Check for nulls
+* There is still a need to check for nulls
 
+### Step 3: Clean Up and Add Data to Prepare for Analysis
+#### Overview
+The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
+
+If you are more interested with the analysis, and results, you can jump ahead to [Data Summary] (link here).
 
 #### ***Key Problems and Solutions***
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
@@ -147,7 +152,12 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 1. The data can only be aggregated at the ride-level, which is too granular.
     * *Add additional columns* of data -- such as the **weekday** & **month** when trips begin -- that provide additional opportunities to aggregate the data.
 
-1. There are some rides were trip durations are negative.
+1. There is no field measuring *trip duration*.
+    * *Create* a new column indicating **ride_length** and *Scrutinize* ride duration.
+  
+    * This presents more opportunities to compare user behavior between casual and member riders.
+
+1. Additionally, there are some rides were trip durations are negative.
     * *Remove* bad data.
     
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
