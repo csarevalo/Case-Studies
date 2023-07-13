@@ -236,7 +236,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then used to replaced the start and end station lat/long values for each ride.
 
-* 
+* The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows in a query.
 
 
 ## Data Summary
