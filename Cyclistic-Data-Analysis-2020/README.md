@@ -104,8 +104,8 @@ The following query is used to create a new table containing all trip data occur
 * This query makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
 
 ```sql
-CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
-SELECT * FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_*`;
+CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020`
+SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
 #### Inspecting Combined Trip Data
@@ -174,7 +174,7 @@ First order of business is finding out if anything important is missing from the
 
 ```sql
 SELECT column_name, COUNT(1) AS nulls_count
-FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020` as table1,
+FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020` as table1,
 UNNEST(REGEXP_EXTRACT_ALL(TO_JSON_STRING(table1), r'"(\w+)":null')) column_name
 GROUP BY column_name
 ORDER BY nulls_count DESC
@@ -203,7 +203,7 @@ A common problem often encounter while cleaning data is *duplicate names*, which
 ```sql
 WITH all_stations AS (
   SELECT start_station_name, start_station_id, end_station_name, end_station_id
-  FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020` 
+  FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020` 
 )
 SELECT DISTINCT station_name, station_id
 FROM ( (SELECT DISTINCT start_station_name AS station_name, start_station_id AS station_id FROM all_stations)
