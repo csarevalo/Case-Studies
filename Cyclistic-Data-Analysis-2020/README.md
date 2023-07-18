@@ -232,6 +232,18 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
+#### Creating A List Of (Unique) Stations For 2020
+Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
+
+1. We beging by identifying unique station names from start & end station names, fixing duplicates to only present unique station names.
+
+1. Then, we create unique station ids that correspond to only one station.
+
+Now that we have the most basic station information, we consider the trip data from 2020 and notice that the geo-location can be different for the same station. This means that the *latitude* and *longitude* values of each ride is determined by the bike gps, not the actual station's location. However, each station can only have one geo-location.
+
+1. Considering the trip data, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
+
+
 #### Manipulating Data
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then used to replaced the start and end station lat/long values for each ride.
