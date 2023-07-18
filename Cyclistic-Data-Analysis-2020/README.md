@@ -239,9 +239,9 @@ Due to the present duplicate data occuring in start & end stations, there is a n
 
 1. Then, we create unique station ids that correspond to only one station.
 
-1. Considering the trip data, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
+1. Finally, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
 
-    * Now that we have the most basic station information, we consider the trip data from 2020 and notice that the geo-location can be different for the same station. This means that the *latitude* and *longitude* values of each ride are determined by the bike gps, not the actual station's location. However, each station can only have one geo-location.
+    * Now that we have the most basic station information, we need consider the trip data from 2020 and notice that the geo-location can be different for the same station. This means that the *latitude* and *longitude* values of each ride are determined by the bike gps, not the actual station's location. However, each station can only have one geo-location.
 
 
 #### Manipulating Data
