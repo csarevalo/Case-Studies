@@ -68,11 +68,9 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 
 ### Step 2: Wrangle Data and Combine into a Single Table
-* Once uploaded, compare schemas (e.g. column names and data type) for each of the tables.
+#### Preliminary Inspection
+Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
-* Inspect the tables (through preview) and look for incongruencies.
-
-#### Results
 * Though column names matched, column types differed accross tables.
 
   - The reason being that I did not format the dataframe in python prior to uploading (useful for the future).
