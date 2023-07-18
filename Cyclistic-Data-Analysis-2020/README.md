@@ -64,7 +64,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 * Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
 
-* Files that were too large were uploaded via python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
+* Files that were too large were uploaded via this python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
 
 
 ### Step 2: Wrangle Data and Combine into a Single Table
@@ -77,7 +77,9 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
 * From Jan 2020 to Nov 2020, station ids were purely numeric. On Dec 2020, alphanumeric station ids were added; however, on several occasions their previous numeric ids were also used.
 
-  - Change data type for ids from INT64 to STRING. There is also a need for new unique ids that remains.
+  - It is necessary to change data type for station ids from INT64 to STRING.
+
+  - There is also a need for new and unique ids for the stations.
 
 #### Fixing Column Data Type
 The following query is ran for multiple tables to correct column types.
@@ -103,19 +105,19 @@ The following query is used to create a new table containing all trip data occur
 
 ```sql
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020`
-SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
+SELECT * FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_*`;
 ```
 
 #### Inspecting Combined Trip Data
 Briefly skiming the new table shows that:
 
-- Column names and type look great (they match)
+- Column names and type look great (they match).
 
-- Station names and ids (check for and remove duplicates)
+- Station names and ids need to be checked for duplicates (to remove them).
 
-- There is no trip duration for comparing casual riders with members (create field and scrutinize)
+- There is no trip duration among the columns to compare casual riders with members (there is a need to create the field and scrutinized it for abnormal ride lengths).
 
-- Check for distinct values across columns (all good here)
+- Check for distinct values across columns (all good here: 2 usertypes, 3 ridable types; station information needs to be verified seperatly, latitude and longitude values are not unique per station).
 
 There is still a need to check for nulls or missing values.
 
