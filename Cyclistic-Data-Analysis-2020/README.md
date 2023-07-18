@@ -232,7 +232,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
-#### Creating A List Of (Unique) Stations For 2020
+#### Creating A New Table Containing Station Info
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
 1. We begin by identifying unique station names from start & end station names, fixing duplicates to only present unique station names.
