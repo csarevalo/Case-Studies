@@ -42,9 +42,10 @@ ORDER BY started_at;
 ################# Random Notes #####################
 ## Seems I am stuck with the "L" haha
 #- Unable to remove the capitalized 'L' at the end of 'member_casuaL'
-#- Query error: Column already exists: member_casual at [46:34] 
--- ALTER TABLE `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020`
---   RENAME COLUMN member_casuaL TO member_casual;
+#- Query error: Column already exists: member_casual at [47:34] 
+
+ALTER TABLE `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020`
+  RENAME COLUMN member_casuaL TO member_casual;
 ####################################################
 
 
