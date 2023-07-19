@@ -13,14 +13,14 @@
 
 ## Fix Schema For Tables With Trip Data
 
--- CREATE OR REPLACE TABLE `project.dataset.table` AS (
---   SELECT * REPLACE (
---     CAST(started_at AS TIMESTAMP) AS started_at, 	
---     CAST(ended_at AS TIMESTAMP) AS ended_at, 
---     CAST(start_station_id AS STRING) AS  start_station_id, 
---     CAST(end_station_id AS STRING) AS end_station_id 
---     )
--- FROM `project.dataset.table`);
+CREATE OR REPLACE TABLE `project.dataset.table` AS (
+  SELECT * REPLACE (
+    CAST(started_at AS TIMESTAMP) AS started_at, 	
+    CAST(ended_at AS TIMESTAMP) AS ended_at, 
+    CAST(start_station_id AS STRING) AS  start_station_id, 
+    CAST(end_station_id AS STRING) AS end_station_id 
+    )
+FROM `project.dataset.table`);
 
 #========================================================
 # STEP 2.1: Combine Data Into A Single Table
