@@ -167,7 +167,8 @@ ORDER BY station_id
 #==================================================================
 # STEP 2.9: Combine Two Queries Into One
 #==================================================================
-
+#- I named this as v2 to compare if the outcome is the same when combined the two prior queries
+  
 CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_analysis.divvy_stations_2020_v2`
 -- CREATE OR REPLACE TABLE `case-study1-bike-share.divvy_trips_2020_analysis.divvy_stations_2020_v2`
 OPTIONS (
