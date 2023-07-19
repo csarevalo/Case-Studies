@@ -235,7 +235,9 @@ Below are two primary examples showcasing duplicates by either having the differ
 #### Creating A New Table Containing Station Info
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
-The new table will be called *divvy_stations_2020*. The full query will be available [here] (link needed here) but here is a summary:
+A summary of the steps taken to create a new table showcasing the station info is presented below (meanwhile, the full query will be available [here] (link needed here)):
+
+1. The new table will be called *divvy_stations_2020*.
 
 1. We begin by identifying unique station names from start & end station names, fixing duplicates to only present unique station names.
 
