@@ -279,10 +279,10 @@ The data can be summarized as below:
 * Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
 
-| summary_of | started_with | ended_with | num_rows_elim | retain_rows (%)   |
-| ---------- | ------------ | ---------- | ------------- | ----------------- |
-| rides      | 3,541,683    | 3,330,296  | 211,387       | 94.031 |
-| stations   | 696          | 683        | 13            | 98.132 |
+| summary_of | started_with | ended_with | eliminated | retained (%)   |
+| ---------- | ------------ | ---------- | ---------- | -------------- |
+| rides      | 3,541,683    | 3,330,296  | 211,387    | 94.031 |
+| stations   | 696          | 683        | 13         | 98.132 |
 
 
 #### Preparing and Cleaning
