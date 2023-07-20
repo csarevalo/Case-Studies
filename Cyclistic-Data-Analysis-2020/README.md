@@ -98,9 +98,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 #### Combine Trip Data
 The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
-The following query is used to create a new table containing all trip data occuring in 2020 is created.
-* The new table will be called **divvy_trips_2020** for reference.
-
+The following query is used to create a new table, called **divvy_trips_2020** for reference, containing all trip data occuring in 2020 is created.
 * Additionally, this query makes use of naming conventions (specifically, *similar names*) to combine all data from 2020 into a single table.
 
 ```sql
