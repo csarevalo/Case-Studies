@@ -244,12 +244,17 @@ A summary of the steps taken to create a new table showcasing the station info i
 
 1. Finally, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
 
-    * Now that we have the most basic station information, we need consider the trip data from 2020 and notice that the geo-location can be different for the same station.
+    * Now that we have the most basic station information, we need consider the trip data from 2020 where we notice that the geo-location can be different for the same station.
 
     * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station.
 
 
+#### Cleaning Operations
+Now that we have established a solid foundation for information about each station, we use this data to replace...
+
 #### Manipulating Data
+There needs to be cleaning operations first.
+
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then used to replaced the start and end station lat/long values for each ride.
 
