@@ -244,7 +244,9 @@ A summary of the steps taken to create a new table showcasing the station info i
 
 1. Finally, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
 
-    * Now that we have the most basic station information, we need consider the trip data from 2020 and notice that the geo-location can be different for the same station. This means that the *latitude* and *longitude* values of each ride are determined by the bike gps, not the actual station's location. However, each station can only have one geo-location.
+    * Now that we have the most basic station information, we need consider the trip data from 2020 and notice that the geo-location can be different for the same station.
+
+    * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station.
 
 
 #### Manipulating Data
