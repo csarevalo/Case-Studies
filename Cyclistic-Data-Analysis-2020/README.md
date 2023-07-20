@@ -144,7 +144,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
       - Hubbard st bike checking (Lbs-wh-test) (id=311),
       - HQ QR (id=310),
-      - Watson Testing-divvy (id=631)
+      - Watson Testing-divvy (id=631) new one is 633
       - Hubbard_test_lws (id=312)
       - Base-2132 W Hubbard Warehouse (id=45)
       - Mt1-Eco5.1-01 (id=455)
