@@ -169,6 +169,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
 #### Checking For Missing Data
 First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS using the following query.
+* The source for the following query comes from [stackoverflow](https://stackoverflow.com/questions/58716640/bigquery-check-entire-table-for-null-values)
 
 ```sql
 SELECT column_name, COUNT(1) AS nulls_count
