@@ -247,6 +247,8 @@ A summary of the steps taken to create a new table showcasing the station info i
     * Now that we have the most basic station information, we need consider the trip data from 2020 where we notice that the geo-location can be different for the same station.
 
     * Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station.
+  
+    * These values are then used to replaced the start and end station lat/long values for each ride.
 
 
 #### Cleaning Operations
@@ -280,20 +282,16 @@ Now that we have established a solid foundation of information about each statio
 1. Additional data is added to aggregate trip info more easily during analysis
     - The following fields of data are implemented:
       
-        * Starting month number (1-12) as *month_num*
-        * Starting month name as *starting_month*
-        * Starting day of the week (number) as *weekday_num* [1-7]
-        * Starting day of the week as *weekday* [Sun-Sat]
-        * Trip duration as *ride_length* measured in seconds
+        * Starting month number (1-12) as **month_num**
+        * Starting month name as **starting_month**
+        * Starting day of the week (number) as **weekday_num** [1-7]
+        * Starting day of the week as **weekday** [Sun-Sat]
+        * Trip duration as **ride_length** measured in seconds
 
 
 
 #### Manipulating Data
-There needs to be cleaning operations first.
-
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
-* Latitude / Longitude values for the stations are included in the same row as each ride’s information. Since each bike has its own GPS device, there is slight variance in the lat/long values of every station per ride. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then used to replaced the start and end station lat/long values for each ride.
-
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows in a query.
 
 
