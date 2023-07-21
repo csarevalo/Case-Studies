@@ -271,6 +271,7 @@ Now that we have established a solid foundation of information about each statio
   
 1. Using **divvy_stations_2020**, station information is updated for both *start & end stations*.
     - Specifically, the following parameters are updated (8 parameters total):
+      
         * Station name
         * Station id
         * Starting latitude
@@ -278,6 +279,7 @@ Now that we have established a solid foundation of information about each statio
 
 1. Additional data is added to aggregate trip info more easily during analysis
     - The following fields of data are implemented:
+      
         * Starting month number (1-12) as *month_num*
         * Starting month name as *starting_month*
         * Starting day of the week (number) as *weekday_num* [1-7]
