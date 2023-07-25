@@ -231,7 +231,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
-#### Creating A New Table Containing Station Info
+#### Creating Table About Stations
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
 A summary of the steps taken to create a new table showcasing the station info is presented below (meanwhile, the full query will be available [here](sql-queries/step-2_9-create-divvy_station_2020.sql)):
@@ -301,6 +301,16 @@ Now that we have established a solid foundation of information about each statio
         * Starting day of the week (number) as **weekday_num** [1-7]
         * Starting day of the week as **weekday** [Sun-Sat]
         * Trip duration as **ride_length** measured in seconds
+
+**Results**
+
+| ride_id          | rideable_type | started_at                     | ended_at                       | start_station_name           | start_station_id | end_station_name           | end_station_id | start_lat          | start_lng           | end_lat            | end_lng             | member_casuaL | month_num | starting_month | weekday_num | weekday | ride_length |
+| ---------------- | ------------- | ------------------------------ | ------------------------------ | ---------------------------- | ---------------- | -------------------------- | -------------- | ------------------ | ------------------- | ------------------ | ------------------- | ------------- | --------- | -------------- | ----------- | ------- | ----------- |
+| 99C72397983C1DF5 | docked_bike   | 2020-08-10 23:49:04.000000 UTC | 2020-08-11 12:49:16.000000 UTC | Lake Park Ave & 35th St      | 351              | Lake Park Ave & 35th St    | 351            | 41.831275652901688 | -87.6087894057451   | 41.831275652901688 | -87.6087894057451   | casual        | 8         | Aug            | 2           | Mon     | 46812       |
+| 08306A0B4F8B9C44 | docked_bike   | 2020-08-10 23:49:04.000000 UTC | 2020-08-11 00:56:14.000000 UTC | Lake Park Ave & 35th St      | 351              | Lake Park Ave & 35th St    | 351            | 41.831275652901688 | -87.6087894057451   | 41.831275652901688 | -87.6087894057451   | casual        | 8         | Aug            | 2           | Mon     | 4030        |
+| 7A3E9EC138E2D0AD | docked_bike   | 2020-08-10 23:49:17.000000 UTC | 2020-08-11 00:18:37.000000 UTC | Stockton Dr & Wrightwood Ave | 586              | Kedzie Ave & Milwaukee Ave | 333            | 41.931312260664328 | -87.638733542147918 | 41.929576232244784 | -87.707870112443771 | casual        | 8         | Aug            | 2           | Mon     | 1760        |
+| 5858B7C1FC4A89A2 | docked_bike   | 2020-08-10 23:49:28.000000 UTC | 2020-08-11 00:57:04.000000 UTC | Lake Park Ave & 35th St      | 351              | Lake Park Ave & 35th St    | 351            | 41.831275652901688 | -87.6087894057451   | 41.831275652901688 | -87.6087894057451   | casual        | 8         | Aug            | 2           | Mon     | 4056        |
+| CDF2EA7B3F5ED5FF | docked_bike   | 2020-08-10 23:49:48.000000 UTC | 2020-08-11 00:39:13.000000 UTC | Halsted St & 59th St         | 286              | Halsted St & 59th St       | 286            | 41.787533838414639 | -87.644880773373984 | 41.787533838414639 | -87.644880773373984 | casual        | 8         | Aug            | 2           | Mon     | 2965        |
 
 
 
