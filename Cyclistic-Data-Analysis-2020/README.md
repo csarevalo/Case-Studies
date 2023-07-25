@@ -234,7 +234,8 @@ Below are two primary examples showcasing duplicates by either having the differ
 #### Creating A New Table Containing Station Info
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
-A summary of the steps taken to create a new table showcasing the station info is presented below (meanwhile, the full query will be available [here](https://github.com/csarevalo/Case-Studies/blob/cc2ab28eac4db6c1334e717626faf7259c123693/Cyclistic-Data-Analysis-2020/sql-queries/step-2-9-create-divvy_station_2020.sql)):
+A summary of the steps taken to create a new table showcasing the station info is presented below (meanwhile, the full query will be available [here](sql-queries/step-2_9-create-divvy_station_2020.sql)):
+
 
 1. The new table will be called *divvy_stations_2020*.
 
@@ -319,21 +320,9 @@ The data can be summarized as below:
 | stations   | 696          | 683        | 13         | 98.132 |
 
 
-#### Preparing and Cleaning
-this bullet should go at the top of **STEP 3**
-* The full query to clean clean and add data is available [here] (0) and is also **progressively detailed [here] (link needed)**.
 
 
 
-
-### Step 3.1: Breakdown of Creating a New Table with SQL
-* Due to various nulls in station names & ids, and other concerns outlined in **Step 3**, there is a need to create a new table without any of the undesirable traits mentioned above.
-
-* The whole query is available [here](https://github.com/csarevalo/Case-Studies/blob/d4eb3479ac0b2a925180045230226046771f0d9d/Cyclistic-Data-Analysis-2020/sql-queries/step3_create_table_w_clean_data.sql)
-
-* Moreover, a breakdown of how to create the desired table is provided [here] (need link)
- 
-Here, I will provide a brief summary of the steps taken to **Create a new version of combined 2020 trip data where unnecessary or bias data is removed**
 
 
 
