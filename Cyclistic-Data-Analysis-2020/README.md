@@ -295,7 +295,15 @@ Now that we have established a solid foundation of information about each statio
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
 
-We accomplish 
+**Results**
+
+| station_name             | station_id | lat                | lng                 | total_rides_from | total_rides_to | members_from_st | casuals_from_st | members_to_st | casuals_to_st |
+| ------------------------ | ---------- | ------------------ | ------------------- | ---------------- | -------------- | --------------- | --------------- | ------------- | ------------- |
+| Clark St & Elm St        | 135        | 41.902963895113132 | -87.631312305029311 | 31012            | 31180          | 19886           | 11126           | 20565         | 10615         |
+| Kingsbury St & Kinzie St | 345        | 41.889192992430722 | -87.638501411531365 | 21882            | 21337          | 16260           | 5622            | 16454         | 4883          |
+| St. Clair St & Erie St   | 564        | 41.894421578032492 | -87.622700546409931 | 21188            | 23853          | 15559           | 5629            | 17410         | 6443          |
+| Dearborn St & Erie St    | 208        | 41.894004025551475 | -87.629318830077878 | 23559            | 24134          | 15453           | 8106            | 16039         | 8095          |
+| Broadway & Barry Ave     | 56         | 41.937610986894825 | -87.644098303068489 | 23167            | 24057          | 15372           | 7795            | 15787         | 8270          |
 
 
 ## Data Summary
