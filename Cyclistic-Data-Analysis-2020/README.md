@@ -251,6 +251,19 @@ A summary of the steps taken to create a new table showcasing the station info i
   
     * These values are then used to replaced the start and end station lat/long values for each ride.
 
+**Results**
+
+The full table is available [here] (link). Meanwhile, here is the first 5 results.
+
+| station_name               | station_id | lat                | lng                 |
+| -------------------------- | ---------- | ------------------ | ------------------- |
+| 2112 W Peterson Ave        | 1          | 41.991161729691882 | -87.683592172455633 |
+| 63rd St Beach              | 2          | 41.781052497804261 | -87.57612809187053  |
+| 900 W Harrison St          | 3          | 41.8747676018918   | -87.649804773961    |
+| Aberdeen St & Jackson Blvd | 4          | 41.877720779404484 | -87.654792138860145 |
+| Aberdeen St & Monroe St    | 5          | 41.880414761538468 | -87.655516799346827 |
+| Aberdeen St & Randolph St  | 6          | 41.884114663376479 | -87.654270784691533 |
+
 
 #### Cleaning Operations
 Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here] (link), however below I will discussion a brief overview of the steps taken.
@@ -295,7 +308,7 @@ Now that we have established a solid foundation of information about each statio
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
 
-**Results**
+**Results: Top 5 Starting Stations**
 
 | station_name             | station_id | lat                | lng                 | total_rides_from | total_rides_to | members_from_st | casuals_from_st | members_to_st | casuals_to_st |
 | ------------------------ | ---------- | ------------------ | ------------------- | ---------------- | -------------- | --------------- | --------------- | ------------- | ------------- |
