@@ -253,7 +253,7 @@ A summary of the steps taken to create a new table showcasing the station info i
 
 **Results**
 
-The full table is available [here] (link). Meanwhile, here is the first 5 results.
+The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.csv) and [uncleaned](Cyclistic-Data-Analysis-2020/tables/divvy_stations_2020_uncleaned.csv). Below are the first 5 results.
 
 | station_name               | station_id | lat                | lng                 |
 | -------------------------- | ---------- | ------------------ | ------------------- |
