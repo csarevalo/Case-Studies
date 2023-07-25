@@ -64,7 +64,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 * Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
 
-* Files that were too large were uploaded via this python script ([shown here](https://github.com/csarevalo/Case-Studies/blob/0c5a0745d1742ce9c8195db2f770e81325d5f2de/Cyclistic-Data-Analysis-2020/python-code/upload_df_to_gbq_v5.py)).
+* Files that were too large were uploaded via this python script ([shown here](python-code/upload_df_to_gbq_v5.py)).
 
 
 ### Step 2: Wrangle Data and Combine into a Single Table
