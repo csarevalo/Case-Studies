@@ -333,16 +333,18 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 The data can be summarized as below:
 
-* Total number of stations is **669**.
+* Total number of stations is **683**.
 
 * Out 3.54 million rows of trip data, **3.3 million rides** remain.
-    - this data was removed (elaborate)
+    - Trips without a *start* or *end station name* are removed because without station names we can't track the trips. Additionally, this information is used to assign new station ids.
  
-    - less than a min (and reason: less than 0 bad and less than 1min is false start or set price) and more than a day (and reason: stolen? must return!)
- 
-    - what other data was removed and why
+    - Trips less than a min are also removed because they can be considered a false start of sorts. Moreover, the price is set for all rides within a minute.
+    -
+    - Trips more than a day are removed because all rideables must be returned after they are used. Rides longer than a day can be considered stolen and users are even charged an additional fee for such cases.
 
-* Out of the 3.4 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers.
+* Out of the 3.54 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers.
+
+* need queries for this in new sub sections
 
 * Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
