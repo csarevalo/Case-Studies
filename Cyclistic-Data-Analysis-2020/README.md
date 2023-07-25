@@ -293,7 +293,9 @@ Now that we have established a solid foundation of information about each statio
 
 #### Manipulating Data
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
-* The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows in a query.
+* The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
+
+We accomplish 
 
 
 ## Data Summary
