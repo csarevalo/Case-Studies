@@ -142,10 +142,10 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45
 
-      - Hubbard st bike checking (Lbs-wh-test) (id=311),
-      - HQ QR (id=310),
-      - Watson Testing-divvy (id=631); **new id is 633**
+      - HQ QR (id=310)
+      - Hubbard st bike checking (Lbs-wh-test) (id=311)
       - Hubbard_test_lws (id=312)
+      - Watson Testing-divvy (id=633)
       - Base-2132 W Hubbard Warehouse (id=45)
       - Mt1-Eco5.1-01 (id=455)
 
@@ -312,6 +312,26 @@ Now that we have established a solid foundation of information about each statio
 | 5858B7C1FC4A89A2 | docked_bike   | 2020-08-10 23:49:28.000000 UTC | 2020-08-11 00:57:04.000000 UTC | Lake Park Ave & 35th St      | 351              | Lake Park Ave & 35th St    | 351            | 41.831275652901688 | -87.6087894057451   | 41.831275652901688 | -87.6087894057451   | casual        | 8         | Aug            | 2           | Mon     | 4056        |
 | CDF2EA7B3F5ED5FF | docked_bike   | 2020-08-10 23:49:48.000000 UTC | 2020-08-11 00:39:13.000000 UTC | Halsted St & 59th St         | 286              | Halsted St & 59th St       | 286            | 41.787533838414639 | -87.644880773373984 | 41.787533838414639 | -87.644880773373984 | casual        | 8         | Aug            | 2           | Mon     | 2965        |
 
+
+**Verified**
+
+Number of quality check uses in cleaned trip data
+
+| member_casual | quality_check_users |
+| ------------- | ------------------- |
+| casual        | 71                  |
+| member        | 197                 |
+
+From the following stations:
+
+| station_name                           | station_id |
+| -------------------------------------- | ---------- |
+| Base - 2132 W Hubbard Warehouse        | 45         |
+| HQ QR                                  | 310        |
+| Hubbard St Bike Checking (Lbs-Wh-Test) | 311        |
+| Hubbard_Test_Lws                       | 312        |
+| Mtl-Eco5.1-01                          | 455        |
+| Watson Testing - Divvy                 | 633        |
 
 
 #### Manipulating Data
