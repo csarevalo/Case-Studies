@@ -266,7 +266,7 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 
 
 #### Cleaning Operations
-Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here] (link), however below I will discussion a brief overview of the steps taken.
+Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here](sql-queries/step-3-cleaning-and-adding-data.sql) and the verification of the results is available [here](sql-queries/step-3_5-verifying-clean-data.sql), however below I will discussion a brief overview of the steps taken.
 
 1. The goal of this new query is to create a new version of *divvy_trip_data* (*v2*), where certain cases are excluded, to make analysis of the trip data easier.
 
@@ -277,7 +277,7 @@ Now that we have established a solid foundation of information about each statio
     - Trip durations that are less than 60 seconds because **these *ride lengths* are similar to a false start**.
         * Moreover, the first minute of all rides are charged a fix fee (even if rides are less than a minute).
   
-    - Trip durations are greater than 24 hours because **Cyclistic bikes are spected to be returned to an appropriate station once they are no longer being used**.
+    - Trip durations are greater than 24 hours because **Cyclistic bikes are expected to be returned to an appropriate station once they are no longer being used**.
         * Keeping a bike longer than a day is synonymous to stealing it and such cases result in an additional fee.
 
 1. Station names are altered to prevent duplicate names.
