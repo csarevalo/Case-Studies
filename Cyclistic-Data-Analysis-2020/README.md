@@ -362,9 +362,7 @@ The data can be summarized as below:
     -
     - Trips more than a day are removed because all rideables must be returned after they are used. Rides longer than a day can be considered stolen and users are even charged an additional fee for such cases.
 
-* Out of the 3.54 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers.
-
-* need queries for this in new sub sections
+* Out of the 3.54 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers
 
 * Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
@@ -373,6 +371,12 @@ The data can be summarized as below:
 | ---------- | ------------ | ---------- | ---------- | ------------ |
 | rides      | 3,541,683    | 3,330,296  | 211,387    | 94.031 |
 | stations   | 696          | 683        | 13         | 98.132 |
+
+
+| member_casual | num_riders | percent  | avg_ride  |
+| ------------- | ---------- | -------  | --------  |
+| casual        | 1278754    | 38.40    | 37:55     |
+| member        | 2051542    | 61.60    | 15:15     |
 
 
 
