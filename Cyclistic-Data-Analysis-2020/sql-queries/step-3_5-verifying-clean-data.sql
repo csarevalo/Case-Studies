@@ -73,3 +73,31 @@ WHERE start_station_id=310 OR end_station_id=310
   OR start_station_id=633  OR end_station_id=633
 GROUP BY member_casual
 ;
+
+## Since their occurance is negligible when compared to millions of rows.
+## Group all trip instances by member_casual
+WITH 
+  number_of_riders AS (
+    SELECT member_casual, COUNT(*) AS num_riders
+    FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`
+    GROUP BY member_casual
+  ),
+  average_ride AS (
+    SELECT member_casual, AVG(ride_length/60), 
+      FORMAT_TIME("%M:%S", TIME_ADD(TIME "00:00:00", INTERVAL CAST((AVG(ride_length)) AS INT64) SECOND)) AS avg_ride
+    FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`
+    GROUP BY member_casual
+  )
+
+SELECT c1.*, 
+  c1.num_riders/(SELECT SUM(num_riders) FROM number_of_riders)*100 AS percent,
+  c2.avg_ride
+FROM number_of_riders as c1 INNER JOIN average_ride as c2
+ON c1.member_casual = c2.member_casual
+;
+
+
+
+
+
+
