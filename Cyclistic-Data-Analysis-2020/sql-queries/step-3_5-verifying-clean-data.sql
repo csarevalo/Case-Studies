@@ -44,3 +44,32 @@ FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`  as 
 UNNEST(REGEXP_EXTRACT_ALL(TO_JSON_STRING(table1), r'"(\w+)":null')) column_name
 GROUP BY column_name
 ORDER BY nulls_count DESC;
+
+
+#=============================================================
+## STEP 3.5.3: Check Number Of Member_Casuals
+#=============================================================
+
+## Verify Corresponding Station Ids For Quality Checks
+SELECT station_name, station_id
+FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_stations_2020_v2`
+WHERE station_id=310
+  OR station_id=311
+  OR station_id=312
+  OR station_id=45
+  OR station_id=455
+  OR station_id=633
+ORDER BY station_id
+;
+
+## Check the overall number of member/casual riders
+SELECT member_casual, COUNT(ride_id) AS  quality_check_users
+FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`
+WHERE start_station_id=310 OR end_station_id=310
+  OR start_station_id=311  OR end_station_id=311
+  OR start_station_id=312  OR end_station_id=312
+  OR start_station_id=45   OR end_station_id=45
+  OR start_station_id=455  OR end_station_id=455
+  OR start_station_id=633  OR end_station_id=633
+GROUP BY member_casual
+;
