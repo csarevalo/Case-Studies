@@ -2,7 +2,7 @@
 
 **By** Cristian Arevalo 
 
-**Last Updated** July 10, 2023
+**Last Updated** August 1, 2023
 
 ## About this Project
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
@@ -357,21 +357,24 @@ The data can be summarized as below:
 
 * Out 3.54 million rows of trip data, **3.3 million rides** remain.
     - Trips without a *start* or *end station name* are removed because without station names we can't track the trips. Additionally, this information is used to assign new station ids.
- 
+
     - Trips less than a min are also removed because they can be considered a false start of sorts. Moreover, the price is set for all rides within a minute.
-    -
+
     - Trips more than a day are removed because all rideables must be returned after they are used. Rides longer than a day can be considered stolen and users are even charged an additional fee for such cases.
 
 * Out of the 3.54 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers
 
 * Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
+**Table: Summary of Trips**
 
 | summary_of | started_with | ended_with | eliminated | retained (%) |
 | ---------- | ------------ | ---------- | ---------- | ------------ |
 | rides      | 3,541,683    | 3,330,296  | 211,387    | 94.031 |
 | stations   | 696          | 683        | 13         | 98.132 |
 
+
+**Table: Summary of Riders**
 
 | member_casual | num_riders | percent  | avg_ride  |
 | ------------- | ---------- | -------  | --------  |
