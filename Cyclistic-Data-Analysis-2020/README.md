@@ -349,6 +349,14 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 | Broadway & Barry Ave     | 56         | 41.937610986894825 | -87.644098303068489 | 23167            | 24057          | 15372           | 7795            | 15787         | 8270          |
 
 
+
+### Step 4: Perform Analysis
+
+
+
+
+
+
 ## Data Summary
 
 The data can be summarized as below:
@@ -376,10 +384,10 @@ The data can be summarized as below:
 
 **Table: Summary of Riders**
 
-| member_casual | num_riders | percent  | avg_ride  |
-| ------------- | ---------- | -------  | --------  |
-| casual        | 1278754    | 38.40    | 37:55     |
-| member        | 2051542    | 61.60    | 15:15     |
+| member_casual | num_riders   | percent  | avg_ride  |
+| ------------- | ----------   | -------  | --------  |
+| casual        | 1,278,754    | 38.40    | 37:55     |
+| member        | 2,051,542    | 61.60    | 15:15     |
 
 
 
