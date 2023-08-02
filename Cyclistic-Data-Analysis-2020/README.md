@@ -361,6 +361,8 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 1. Time of day
 
+1. Type of rideable
+
 1. And geographically
 
 #### Cyclistic Weekly Analysis
@@ -497,6 +499,31 @@ This table is available for [download here](tables/cyclistic-time-of-day-analysi
 | casual        | 1           | Sun     | 23          | 3551      | 0.0010662715866697735  |
 | casual        | 2           | Mon     | 0           | 2210      | 0.0006636046765813009  |
 | ...        | ...           | ...     | ...           | ...       | ... |
+
+
+
+#### Cyclistic Rideable Analysis
+Riders have a higher tendency to use certain rideable types than others. This analysis aims to ascertain which rideables are more favored. During the analysis we look out for the following parameters:
+
+* Rideable Type (classic / docked / electric bikes)
+
+* Usertype (member / casual)
+
+* Number of rides
+
+* And part of total rides
+
+**Resulting Table**
+
+| rideable_type | member_casual | num_rides | part_of_tot_rides     |
+| ------------- | ------------- | --------- | --------------------- |
+| classic_bike  | casual        | 11158     | 0.0033504529327122875 |
+| classic_bike  | member        | 58496     | 0.017564805050361891  |
+| docked_bike   | casual        | 1125692   | 0.33801559981455104   |
+| docked_bike   | member        | 1784073   | 0.53571003898752545   |
+| electric_bike | casual        | 141904    | 0.042610026255924395  |
+| electric_bike | member        | 208973    | 0.062749076958924968  |
+
 
 
 
