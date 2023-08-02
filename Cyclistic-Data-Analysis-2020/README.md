@@ -398,6 +398,8 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 embedded image here
 <img src="images/Cyclistic Analysis By Weekday - Dashboard 1.png">
 
+new link [here](https://public.tableau.com/views/testing12345/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
 
 
 
