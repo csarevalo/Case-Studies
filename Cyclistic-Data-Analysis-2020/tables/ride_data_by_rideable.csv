@@ -1,0 +1,7 @@
+rideable_type,member_casual,num_rides,part_of_tot_rides
+classic_bike,casual,11158,0.0033504529327122875
+classic_bike,member,58496,0.017564805050361891
+docked_bike,casual,1125692,0.33801559981455104
+docked_bike,member,1784073,0.53571003898752545
+electric_bike,casual,141904,0.042610026255924395
+electric_bike,member,208973,0.062749076958924968
