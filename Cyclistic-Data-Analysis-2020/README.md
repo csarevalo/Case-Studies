@@ -351,10 +351,157 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 ### Step 4: Perform Analysis
+Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
+
+Specifically, we are interested in analyzing user behavior in the following ways:
+
+1. Weekly
+
+1. Monthly
+
+1. Time of day
+
+1. And geographically
+
+#### Cyclistic Weekly Analysis
+Riders behave very different based on weekly trips. During the weekly analysis, we scrutinize the following parameters:
+
+* Usertype (member / casual)
+
+* Weekday (number [1-7] & day [Sun-Sat])
+
+* Average ride length (in secs & time duration)
+
+* Max ride length
+
+* Minimum ride length
+
+* Number of rides
+
+* And part of total rides 
+
+**Resulting Table**
+
+This table is available for [download here](tables/cyclistic-weekly-analysis).
+
+| member_casual | weekday_num | weekday | avg_ride_len_secs | avg_ride_len | max_ride_len | min_ride_len | num_rides | part_of_tot_rides    |
+| ------------- | ----------- | ------- | ----------------- | ------------ | ------------ | ------------ | --------- | -------------------- |
+| casual        | 1           | Sun     | 2520              | 00:42:00     | 23:55:54     | 00:01:01     | 242713    | 0.072880308537139046 |
+| casual        | 2           | Mon     | 2239              | 00:37:19     | 23:59:49     | 00:01:01     | 131039    | 0.039347553490740761 |
+| casual        | 3           | Tue     | 2101              | 00:35:01     | 23:54:26     | 00:01:01     | 127485    | 0.038280381083243054 |
+| casual        | 4           | Wed     | 2061              | 00:34:21     | 23:57:59     | 00:01:01     | 141395    | 0.04245718698878418  |
+| casual        | 5           | Thu     | 2073              | 00:34:33     | 23:48:04     | 00:01:01     | 150913    | 0.045315191202223465 |
+| casual        | 6           | Fri     | 2183              | 00:36:23     | 23:58:33     | 00:01:01     | 188455    | 0.056588063043044826 |
+| casual        | 7           | Sat     | 2427              | 00:40:27     | 23:59:54     | 00:01:01     | 296754    | 0.089107394658012387 |
+| member        | 1           | Sun     | 1044              | 00:17:24     | 23:29:04     | 00:01:01     | 254494    | 0.076417831928453209 |
+| member        | 2           | Mon     | 857               | 00:14:17     | 23:17:37     | 00:01:01     | 276207    | 0.082937672807462157 |
+| member        | 3           | Tue     | 855               | 00:14:15     | 23:56:39     | 00:01:01     | 298331    | 0.089580926139898681 |
+| member        | 4           | Wed     | 861               | 00:14:21     | 23:39:52     | 00:01:01     | 311855    | 0.093641826432245057 |
+| member        | 5           | Thu     | 870               | 00:14:30     | 23:46:15     | 00:01:01     | 310516    | 0.093239760069375219 |
+| member        | 6           | Fri     | 901               | 00:15:01     | 23:52:08     | 00:01:01     | 307400    | 0.092304107502756513 |
+| member        | 7           | Sat     | 1036              | 00:17:16     | 23:59:43     | 00:01:01     | 292739    | 0.087901796116621467 |
+
+
+#### Cyclistic Monthly Analysis
+Riders also behave very differently based on monthly trips. During the monthly analysis, we scrutinize the following parameters:
+
+* Usertype (member / casual)
+
+* Month (number [1-12] & day [Jan-Dec])
+
+* Average ride length (in secs & time duration)
+
+* Max ride length
+
+* Minimum ride length
+
+* Number of rides
+
+* And part of total rides 
+
+**Resulting Table**
+
+
+This table is available for [download here](tables/cyclistic-monthly-analysis).
+
+| member_casual | month_num | starting_month | avg_ride_len_secs | avg_ride_len | max_ride_len | min_ride_len | num_rides | part_of_tot_rides     |
+| ------------- | --------- | -------------- | ----------------- | ------------ | ------------ | ------------ | --------- | --------------------- |
+| casual        | 1         | Jan            | 2273              | 00:37:53     | 23:48:04     | 00:01:05     | 7678      | 0.002305500772303723  |
+| casual        | 2         | Feb            | 2364              | 00:39:24     | 23:55:55     | 00:01:06     | 12206     | 0.0036651396752721077 |
+| casual        | 3         | Mar            | 2474              | 00:41:14     | 23:53:10     | 00:01:01     | 24418     | 0.0073320809922000924 |
+| casual        | 4         | Apr            | 2372              | 00:39:32     | 23:58:33     | 00:01:01     | 23331     | 0.0070056835788770725 |
+| casual        | 5         | May            | 2678              | 00:44:38     | 23:53:20     | 00:01:01     | 85914     | 0.0257977068705004    |
+| casual        | 6         | Jun            | 2554              | 00:42:34     | 23:55:42     | 00:01:01     | 152794    | 0.045880005861340854  |
+| casual        | 7         | Jul            | 2686              | 00:44:46     | 23:58:54     | 00:01:01     | 265559    | 0.079740359415499409  |
+| casual        | 8         | Aug            | 2273              | 00:37:53     | 23:59:49     | 00:01:01     | 277794    | 0.083414207025441583  |
+| casual        | 9         | Sep            | 1961              | 00:32:41     | 23:59:33     | 00:01:01     | 212041    | 0.063670316392296658  |
+| casual        | 10        | Oct            | 1692              | 00:28:12     | 23:59:54     | 00:01:01     | 120624    | 0.03622020384974789   |
+| casual        | 11        | Nov            | 1763              | 00:29:23     | 23:55:03     | 00:01:01     | 72106     | 0.021651528873109178  |
+| casual        | 12        | Dec            | 1436              | 00:23:56     | 23:41:27     | 00:01:01     | 24289     | 0.0072933456965987411 |
+| member        | 1         | Jan            | 652               | 00:10:52     | 23:20:02     | 00:01:01     | 134865    | 0.040496400319971558  |
+| member        | 2         | Feb            | 666               | 00:11:06     | 23:52:08     | 00:01:01     | 125383    | 0.037649205956467535  |
+| member        | 3         | Mar            | 784               | 00:13:04     | 23:41:42     | 00:01:01     | 114351    | 0.034336587498528658  |
+| member        | 4         | Apr            | 1094              | 00:18:14     | 23:56:39     | 00:01:01     | 60215     | 0.018080975384770603  |
+| member        | 5         | May            | 1172              | 00:19:32     | 23:29:04     | 00:01:01     | 111415    | 0.03345498418158626   |
+| member        | 6         | Jun            | 1107              | 00:18:27     | 23:46:15     | 00:01:01     | 184961    | 0.055538907052105881  |
+| member        | 7         | Jul            | 1050              | 00:17:30     | 23:52:12     | 00:01:01     | 276113    | 0.082909447088186761  |
+| member        | 8         | Aug            | 980               | 00:16:20     | 22:05:05     | 00:01:01     | 318269    | 0.0955677813623774    |
+| member        | 9         | Sep            | 901               | 00:15:01     | 22:59:48     | 00:01:01     | 279042    | 0.083788948489863971  |
+| member        | 10        | Oct            | 830               | 00:13:50     | 23:59:43     | 00:01:01     | 211750    | 0.063582936771986634  |
+| member        | 11        | Nov            | 811               | 00:13:31     | 23:36:24     | 00:01:01     | 147124    | 0.044177454496537247  |
+| member        | 12        | Dec            | 748               | 00:12:28     | 22:49:28     | 00:01:01     | 88054     | 0.026440292394429805  |
+
+
+#### Cyclistic Time Of Day Analysis
+Riders appear to follow notable trends based on the start of their trips. During the monthly analysis, we scrutinize the following parameters:
+
+* Usertype (member / casual)
+
+* Weekday (number [1-7] & day [Sun-Sat])
+
+* Time of day (in hours)
+
+* Number of rides
+
+* And part of total rides 
+
+**Resulting Table**
+
+This table is available for [download here](tables/cyclistic-time-of-day-analysis).
+
+| member_casual | weekday_num | weekday | time_of_day | num_rides | part_of_tot_rides      |
+| ------------- | ----------- | ------- | ----------- | --------- | ---------------------- |
+| casual        | 1           | Sun     | 0           | 5504      | 0.0016527059456576832  |
+| casual        | 1           | Sun     | 1           | 3812      | 0.0011446429987004157  |
+| casual        | 1           | Sun     | 2           | 2264      | 0.00067981945148419239 |
+| casual        | 1           | Sun     | 3           | 1176      | 0.00035312176455185967 |
+| casual        | 1           | Sun     | 4           | 714       | 0.00021439535704934336 |
+| casual        | 1           | Sun     | 5           | 591       | 0.00017746170310386825 |
+| casual        | 1           | Sun     | 6           | 1128      | 0.000338708631304845   |
+| casual        | 1           | Sun     | 7           | 1912      | 0.0005741231410060848  |
+| casual        | 1           | Sun     | 8           | 3546      | 0.0010647702186232094  |
+| casual        | 1           | Sun     | 9           | 6924      | 0.0020790944708818674  |
+| casual        | 1           | Sun     | 10          | 11461     | 0.0034414358363340676  |
+| casual        | 1           | Sun     | 11          | 17117     | 0.0051397833706072977  |
+| casual        | 1           | Sun     | 12          | 20244     | 0.0060787389469284412  |
+| casual        | 1           | Sun     | 13          | 23164     | 0.0069555378861218342  |
+| casual        | 1           | Sun     | 14          | 24292     | 0.0072942465174266795  |
+| casual        | 1           | Sun     | 15          | 24548     | 0.0073711165614107578  |
+| casual        | 1           | Sun     | 16          | 22629     | 0.0067948915051394831  |
+| casual        | 1           | Sun     | 17          | 19534     | 0.0058655446843163487  |
+| casual        | 1           | Sun     | 18          | 16201     | 0.0048647327444767676  |
+| casual        | 1           | Sun     | 19          | 12597     | 0.0037825466565134152  |
+| casual        | 1           | Sun     | 20          | 9089      | 0.0027291868350440922  |
+| casual        | 1           | Sun     | 21          | 5993      | 0.0017995397406116453  |
+| casual        | 1           | Sun     | 22          | 4722      | 0.001417891983175069   |
+| casual        | 1           | Sun     | 23          | 3551      | 0.0010662715866697735  |
+| casual        | 2           | Mon     | 0           | 2210      | 0.0006636046765813009  |
+| ...        | ...           | ...     | ...           | ...       | ... |
 
 
 
-
+#### Cyclistic Geographic Analysis
+Members and casual riders concentrate their trips on different destinations.
 
 
 ## Data Summary
@@ -391,11 +538,11 @@ The data can be summarized as below:
 
 
 
-#### Implementing Visualizations
+### Cyclistic Weekday Analysis
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticWeekdayAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-<img src="images/Cyclistic Analysis By Weekday - Dashboard 1.png">
+<img src="images/Cyclistic-Weekday-Analysis.png">
 
 
 
