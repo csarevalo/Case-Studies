@@ -111,7 +111,7 @@ The data is downloaded, skimmed, prepared, cleaned, and manipulated. This sectio
 
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary).
 
-### Step 1: Collect Data
+### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
