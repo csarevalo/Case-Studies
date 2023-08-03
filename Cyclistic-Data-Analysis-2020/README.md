@@ -2,12 +2,12 @@
 
 # Cyclistic Data Analysis 2020 <a href="#the-title" id="the-title"></a>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
-
 **By** Cristian Arevalo 
 
 **Last Updated** August 1, 2023
-<br><br>
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 
 ## Table of Contents
 
