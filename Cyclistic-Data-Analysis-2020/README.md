@@ -4,7 +4,15 @@
 
 **Last Updated** August 1, 2023
 
-## About this Project
+## Table of Contents
+- [About This Project](#about-this-project)
+- [Introduction](#introduction)
+- [Business Task](#business-task)
+- [About Data Sources](#about-data-sources)
+- [Prep Work](#prep-work)
+- [Data Summary](#data-summary)
+
+## About This Project
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
 
 Here, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes. The objective is to understand how casual riders and annual members use Cyclistic bikes differently. These insights will help the marketing team to develop new marketting strategies to convert casual riders into annual members. But first, Cyclistic executives must be compelled with data insights and professional data visualizations.
