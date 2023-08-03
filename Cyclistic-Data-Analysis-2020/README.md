@@ -19,19 +19,19 @@
 - [About Data Sources](#about-data-sources)
 - [Prep Work](#prep-work)
     * [Step 1: Collect Data](#prep-work-step-1)
-    * [Step 2: Wrangle Data and Combine into a Single Table](#step-2-wrangle-data-and-combine-into-a-single-table)
+    * [Step 2: Wrangle Data and Combine into a Single Table](#prep-work-step-2)
          - [Preliminary Inspection](#preliminary-inspection)
          - [Fixing Column Data Type](#fixing-column-data-type)
          - [Combine Trip Data](#combine-trip-data)
          - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
-    * [Step 3: Clean Up and Add Data to Prepare for Analysis](#step-3-clean-up-and-add-data-to-prepare-for-analysis)
+    * [Step 3: Clean Up and Add Data to Prepare for Analysis](#prep-work-step-3)
          - [Key Problems and Solutions](#key-problems-and-solutions)
          - [Checking For Missing Data](#checking-for-missing-data)
          - [Checking For Duplicate Data](#checking-for-duplicate-data)
          - [Creating Table About Stations](#creating-table-about-stations)
          - [Cleaning Operations](#cleaning-operations)
          - [Manipulating Data](#manipulating-data)
-    * [Step 4: Perform Analysis](#step-4-perform-analysis)
+    * [Step 4: Perform Analysis](#prep-work-step-4)
          - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
          - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
          - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
@@ -122,7 +122,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 * Files that were too large were uploaded via this python script ([shown here](python-code/upload_df_to_gbq_v5.py)).
 
 
-### Step 2: Wrangle Data and Combine into a Single Table
+### Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
 
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
@@ -181,7 +181,7 @@ Briefly skiming the new table shows that:
 There is still a need to check for nulls or missing values.
 
 
-### Step 3: Clean Up and Add Data to Prepare for Analysis
+### Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
 #### ***Key Problems and Solutions***
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
@@ -411,7 +411,7 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 
-### Step 4: Perform Analysis
+### Step 4: Perform Analysis <a href="prep-work-step-4" id="prep-work-step4"></a>
 Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
 
 Specifically, we are interested in analyzing user behavior in the following ways:
