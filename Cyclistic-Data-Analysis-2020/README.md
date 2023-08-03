@@ -195,6 +195,10 @@ There is still a need to check for nulls or missing values.
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
 
 #### ***Key Problems and Solutions***
+
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
 1. Some station names can have more than one id.
@@ -241,6 +245,9 @@ The first part of tidying data is look for issues/concerns regarding the data. H
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
 #### Checking For Missing Data
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS using the following query.
 * The source for the following query comes from [stackoverflow](https://stackoverflow.com/questions/58716640/bigquery-check-entire-table-for-null-values)
 
@@ -270,6 +277,9 @@ The table below showcases which columns have missing information and how many ro
 
 
 #### Checking For Duplicate Data 
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 A common problem often encounter while cleaning data is *duplicate names*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station using the following query.
 
 ```sql
@@ -305,6 +315,9 @@ Below are two primary examples showcasing duplicates by either having the differ
 
 
 #### Creating Table About Stations
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
 A summary of the steps taken to create a new table showcasing the station info is presented below (meanwhile, the full query will be available [here](sql-queries/step-2_9-create-divvy_station_2020.sql)):
@@ -339,6 +352,9 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 
 
 #### Cleaning Operations
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here](sql-queries/step-3-cleaning-and-adding-data.sql) and the verification of the results is available [here](sql-queries/step-3_5-verifying-clean-data.sql), however below I will discussion a brief overview of the steps taken.
 
 1. The goal of this new query is to create a new version of *divvy_trip_data* (*v2*), where certain cases are excluded, to make analysis of the trip data easier.
@@ -408,6 +424,9 @@ From the following stations:
 
 
 #### Manipulating Data
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
 
