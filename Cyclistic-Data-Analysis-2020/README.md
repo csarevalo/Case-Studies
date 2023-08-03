@@ -73,6 +73,9 @@ Until now, Cyclistic's marketing strategy relied on building general awareness a
 Although pricing flexibility helps in attracking new customers, Cyclistic's finance analyst have concluded that annual members are much more profitable than casual riders. The director of marketting (Lily Moreno) believes that increasing the number of annual members will be the key to future growth. Since casual riders have chosen Cyclistic for their mobility needs and are already aware of the annual membership program, a marketing strategy aimed at converting casual riders into members is to be held.
 
 ### Business Task
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 The marketing team would like to know:
 
 * How do annual members and casual riders use Cyclistic bikes differently?
@@ -84,6 +87,9 @@ The marketing team would like to know:
 Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
 
 ## About Data Sources
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-1-collect-data) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 * Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different names because Cyclistic is a fictional company).
 
 * The data has been made available by Motivate International Inc. under this [liscense](https://ride.divvybikes.com/data-license-agreement).
