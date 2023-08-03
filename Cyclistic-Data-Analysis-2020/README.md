@@ -124,7 +124,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 ### Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-1) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-1) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/back-back-button3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 #### Preliminary Inspection
 
