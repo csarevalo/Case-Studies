@@ -113,7 +113,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 ### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
