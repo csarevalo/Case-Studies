@@ -4,6 +4,8 @@
 
 **Last Updated** August 1, 2023
 
+<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button.png" height="25" width="25"> 
+
 ## Table of Contents
 - [About This Project](#about-this-project)
 - [Introduction](#introduction)
