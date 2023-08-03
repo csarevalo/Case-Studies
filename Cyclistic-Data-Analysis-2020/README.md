@@ -443,6 +443,9 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 ### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+
 Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
 
 Specifically, we are interested in analyzing user behavior in the following ways:
