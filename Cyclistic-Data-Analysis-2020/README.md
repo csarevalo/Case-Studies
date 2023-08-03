@@ -1,16 +1,12 @@
+<a name="top"></a>
+
 # Cyclistic Data Analysis 2020
 
 **By** Cristian Arevalo 
 
 **Last Updated** August 1, 2023
 
-<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button.png" height="25" width="25"> 
-
-<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button2.png" height="25" width="25"> 
-
-<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="25"> 
-
-<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/click-wink-button.png" height="25" width="25"> 
+<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
 ## Table of Contents
 - [About This Project](#about-this-project)
@@ -27,7 +23,7 @@
     * [Step 3: Clean Up and Add Data to Prepare for Analysis](#step-3-clean-up-and-add-data-to-prepare-for-analysis)
          - [Key Problems and Solutions](#key-problems-and-solutions)
          - [Checking For Missing Data](#checking-for-missing-data)
-         - [Checking For Duplicate Data](#checking-for-duplicate-data)
+         - [Checking For Duplicate Data](#checking-for-duplicate-data)30
          - [Creating Table About Stations](#creating-table-about-stations)
          - [Cleaning Operations](#cleaning-operations)
          - [Manipulating Data](#manipulating-data)
@@ -612,7 +608,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 
 
-
+<a class="top-link hide" href="#top">top ↑</a>
 
 
 
