@@ -50,7 +50,18 @@ GROUP BY member_casual, weekday_num, weekday, time_of_day
 ORDER BY member_casual, weekday_num, time_of_day
 LIMIT 1000;
 
+################################################################################################################################################
 
+## Analyze ridership data by rideable_type and member_casual
+SELECT
+  rideable_type,
+  member_casual,
+  count(*) as num_rides,
+  (count(*)/(SELECT COUNT(*) FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`)) as part_of_tot_rides #normalized to 1
+FROM `case-study1-bike-share.divvy_trips_2020_analysis.divvy_trips_2020_v2`
+GROUP BY rideable_type, member_casual
+ORDER BY rideable_type, member_casual
+LIMIT 1000;
 
 
 
