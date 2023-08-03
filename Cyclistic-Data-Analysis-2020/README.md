@@ -10,6 +10,8 @@
 - [Business Task](#business-task)
 - [About Data Sources](#about-data-sources)
 - [Prep Work](#prep-work)
+    * [Step 1: Collect Data](#step-1-collect-data)
+    * [Step 2: Wrangle Data and Combine into a Single Table](#step-2-wrangle-data-and-combine-into-a-single-table)
 - [Data Summary](#data-summary)
 
 ## About This Project
@@ -65,7 +67,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 ## Prep Work
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
-If you are more interested with the analysis, and results, you can jump ahead to [Data Summary] (link here).
+If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary).
 
 ### Step 1: Collect Data
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
