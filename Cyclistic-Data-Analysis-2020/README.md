@@ -101,11 +101,17 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 
 ## Prep Work
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-1-collect-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary).
 
 ### Step 1: Collect Data
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
 * Uploaded Divvy datasets (csv files) individuall through browser in Google Cloud BigQuery (Sandbox).
@@ -114,6 +120,9 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 
 ### Step 2: Wrangle Data and Combine into a Single Table
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 #### Preliminary Inspection
 Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
