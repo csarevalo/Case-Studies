@@ -384,7 +384,7 @@ Riders behave very different based on weekly trips. During the weekly analysis, 
 
 **Resulting Table**
 
-This table is available for [download here](tables/cyclistic-weekly-analysis).
+This table is available for [download here](tables/analysis_of/ride_data_by_weekday.csv).
 
 | member_casual | weekday_num | weekday | avg_ride_len_secs | avg_ride_len | max_ride_len | min_ride_len | num_rides | part_of_tot_rides    |
 | ------------- | ----------- | ------- | ----------------- | ------------ | ------------ | ------------ | --------- | -------------------- |
@@ -424,7 +424,7 @@ Riders also behave very differently based on monthly trips. During the monthly a
 **Resulting Table**
 
 
-This table is available for [download here](tables/cyclistic-monthly-analysis).
+This table is available for [download here](tables/analysis_of/ride_data_by_month.csv).
 
 | member_casual | month_num | starting_month | avg_ride_len_secs | avg_ride_len | max_ride_len | min_ride_len | num_rides | part_of_tot_rides     |
 | ------------- | --------- | -------------- | ----------------- | ------------ | ------------ | ------------ | --------- | --------------------- |
@@ -469,7 +469,7 @@ Riders appear to follow notable trends based on the start of their trips. During
 
 **Resulting Table**
 
-This table is available for [download here](tables/cyclistic-time-of-day-analysis).
+This table is available for [download here](tables/analysis_of/ride_data_by_weekday_and_time_of_day.csv).
 
 | member_casual | weekday_num | weekday | time_of_day | num_rides | part_of_tot_rides      |
 | ------------- | ----------- | ------- | ----------- | --------- | ---------------------- |
@@ -515,6 +515,8 @@ Riders have a higher tendency to use certain rideable types than others. This an
 
 **Resulting Table**
 
+This table is available for [download here](tables/analysis_of/ride_data_by_rideable.csv)
+
 | rideable_type | member_casual | num_rides | part_of_tot_rides     |
 | ------------- | ------------- | --------- | --------------------- |
 | classic_bike  | casual        | 11158     | 0.0033504529327122875 |
@@ -546,7 +548,7 @@ The data can be summarized as below:
 
 * Out of the 3.54 million rides, **61.6%** were taken by subscribers and **38.4%** were taken by casual customers
 
-* Average ride by a casual biker is **46 minutes** long, while by a subscriber is **12 minutes** long.
+* Average ride duration for a casual biker is **46 minutes** long, meanwhile the average ride length for a member is **12 minutes** long.
 
 **Table: Summary of Trips**
 
