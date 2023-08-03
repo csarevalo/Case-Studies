@@ -128,7 +128,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 #### Preliminary Inspection
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
 
 Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
@@ -144,7 +144,7 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
 #### Fixing Column Data Type
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
 
 The following query is ran for multiple tables to correct column types.
 
@@ -161,7 +161,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 
 #### Combine Trip Data
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
 
 The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
@@ -175,7 +175,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 #### Inspecting Combined Trip Data
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
 
 Briefly skiming the new table shows that:
 
