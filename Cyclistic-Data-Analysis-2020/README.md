@@ -645,6 +645,8 @@ Members and casual riders concentrate their trips on different destinations.
 
 ## Data Summary
 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cylistic-weekday-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+
 The data can be summarized as below:
 
 * Total number of stations is **683**.
