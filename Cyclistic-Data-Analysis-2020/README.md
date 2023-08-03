@@ -8,7 +8,7 @@
 
 ![Previous Button] ![Next Button] ![Next Heading Button]
 
-[Previous Button2] [Next Button2] [Next Heading Button2]
+![Next Button]{height="25"}
 
 <img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
