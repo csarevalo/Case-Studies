@@ -8,6 +8,7 @@
 
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#top) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
+
 ## Table of Contents
 - [About This Project](#about-this-project)
 - [Introduction](#introduction)
@@ -35,6 +36,7 @@
          - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
 - [Data Summary](#data-summary)
 
+
 ## About This Project
 
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
@@ -49,7 +51,11 @@ All data cleaning and analysis is accomplish through the use of *SQL* in *Google
 
 The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
-## Introduction
+
+## Introduction 
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 <img src="https://github.com/csarevalo/Case-Studies/blob/cbcdc43ae32a54666f73902b52cce8ff2130137c/Cyclistic-Data-Analysis-2020/images/cyclist2.png">
 
 Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Launched a successful bike-share program offering bike rentals throughout the city. Since then, the program has expanded to a fleet over 5,800 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
