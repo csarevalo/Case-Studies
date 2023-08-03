@@ -610,7 +610,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 <a class="top-link hide" href="#top">↑</a>
 
-[<img src="images/buttons/up-button.png">](#top)
+[<img src="images/buttons/up-button.png" height="25" width="25" align="right">](#top)
 
 
 
