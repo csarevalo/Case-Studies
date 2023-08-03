@@ -22,8 +22,13 @@
          - [Checking For Duplicate Data](#checking-for-duplicate-data)
          - [Creating Table About Stations](#creating-table-about-stations)
          - [Cleaning Operations](#cleaning-operations)
-         - 
+         - [Manipulating Data](#manipulating-data)
     * [Step 4: Perform Analysis](#step-4-perform-analysis)
+         - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
+         - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
+         - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
+         - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
+         - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
 - [Data Summary](#data-summary)
 
 ## About This Project
@@ -476,7 +481,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 | member        | 12        | Dec            | 748               | 00:12:28     | 22:49:28     | 00:01:01     | 88054     | 0.026440292394429805  |
 
 
-#### Cyclistic Time Of Day Analysis
+#### Cyclistic Time of Day Analysis
 Riders appear to follow notable trends based on the start of their trips. During the monthly analysis, we scrutinize the following parameters:
 
 * Usertype (member / casual)
