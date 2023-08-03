@@ -24,7 +24,7 @@
     * [Step 3: Clean Up and Add Data to Prepare for Analysis](#step-3-clean-up-and-add-data-to-prepare-for-analysis)
          - [Key Problems and Solutions](#key-problems-and-solutions)
          - [Checking For Missing Data](#checking-for-missing-data)
-         - [Checking For Duplicate Data](#checking-for-duplicate-data)30
+         - [Checking For Duplicate Data](#checking-for-duplicate-data)
          - [Creating Table About Stations](#creating-table-about-stations)
          - [Cleaning Operations](#cleaning-operations)
          - [Manipulating Data](#manipulating-data)
@@ -39,7 +39,7 @@
 
 ## About This Project
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
 
@@ -54,7 +54,7 @@ The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polish
 
 ## Introduction 
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 <img src="https://github.com/csarevalo/Case-Studies/blob/cbcdc43ae32a54666f73902b52cce8ff2130137c/Cyclistic-Data-Analysis-2020/images/cyclist2.png">
 
@@ -74,7 +74,7 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 ### Business Task
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 The marketing team would like to know:
 
@@ -88,7 +88,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 ## About Data Sources
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-1-collect-data) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 * Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different names because Cyclistic is a fictional company).
 
@@ -102,7 +102,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 ## Prep Work
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-1-collect-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-1-collect-data)[<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
@@ -110,7 +110,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 ### Step 1: Collect Data
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#step-2-wrangle-data-and-combine-into-a-single-table) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
@@ -124,6 +124,9 @@ If you are more interested with the analysis, and results, you can jump ahead to
 [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 #### Preliminary Inspection
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#step-1-collect-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#step-3-clean-up-and-add-data-to-prepare-for-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
 * Though column names matched, column types differed accross tables.
