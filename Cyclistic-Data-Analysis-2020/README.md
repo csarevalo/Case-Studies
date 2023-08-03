@@ -6,7 +6,7 @@
 
 **Last Updated** August 1, 2023
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float: right">](#top)
 
 
 ## Table of Contents
