@@ -6,7 +6,9 @@
 
 **Last Updated** August 1, 2023
 
-<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
+![Previous Button] ![Next Button] ![Next Heading Button]
+
+[Previous Button2] [Next Button2]
 
 ## Table of Contents
 - [About This Project](#about-this-project)
@@ -608,7 +610,8 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 
 
-<a class="top-link hide" href="#top">top ↑</a>
+<a class="top-link hide" href="#top">↑</a>
+
 [<img src="images/buttons/up-button.png">](#table-of-contents)
 
 
@@ -617,11 +620,17 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 
 
+<!--------------------------------------[Buttons]------------------------------------------------>
+[Previous Button]: images/buttons/previous-button.png
+[Next Button]: images/buttons/next-button.png
+[Next Heading Button]: images/buttons/next-next-button3.png
+
+[Previous Button2]: <img src="images/buttons/previous-button.png" height="25" width="25">
+[Next Button2]: <img src="images/buttons/next-button.png" height="25" width="25">
+[Next Heading Button2]: <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
 
-
-
-
+<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
 
 
