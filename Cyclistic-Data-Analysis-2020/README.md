@@ -192,7 +192,7 @@ There is still a need to check for nulls or missing values.
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 #### ***Key Problems and Solutions***
 
