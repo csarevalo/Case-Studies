@@ -113,7 +113,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 ### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
@@ -124,11 +124,11 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 ### Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-1) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-1) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 #### Preliminary Inspection
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
@@ -144,7 +144,7 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
 #### Fixing Column Data Type
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 The following query is ran for multiple tables to correct column types.
 
@@ -161,7 +161,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 
 #### Combine Trip Data
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
@@ -175,7 +175,7 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 #### Inspecting Combined Trip Data
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Briefly skiming the new table shows that:
 
@@ -192,12 +192,12 @@ There is still a need to check for nulls or missing values.
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-2) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 #### ***Key Problems and Solutions***
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work) 
 
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
@@ -246,7 +246,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
 #### Checking For Missing Data
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS using the following query.
 * The source for the following query comes from [stackoverflow](https://stackoverflow.com/questions/58716640/bigquery-check-entire-table-for-null-values)
@@ -278,7 +278,7 @@ The table below showcases which columns have missing information and how many ro
 
 #### Checking For Duplicate Data 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 A common problem often encounter while cleaning data is *duplicate names*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station using the following query.
 
@@ -316,7 +316,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 
 #### Creating Table About Stations
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
@@ -353,7 +353,7 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 
 #### Cleaning Operations
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here](sql-queries/step-3-cleaning-and-adding-data.sql) and the verification of the results is available [here](sql-queries/step-3_5-verifying-clean-data.sql), however below I will discussion a brief overview of the steps taken.
 
@@ -425,7 +425,7 @@ From the following stations:
 
 #### Manipulating Data
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
@@ -444,7 +444,7 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 ### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work-step-3) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
 
