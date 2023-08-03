@@ -143,6 +143,9 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
   - There is also a need for new and unique ids for the stations.
 
 #### Fixing Column Data Type
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 The following query is ran for multiple tables to correct column types.
 
 ```sql
@@ -157,6 +160,9 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 ```
 
 #### Combine Trip Data
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
 The following query is used to create a new table, called **divvy_trips_2020** for reference, containing all trip data occuring in 2020 is created.
@@ -168,6 +174,9 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
 #### Inspecting Combined Trip Data
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 Briefly skiming the new table shows that:
 
 - Column names and type look great (they match).
