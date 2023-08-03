@@ -411,7 +411,7 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 
-### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step4"></a>
+### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
 Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
 
 Specifically, we are interested in analyzing user behavior in the following ways:
