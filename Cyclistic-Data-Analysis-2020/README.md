@@ -1,5 +1,5 @@
 <a name="top"></a>
-<--- https://gist.github.com/richstrauss/15ba8dddaf94f5f6bb10ef14360320fd --->
+<!--- https://gist.github.com/richstrauss/15ba8dddaf94f5f6bb10ef14360320fd --->
 
 <a href="#top" id="top"></a>
 
