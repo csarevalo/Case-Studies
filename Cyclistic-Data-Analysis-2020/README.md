@@ -609,6 +609,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 
 <a class="top-link hide" href="#top">top ↑</a>
+[<img src="images/buttons/up-button.png">](#table-of-contents)
 
 
 
