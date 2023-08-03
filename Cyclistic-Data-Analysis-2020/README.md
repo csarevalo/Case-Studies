@@ -462,7 +462,7 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 #### Cyclistic Weekly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Riders behave very different based on weekly trips. During the weekly analysis, we scrutinize the following parameters:
 
@@ -504,7 +504,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 #### Cyclistic Monthly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)  [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-time-of-day-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Riders also behave very differently based on monthly trips. During the monthly analysis, we scrutinize the following parameters:
 
@@ -557,7 +557,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 
 #### Cyclistic Time of Day Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Riders appear to follow notable trends based on the start of their trips. During the monthly analysis, we scrutinize the following parameters:
 
@@ -608,7 +608,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 #### Cyclistic Rideable Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-time-of-day-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Riders have a higher tendency to use certain rideable types than others. This analysis aims to ascertain which rideables are more favored. During the analysis we look out for the following parameters:
 
@@ -638,7 +638,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
 
 #### Cyclistic Geographic Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Members and casual riders concentrate their trips on different destinations.
 
