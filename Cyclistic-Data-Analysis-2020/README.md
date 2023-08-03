@@ -12,6 +12,18 @@
 - [Prep Work](#prep-work)
     * [Step 1: Collect Data](#step-1-collect-data)
     * [Step 2: Wrangle Data and Combine into a Single Table](#step-2-wrangle-data-and-combine-into-a-single-table)
+         - [Preliminary Inspection](#preliminary-inspection)
+         - [Fixing Column Data Type](#fixing-column-data-type)
+         - [Combine Trip Data](#combine-trip-data)
+         - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
+    * [Step 3: Clean Up and Add Data to Prepare for Analysis](#step-3-clean-up-and-add-data-to-prepare-for-analysis)
+         - [Key Problems and Solutions](#key-problems-and-solutions)
+         - [Checking For Missing Data](#checking-for-missing-data)
+         - [Checking For Duplicate Data](#checking-for-duplicate-data)
+         - [Creating Table About Stations](#creating-table-about-stations)
+         - [Cleaning Operations](#cleaning-operations)
+         - 
+    * [Step 4: Perform Analysis](#step-4-perform-analysis)
 - [Data Summary](#data-summary)
 
 ## About This Project
