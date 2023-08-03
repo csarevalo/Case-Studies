@@ -18,7 +18,7 @@
 - [Business Task](#business-task)
 - [About Data Sources](#about-data-sources)
 - [Prep Work](#prep-work)
-    * [Step 1: Collect Data](#step-1-collect-data)
+    * [Step 1: Collect Data](#prep-work-step-1)
     * [Step 2: Wrangle Data and Combine into a Single Table](#step-2-wrangle-data-and-combine-into-a-single-table)
          - [Preliminary Inspection](#preliminary-inspection)
          - [Fixing Column Data Type](#fixing-column-data-type)
