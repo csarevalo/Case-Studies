@@ -106,7 +106,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 ## Prep Work
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-1)[<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/next-next-button.png" height="25" width="25">](#data-summary)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-1)[<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/next-next-button.png" height="25" width="25">](#data-summary)
 
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
