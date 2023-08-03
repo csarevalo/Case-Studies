@@ -8,7 +8,9 @@
 
 ![Previous Button] ![Next Button] ![Next Heading Button]
 
-[Previous Button2] [Next Button2]
+[Previous Button2] [Next Button2] [Next Heading Button2]
+
+<img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
 ## Table of Contents
 - [About This Project](#about-this-project)
