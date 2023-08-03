@@ -6,10 +6,6 @@
 
 **Last Updated** August 1, 2023
 
-![Previous Button] ![Next Button] ![Next Heading Button]
-
-![Next Button]{height="25"}
-
 <img src="images/buttons/previous-button.png" height="25" width="25"> <img src="images/buttons/next-button.png" height="25" width="25"> <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
 
 ## Table of Contents
@@ -614,7 +610,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 <a class="top-link hide" href="#top">↑</a>
 
-[<img src="images/buttons/up-button.png">](#table-of-contents)
+[<img src="images/buttons/up-button.png">](#top)
 
 
 
