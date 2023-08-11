@@ -122,7 +122,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 
 > [!IMPORTANT]
-> ###**Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
+> **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
 
 
 ## About Data Sources
