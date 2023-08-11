@@ -682,16 +682,32 @@ The data can be summarized as below:
 
 
 
-### Cyclistic Weekday Analysis
+### Weekly Analysis
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticWeekdayAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 <img src="images/Cyclistic-Weekday-Analysis.png">
 
+### Monthly Analysis
+[For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticMonthlyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+<img src="images/Cyclistic-Monthly-Analysis.png">
+
+### Timely Analysis
+[For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticTimelyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+<img src="images/Cyclistic-Timely-Analysis.png">
+
+### Rideable Analysis
+Unfortunatly no individual dashboard was made available, however this data viz is still available in the data story below!
+
+## Data Story: Cyclistic Analysis 2020
+Using the Tableau, we have our story and presentation. Feel free to [visit it here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story1?:language=en-US&:display_count=n&:origin=viz_share_link). It is a compilation of all prior dashboards combined into a story.
 
 
 
 
+<!--- useless little text (but can be fixed later) --->
 <a class="top-link hide" href="#top">↑</a>
 
 [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
