@@ -70,9 +70,10 @@ A more in-depth breakdown of the case study scenario is included below, followed
 
 > [!NOTE]
 >
-> All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
->
 > The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
+> 
+> Additionally, all data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
+>
 
 
 ## Introduction 
