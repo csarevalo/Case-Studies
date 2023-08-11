@@ -717,7 +717,7 @@ The data can be summarized as below:
 
 ### Weekly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) 
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticWeekdayAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
