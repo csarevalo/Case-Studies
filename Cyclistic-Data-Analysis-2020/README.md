@@ -41,6 +41,11 @@
          - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
          - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
 - [Data Summary](#data-summary)
+    * [Weekly Analysis](#weekly-analysis)
+    * [Monthly Analysis](#monthly-analysis)
+    * [Timely Analysis](#timely-analysis)
+    * [Rideable Analysis](#rideable-analysis) 
+- [Data Story: Cyclistic Analysis 2020](#data-story)
 
 
 ## About This Project
@@ -689,12 +694,12 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 <img src="images/Cyclistic-Weekday-Analysis.png">
 
 ### Monthly Analysis
-[For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticMonthlyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticMonthlyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 <img src="images/Cyclistic-Monthly-Analysis.png">
 
 ### Timely Analysis
-[For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticTimelyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticTimelyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 <img src="images/Cyclistic-Timely-Analysis.png">
 
@@ -703,7 +708,7 @@ Unfortunatly no individual dashboard was made available, however this data viz i
 
 <img src="images/Cyclistic Story (4).png">
 
-## Data Story: Cyclistic Analysis 2020
+## Data Story: Cyclistic Analysis 2020 <a href="#data-story" id="data-story"></a>
 Using the Tableau, we have our story and presentation. Feel free to [visit it here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story1?:language=en-US&:display_count=n&:origin=viz_share_link). It is a compilation of all prior dashboards combined into a story.
 
 ADD GIF HERE OF JUST SCROLLING THROUGH IMAGES DOWNLOADED OF STORY
