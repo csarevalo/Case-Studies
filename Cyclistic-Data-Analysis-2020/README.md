@@ -701,8 +701,12 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 ### Rideable Analysis
 Unfortunatly no individual dashboard was made available, however this data viz is still available in the data story below!
 
+<img src="images/Cyclistic Story (4).png">
+
 ## Data Story: Cyclistic Analysis 2020
 Using the Tableau, we have our story and presentation. Feel free to [visit it here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story1?:language=en-US&:display_count=n&:origin=viz_share_link). It is a compilation of all prior dashboards combined into a story.
+
+ADD GIF HERE OF JUST SCROLLING THROUGH IMAGES DOWNLOADED OF STORY
 
 
 
