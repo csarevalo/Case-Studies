@@ -3,7 +3,8 @@
 
 <a href="#top" id="top"></a>
 
-# Cyclistic Data Analysis 2020 <a href="#the-title" id="the-title"></a>
+# Cyclistic Case Study Analysis 2020 <a href="#the-title" id="the-title"></a>
+Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 **By** Cristian Arevalo 
 
@@ -54,11 +55,21 @@
 
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
 
-Here, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes. The objective is to understand how casual riders and annual members use Cyclistic bikes differently. These insights will help the marketing team to develop new marketting strategies to convert casual riders into annual members. But first, Cyclistic executives must be compelled with data insights and professional data visualizations.
+Here, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes. The objective is to understand how casual riders and annual members use Cyclistic bikes differently by identifying trends and more. These insights will help the marketing team to develop new marketting strategies to convert casual riders into annual members. But first, Cyclistic executives must be compelled with data insights and professional data visualizations.
 
-***Special Notes***: 
+The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
 
-All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files.
+* [Github: Cyclistic Data Analysis, Summary, and Story](#data-summary)
+
+* [Tableau Story: Cyclistic Bikeshare in Chicago](#data-story)
+
+* [Slides: Converting Casual Riders to Cyclistic Members] (link)
+
+A more in-depth breakdown of the case study scenario is included below, followed by my full report.
+
+***Additional Notes***: 
+
+All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
 
 The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
@@ -83,9 +94,10 @@ Until now, Cyclistic's marketing strategy relied on building general awareness a
 
 Although pricing flexibility helps in attracking new customers, Cyclistic's finance analyst have concluded that annual members are much more profitable than casual riders. The director of marketting (Lily Moreno) believes that increasing the number of annual members will be the key to future growth. Since casual riders have chosen Cyclistic for their mobility needs and are already aware of the annual membership program, a marketing strategy aimed at converting casual riders into members is to be held.
 
-### Business Task
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+## Defining The Problem
+
+Lily, the director of marketing, and the marketing analytics team are looking for ways to convert Cyclistic's casual riders into annual members. The main problem is designing marketing strategies to accomplishing this task by identifying and understading the difference between casual riders & member riders in their usage of Cyclistic Bikeshare program. There are three questions that will guide the marketing team in their future marketing program.
 
 The marketing team would like to know:
 
@@ -96,6 +108,21 @@ The marketing team would like to know:
 * How can Cyclistic use digital media to influence casual riders to become members?
 
 Specifically, my focus will revolve around on ***how do annual members and casual riders use Cyclistic bikes differently***.
+
+By looking at the data, we will be able to first get a broad sense of certain patterns that are occurring in the two different groups. Understanding the differences will provide more accurate customer profiles for each group. These insights will help the marketing analytics team design high quality targeted marketing for converting casual riders into members. For the Cyclistic executive team, these insights will help Cyclistic maximize the number of annual members and will fuel future growth for the company.
+
+### Business Task
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
+
+> [!IMPORTANT]
+> **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
+> 
+
+> [!WARNING]
+> Crucial information necessary for users to succeed.
+
 
 ## About Data Sources
 
