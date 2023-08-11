@@ -67,7 +67,7 @@ The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
 
 A more in-depth breakdown of the case study scenario is included below, followed by my full report.
 
-***Additional Notes***: 
+> [!NOTE]
 
 All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
 
@@ -118,10 +118,6 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 > [!IMPORTANT]
 > **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
-> 
-
-> [!WARNING]
-> Crucial information necessary for users to succeed.
 
 
 ## About Data Sources
