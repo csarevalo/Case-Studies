@@ -653,7 +653,7 @@ Members and casual riders concentrate their trips on different destinations.
 
 ## Data Summary
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 The data can be summarized as below:
 
@@ -689,7 +689,7 @@ The data can be summarized as below:
 
 ### Weekly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticWeekdayAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
@@ -697,7 +697,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 
 ### Monthly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-timely-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#weekly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#timely-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticMonthlyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
@@ -706,7 +706,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 ### Timely Analysis
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#rideable-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticTimelyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
@@ -715,7 +715,7 @@ For the full interactive dashboard visit [here](https://public.tableau.com/views
 ### Rideable Analysis
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-timely-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#data-story) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#timely-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#data-story) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Unfortunatly no individual dashboard was made available, however this data viz is still available in the data story below!
 
@@ -726,7 +726,7 @@ Unfortunatly no individual dashboard was made available, however this data viz i
 ## Data Story: Cyclistic Analysis 2020 <a href="#data-story" id="data-story"></a>
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#rideable-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
 
 Using the Tableau, we have our story and presentation. Feel free to [visit it here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story1?:language=en-US&:display_count=n&:origin=viz_share_link). It is a compilation of all prior dashboards combined into a story.
 
