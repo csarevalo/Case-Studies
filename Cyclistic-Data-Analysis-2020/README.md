@@ -19,7 +19,8 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 - [About This Project](#about-this-project)
 - [Introduction](#introduction)
-- [Business Task](#business-task)
+- [Defining The Problem](#defining-the-problem)
+    * [Business Task](#business-task)
 - [About Data Sources](#about-data-sources)
 - [Prep Work](#prep-work)
     * [Step 1: Collect Data](#prep-work-step-1)
@@ -68,15 +69,15 @@ The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
 A more in-depth breakdown of the case study scenario is included below, followed by my full report.
 
 > [!NOTE]
-
-All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
-
-The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
+>
+> All data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
+>
+> The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 
 
 ## Introduction 
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#defining-the-problem) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 <img src="https://github.com/csarevalo/Case-Studies/blob/cbcdc43ae32a54666f73902b52cce8ff2130137c/Cyclistic-Data-Analysis-2020/images/cyclist2.png">
 
@@ -97,6 +98,9 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 ## Defining The Problem
 
+
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+
 Lily, the director of marketing, and the marketing analytics team are looking for ways to convert Cyclistic's casual riders into annual members. The main problem is designing marketing strategies to accomplishing this task by identifying and understading the difference between casual riders & member riders in their usage of Cyclistic Bikeshare program. There are three questions that will guide the marketing team in their future marketing program.
 
 The marketing team would like to know:
@@ -113,7 +117,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 ### Business Task
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+[<img src="images/buttons/previous-button.png" height="25" width="25">](#defining-the-problem) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
 
 > [!IMPORTANT]
