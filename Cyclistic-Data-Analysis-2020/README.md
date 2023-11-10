@@ -145,7 +145,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
-If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary).
+If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary) or if you want a brief peak at how the analysis is performed please check out [Performing Analysis](#prep-work-step-4).
 
 ### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 
@@ -713,6 +713,8 @@ The data can be summarized as below:
 | casual        | 1,278,754    | 38.40    | 37:55     |
 | member        | 2,051,542    | 61.60    | 15:15     |
 
+### Key Findings:
+During the whole year 2020, casual riders accounted for 38.4% of total rides while member riders made up a whopping 61.6% of total trips. Of course, the actual percentages fluctuated throughout the year according to seasonal trends, but one can still see that summer time is the most popular season for Cyclistic. Meanwhile, winter time is by far the least popular season, which make sense because bike riding is more suited for warm weather. Noting the major drop-off in rides during winter, it makes the most sense to plan out events, activities, or promotional content during the summer. **By taking advantage of the seasonal trend, and the fact that casual riders are already familiar with the Cyclistic program and using Cyclistic bikes, this can be a good opportunity to convert them to annual members.**
 
 
 ## Data Story: Cyclistic Analysis 2020 <a href="#data-story" id="data-story"></a>
