@@ -1,6 +1,3 @@
-<a name="top"></a>
-<!--- https://gist.github.com/richstrauss/15ba8dddaf94f5f6bb10ef14360320fd --->
-
 <a href="#top" id="top"></a>
 
 # Cyclistic Case Study Analysis 2020 <a href="#the-title" id="the-title"></a>
@@ -8,51 +5,90 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 **By** Cristian Arevalo 
 
-**Last Updated** August 1, 2023
+**Last Updated** November 10, 2023
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right">](#top)
+<p align="left">
+    <a href="#the-title">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#table-of-contents">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#about-this-project">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p> 
 
 
 ## Table of Contents
+<p align="left">
+    <a href="#the-title">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#about-this-project">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p> 
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#the-title) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
-- [About This Project](#about-this-project)
-- [Introduction](#introduction)
-- [Defining The Problem](#defining-the-problem)
-    * [Business Task](#business-task)
-- [About Data Sources](#about-data-sources)
-- [Prep Work](#prep-work)
-    * [Step 1: Collect Data](#prep-work-step-1)
-    * [Step 2: Wrangle Data and Combine into a Single Table](#prep-work-step-2)
-         - [Preliminary Inspection](#preliminary-inspection)
-         - [Fixing Column Data Type](#fixing-column-data-type)
-         - [Combine Trip Data](#combine-trip-data)
-         - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
-    * [Step 3: Clean Up and Add Data to Prepare for Analysis](#prep-work-step-3)
-         - [Key Problems and Solutions](#key-problems-and-solutions)
-         - [Checking For Missing Data](#checking-for-missing-data)
-         - [Checking For Duplicate Data](#checking-for-duplicate-data)
-         - [Creating Table About Stations](#creating-table-about-stations)
-         - [Cleaning Operations](#cleaning-operations)
-         - [Manipulating Data](#manipulating-data)
-    * [Step 4: Perform Analysis](#prep-work-step-4)
-         - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
-         - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
-         - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
-         - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
-         - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
-- [Data Summary](#data-summary)
-- [Data Story: Cyclistic Analysis 2020](#data-story)
-    * [Weekly Analysis](#weekly-analysis)
-    * [Monthly Analysis](#monthly-analysis)
-    * [Timely Analysis](#timely-analysis)
-    * [Rideable Analysis](#rideable-analysis) 
+- [Cyclistic Case Study Analysis 2020 ](#cyclistic-case-study-analysis-2020-)
+  - [Table of Contents](#table-of-contents)
+  - [About This Project](#about-this-project)
+  - [Introduction](#introduction)
+  - [Defining The Problem](#defining-the-problem)
+    - [Business Task](#business-task)
+  - [About Data Sources](#about-data-sources)
+  - [Prep Work](#prep-work)
+    - [Step 1: Collect Data ](#step-1-collect-data-)
+    - [Step 2: Wrangle Data and Combine into a Single Table ](#step-2-wrangle-data-and-combine-into-a-single-table-)
+      - [Preliminary Inspection](#preliminary-inspection)
+      - [Fixing Column Data Type](#fixing-column-data-type)
+      - [Combine Trip Data](#combine-trip-data)
+      - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
+    - [Step 3: Clean Up and Add Data to Prepare for Analysis ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
+      - [***Key Problems and Solutions***](#key-problems-and-solutions)
+      - [Checking For Missing Data](#checking-for-missing-data)
+      - [Checking For Duplicate Data](#checking-for-duplicate-data)
+      - [Creating Table About Stations](#creating-table-about-stations)
+      - [Cleaning Operations](#cleaning-operations)
+      - [Manipulating Data](#manipulating-data)
+    - [Step 4: Perform Analysis ](#step-4-perform-analysis-)
+      - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
+      - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
+      - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
+      - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
+      - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
+  - [Data Summary](#data-summary)
+  - [Data Story: Cyclistic Bikeshare Analysis of 2020 ](#data-story-cyclistic-bikeshare-analysis-of-2020-)
+    - [Customer Usage](#customer-usage)
+    - [Monthly Analysis](#monthly-analysis)
+    - [Weekly Analysis](#weekly-analysis)
+    - [Daily Analysis](#daily-analysis)
+    - [Geographical Analysis](#geographical-analysis)
+    - [Conclusion](#conclusion)
+    - [Recommendations](#recommendations)
+  - [Final Thoughts](#final-thoughts)
+    - [Thank you for taking the time to read this case study](#thank-you-for-taking-the-time-to-read-this-case-study)
 
 
 ## About This Project
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#table-of-contents) [<img src="images/buttons/next-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+<p align="left">
+    <a href="#table-of-contents">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#introduction">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p>
 
 This case study is my capstone project for the Google Data Analatics Professional Certificated (via Coursera).
 
@@ -77,18 +113,27 @@ A more in-depth breakdown of the case study scenario is included below, followed
 
 
 ## Introduction 
+<p align="left">
+    <a href="#about-this-project">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#defining-the-problem">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p>
 
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-this-project) [<img src="images/buttons/next-button.png" height="25" width="25">](#defining-the-problem) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
-
-<img src="https://github.com/csarevalo/Case-Studies/blob/cbcdc43ae32a54666f73902b52cce8ff2130137c/Cyclistic-Data-Analysis-2020/images/cyclist2.png">
+<img src="images/logo/cyclist2.png">
 
 Cyclistic is a bike-share company based in Chicago, USA. In 2016, Cyclistic Launched a successful bike-share program offering bike rentals throughout the city. Since then, the program has expanded to a fleet over 5,800 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
 <p align="center">
-  <img src = "https://github.com/csarevalo/Case-Studies/blob/4d3f62ffda82b91eaf0586ab1a65ab92b10ec643/Cyclistic-Data-Analysis-2020/images/divvy-bicycles.png" alt="Image" width="650">
+  <img src = "images/divvy-bicycles.png" alt="Divvy Bikes in Chicago" width="650">
 </p>
 
-<p align="center"> <strong> <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago </strong></p>
+<p align="center"> <strong>Based on <a href="https://divvybikes.com">Divvy</a> Bikes Stationed in Chicago </strong></p>
 
 Customers are divided into two classes: casual riders (those who purchase either the single-ride or full-day passes) and Cyclistic members (who purchase annual memberships). 
 
@@ -98,9 +143,17 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 
 ## Defining The Problem
-
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#introduction) [<img src="images/buttons/next-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+<p align="left">
+    <a href="#introduction">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#business-task">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p>
 
 Lily, the director of marketing, and the marketing analytics team are looking for ways to convert Cyclistic's casual riders into annual members. The main problem is designing marketing strategies to accomplishing this task by identifying and understading the difference between casual riders & member riders in their usage of Cyclistic Bikeshare program. There are three questions that will guide the marketing team in their future marketing program.
 
@@ -117,8 +170,17 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 By looking at the data, we will be able to first get a broad sense of certain patterns that are occurring in the two different groups. Understanding the differences will provide more accurate customer profiles for each group. These insights will help the marketing analytics team design high quality targeted marketing for converting casual riders into members. For the Cyclistic executive team, these insights will help Cyclistic maximize the number of annual members and will fuel future growth for the company.
 
 ### Business Task
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#defining-the-problem) [<img src="images/buttons/next-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+<p align="left">
+    <a href="#defining-the-problem">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#about-data-sources">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+</p>
 
 
 > [!IMPORTANT]
@@ -126,8 +188,17 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 
 ## About Data Sources
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#business-task) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+<p align="left">
+    <a href="#business-task">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/next-button.png">
+    </a>
+</p>
 
 * Historical trip data is publicly available [here](https://divvy-tripdata.s3.amazonaws.com/index.html) (Note: The datasets have different names because Cyclistic is a fictional company).
 
@@ -140,16 +211,43 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 
 ## Prep Work
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#about-data-sources) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-1)[<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/next-next-button.png" height="25" width="25" align="right">](#data-summary)
+<p align="left">
+    <a href="#about-data-sources">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#prep-work-step-1">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 The data is downloaded, skimmed, prepared, cleaned, and manipulated. This section deals with all the dirty work prior to the actual analysis and visualization. The prep-work lays the foundation of our data problem solving, and takes more than twice the time and effort as the analysis.
 
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary) or if you want a brief peak at how the analysis is performed please check out [Performing Analysis](#prep-work-step-4).
 
 ### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
-
-[<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 * Download Divvy datasets containing all trip data occuring in 2020 (Jan-Dec).
 
@@ -159,12 +257,48 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 
 ### Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-1) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-1) [<img src="images/buttons/next-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-1">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#prep-work-step-1">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#preliminary-inspection">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 #### Preliminary Inspection
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-2) [<img src="images/buttons/next-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#fixing-column-data-type">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Once data is uploaded, it is important to compare schemas (e.g. column names and data type) for each of the tables and inspect the tables through preview to look for incongruencies. Here are the results:
 
@@ -179,8 +313,26 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
   - There is also a need for new and unique ids for the stations.
 
 #### Fixing Column Data Type
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#preliminary-inspection) [<img src="images/buttons/next-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#preliminary-inspection">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#combine-trip-data">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 The following query is ran for multiple tables to correct column types.
 
@@ -196,8 +348,26 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 ```
 
 #### Combine Trip Data
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#fixing-column-data-type) [<img src="images/buttons/next-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#fixing-column-data-type">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#inspecting-combined-trip-data">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 The bike trip data is divided into 10 tables, however we interested in looking at all rides occuring during 2020. 
 
@@ -210,8 +380,26 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
 #### Inspecting Combined Trip Data
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#combine-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#combine-trip-data">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Briefly skiming the new table shows that:
 
@@ -227,13 +415,48 @@ There is still a need to check for nulls or missing values.
 
 
 ### Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-2) [<img src="images/buttons/previous-button.png" height="25" width="25">](#inspecting-combined-trip-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-2">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#inspecting-combined-trip-data">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#key-problems-and-solutions">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 #### ***Key Problems and Solutions***
-
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-3) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work) 
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#checking-for-missing-data">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 The first part of tidying data is look for issues/concerns regarding the data. Here are some of them:
 
@@ -244,13 +467,13 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
     * The result, the station id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.
 
-1. Some station names have duplicates that end with a word or symbol in parathesis.
+2. Some station names have duplicates that end with a word or symbol in parathesis.
 
     * *Establish* a single unique name per station.
   
     * There are two sources of duplicates: those that end with "(*)" and those that end with "(Temp)".
 
-1. There are some station names that corresponds to quality checks or other.
+3. There are some station names that corresponds to quality checks or other.
     * *Filter* these stations when interest on insights only about customers
 
     * Relevant NEW IDS: 310, 311, 312, 631, 455, and 45
@@ -262,27 +485,45 @@ The first part of tidying data is look for issues/concerns regarding the data. H
       - Base-2132 W Hubbard Warehouse (id=45)
       - Mt1-Eco5.1-01 (id=455)
 
-1. The data can only be aggregated at the ride-level, which is too granular.
+4. The data can only be aggregated at the ride-level, which is too granular.
     * *Add additional columns* of data, such as the **weekday** & **month** when trips begin. This provide additional opportunities to aggregate the data.
 
-1. There is no field measuring *trip duration*.
+5. There is no field measuring *trip duration*.
     * *Create* a new column indicating **ride_length** and *Scrutinize* ride duration.
   
     * This presents more opportunities to compare user behavior between casual and member riders.
 
-1. Additionally, there are some rides were trip durations are negative.
+6. Additionally, there are some rides were trip durations are negative.
     * *Remove* bad data.
     
     * This includes several hundred rides where Divvy took bikes out of circulation for Quality Control reasons.
 
     * This may also correspond to early cancellation times of rides by users.
   
-1. Some crucial data is missing in columns with Null values.
+7. Some crucial data is missing in columns with Null values.
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
 #### Checking For Missing Data
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#key-problems-and-solutions) [<img src="images/buttons/next-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#key-problems-and-solutions">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#checking-for-duplicate-data">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 First order of business is finding out if anything important is missing from the data, so we *check* which columns contain NULLS using the following query.
 * The source for the following query comes from [stackoverflow](https://stackoverflow.com/questions/58716640/bigquery-check-entire-table-for-null-values)
@@ -313,8 +554,26 @@ The table below showcases which columns have missing information and how many ro
 
 
 #### Checking For Duplicate Data 
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-missing-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#checking-for-missing-data">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#creating-table-about-stations">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 A common problem often encounter while cleaning data is *duplicate names*, which we'll tackle in this section. Specifically, we will be looking for duplicate station names or multiple ids for one station using the following query.
 
@@ -334,7 +593,7 @@ ORDER BY station_name
 **Results**
 
 After querying a list of stations with their respective ids, the outcome is downloaded as a csv file to view in EXCEL (unfortunately, some station names were cut off when viewing the table in BigQuery). 
-* A quick and up-close inspection confirms the source of duplicate data: "(*)" and "(Temp)". 
+* A quick and top-close inspection confirms the source of duplicate data: "(*)" and "(Temp)". 
 
 * Additionally, multiple ids are often found for the same station.
 
@@ -351,8 +610,26 @@ Below are two primary examples showcasing duplicates by either having the differ
 
 
 #### Creating Table About Stations
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#checking-for-duplicate-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#checking-for-duplicate-data">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cleaning-operations">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Due to the present duplicate data occuring in start & end stations, there is a need to fix the problem to not have excess information and be concise. A way to address these stations is by creating a new table as a list of station information. The desired parameters will be **station_name**, **station_id**, **lat**, **lng**, and later down the line we will add the number of users per *member_casual* as **member_riders** and **casual_riders** (to display overall station activity for marketing purposes).
 
@@ -361,11 +638,11 @@ A summary of the steps taken to create a new table showcasing the station info i
 
 1. The new table will be called *divvy_stations_2020*.
 
-1. We begin by identifying unique station names from start & end station names, fixing duplicates to only present unique station names.
+2. We begin by identifying unique station names from start & end station names, fixing duplicates to only present unique station names.
 
-1. Then, we create unique station ids that correspond to only one station.
+3. Then, we create unique station ids that correspond to only one station.
 
-1. Finally, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
+4. Finally, we average the latitude and longitude values of all ride trips corresponding to the stations to determine the **lat** and **lng** geo-location of each station.
 
     * Now that we have the most basic station information, we need consider the trip data from 2020 where we notice that the geo-location can be different for the same station.
 
@@ -388,14 +665,32 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 
 
 #### Cleaning Operations
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#creating-table-about-stations) [<img src="images/buttons/next-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#creating-table-about-stations">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#manipulating-data">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Now that we have established a solid foundation of information about each station, we will use this data (station_name, station_id, lat, lng) to replace the trips corresponding information about start & end stations. The full query is available [here](sql-queries/step-3-cleaning-and-adding-data.sql) and the verification of the results is available [here](sql-queries/step-3_5-verifying-clean-data.sql), however below I will discussion a brief overview of the steps taken.
 
 1. The goal of this new query is to create a new version of *divvy_trip_data* (*v2*), where certain cases are excluded, to make analysis of the trip data easier.
 
-1. Rides are removed when:
+2. Rides are removed when:
     - Station names are missing (meaning they are NULL) from *start* or *end station names* because **these rides cannot be tracked**.
         * The new station ids will be assigned based on their station names. 
   
@@ -405,12 +700,12 @@ Now that we have established a solid foundation of information about each statio
     - Trip durations are greater than 24 hours because **Cyclistic bikes are expected to be returned to an appropriate station once they are no longer being used**.
         * Keeping a bike longer than a day is synonymous to stealing it and such cases result in an additional fee.
 
-1. Station names are altered to prevent duplicate names.
+3. Station names are altered to prevent duplicate names.
     - Duplicates end with a word or symbol in parathesis.
   
     - This makes implementing new station ids smoother.
   
-1. Using **divvy_stations_2020**, station information is updated for both *start & end stations*.
+4. Using **divvy_stations_2020**, station information is updated for both *start & end stations*.
     - Specifically, the following parameters are updated (8 parameters total):
       
         * Station name
@@ -418,7 +713,7 @@ Now that we have established a solid foundation of information about each statio
         * Starting latitude
         * Startting longitude
 
-1. Additional data is added to aggregate trip info more easily during analysis
+5. Additional data is added to aggregate trip info more easily during analysis
     - The following fields of data are implemented:
       
         * Starting month number (1-12) as **month_num**
@@ -460,8 +755,26 @@ From the following stations:
 
 
 #### Manipulating Data
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cleaning-operations) [<img src="images/buttons/next-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cleaning-operations">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 After the cleaning operation, our data is nearly ready for analysis. But before that, we manipulate it to ease our analysis.
 * The total number of members and casual riders visiting any station holds potential in identifying key differences among Cyclistic users. We can figure out the total rides from starting and ending stations by grouping data and counting the rows like this [query](sql-queries/step-3_9-manipulating-data.sql).
@@ -479,8 +792,26 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 ### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-3) [<img src="images/buttons/previous-button.png" height="25" width="25">](#manipulating-data) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-3">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#manipulating-data">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cyclistic-weekly-analysis">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Now that the preliminary work is done we can begin conducting a detailed analysis on the data. But first we need to recall the goal: *to discover **how do annual members and casual riders use Cyclistic bikes differently***. The full query used for performing analysis is provided [here](sql-queries/step-4-conduct-analysis).
 
@@ -488,17 +819,35 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 1. Weekly
 
-1. Monthly
+2. Monthly
 
-1. Time of day
+3. Time of day
 
-1. Type of rideable
+4. Type of rideable
 
-1. And geographically
+5. And geographically
 
 #### Cyclistic Weekly Analysis
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#prep-work-step-4) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cyclistic-monthly-analysis">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Riders behave very different based on weekly trips. During the weekly analysis, we scrutinize the following parameters:
 
@@ -539,8 +888,26 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 
 #### Cyclistic Monthly Analysis
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4)  [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-weekly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-time-of-day-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cyclistic-weekly-analysis">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cyclistic-time-of-day-analysis">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Riders also behave very differently based on monthly trips. During the monthly analysis, we scrutinize the following parameters:
 
@@ -592,8 +959,26 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 
 
 #### Cyclistic Time of Day Analysis
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-monthly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cyclistic-monthly-analysis">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cyclistic-rideable-analysis">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Riders appear to follow notable trends based on the start of their trips. During the monthly analysis, we scrutinize the following parameters:
 
@@ -643,8 +1028,26 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 
 #### Cyclistic Rideable Analysis
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-time-of-day-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cyclistic-time-of-day-analysis">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#cyclistic-geographic-analysis">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Riders have a higher tendency to use certain rideable types than others. This analysis aims to ascertain which rideables are more favored. During the analysis we look out for the following parameters:
 
@@ -673,15 +1076,51 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
 
 
 #### Cyclistic Geographic Analysis
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-rideable-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cyclistic-geographic-analysis">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-summary">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 Members and casual riders concentrate their trips on different destinations.
 
 
 ## Data Summary
-
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#prep-work-step-4) [<img src="images/buttons/previous-button.png" height="25" width="25">](#cyclistic-geographic-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#weekly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top) [<img src="images/buttons/back-back-button.png" height="25" width="30" align="right">](#prep-work)
+<p align="left">
+    <a href="#prep-work-step-4">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#cyclistic-geographic-analysis">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#key-findings">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#data-story">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="#prep-work">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p>
 
 The data can be summarized as below:
 
@@ -713,77 +1152,210 @@ The data can be summarized as below:
 | casual        | 1,278,754    | 38.40    | 37:55     |
 | member        | 2,051,542    | 61.60    | 15:15     |
 
-### Key Findings:
-During the whole year 2020, casual riders accounted for 38.4% of total rides while member riders made up a whopping 61.6% of total trips. Of course, the actual percentages fluctuated throughout the year according to seasonal trends, but one can still see that summer time is the most popular season for Cyclistic. Meanwhile, winter time is by far the least popular season, which make sense because bike riding is more suited for warm weather. Noting the major drop-off in rides during winter, it makes the most sense to plan out events, activities, or promotional content during the summer. **By taking advantage of the seasonal trend, and the fact that casual riders are already familiar with the Cyclistic program and using Cyclistic bikes, this can be a good opportunity to convert them to annual members.**
 
 
-## Data Story: Cyclistic Analysis 2020 <a href="#data-story" id="data-story"></a>
+## Data Story: Cyclistic Bikeshare Analysis of 2020 <a href="#data-story" id="data-story"></a>
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#rideable-analysis) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
 
-Using the Tableau, we have our story and presentation. Feel free to [visit it here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story1?:language=en-US&:display_count=n&:origin=viz_share_link). It is a compilation of all prior dashboards combined into a story.
+For the full interactive Tableau Story please [visit here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story2?:language=en-US&:display_count=n&:origin=viz_share_link "Cyclistic Bikeshare Analysis of 2020").
 
-Below you will find how each dashboard looks like within the story, you are more than welcome to have a look by clicking on the links.
+Below you will find key insights pertaining to each dashboard within the story, you are more than welcome to have a look.
 
-### Weekly Analysis
+### Customer Usage
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#data-summary) [<img src="images/buttons/next-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+Seasonal trends played a major role in the number of rides Cyclistic experienced. *During the year 2020, **casual riders accounted for 38.4% of total rides** while **member riders made up** a whopping **61.6% of total trips***. Summer time brought a huge increase in the number of casual riders, in addition to overall ridership. Meanwhile, during winter time, by far the least popular season, there is a major drop-off in rides. This makes sense because bike riding is more suited for warm weather, however it important to plan out events, activities, or promotional content during Cyclistic's most popular time: summer. 
 
-For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticWeekdayAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+**By taking advantage of the seasonal trend, and the fact that casual riders are already familiar with the Cyclistic program and using Cyclistic bikes, this can be a good opportunity to convert them to annual members.**
 
-<img src="images/Cyclistic-Weekday-Analysis.png">
+It is also important to note user preference when it comes to which rideable popularity. **Docked bikes are by far the most popular** but *electric bikes also receive their fair share of attention*. Moving forward, focusing on these bikes will continue to yield more customers.
+
+<img src="images/story/story-p1-customer-usage.png">
+
 
 ### Monthly Analysis
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#weekly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#timely-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+Taking a deeper dive into how customers use Cyclistic bikes throughout the year, we consider the number of trips taken & their average ride length on a month-to-month basis.
 
-For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticMonthlyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+**Seasonal Trend**
 
-<img src="images/Cyclistic-Monthly-Analysis.png">
+We confirm once more *the favorite season for riders is summer*. Moreover, *a rising trend is seen during early spring*, when the number of rides begin increasing around May. Peak usage occurs during August, then we see a falling trend up during fall, ending with *the least favorite cycling period: winter*.
 
-### Timely Analysis
+**Best Time For Marketting Campaign**
 
+Since we know that riders prefer biking during summer time and we see a large influx of trips taken during late Spring, this means a sufficient number of users are aware and have experience Cyclistics bikeshare services. Thus, ***early May is the optimal time to begin advertising***.
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#monthly-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#rideable-analysis) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
-
-For the full interactive dashboard visit [here](https://public.tableau.com/views/CyclisticTimelyAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-
-<img src="images/Cyclistic-Timely-Analysis.png">
-
-### Rideable Analysis
+<img src="images/story/story-p2-monthly-trends.png">
 
 
-[<img src="images/buttons/back-back-button-3.png" height="25" width="30">](#data-summary) [<img src="images/buttons/previous-button.png" height="25" width="25">](#timely-analysis) [<img src="images/buttons/next-button.png" height="25" width="25">](#data-story) [<img src="images/buttons/next-next-button3.png" height="25" width="30">](#data-story) [<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+### Weekly Analysis
 
-This data viz is available in the data story as shown below!
+**Number of Rides**
 
-<img src="images/Cyclistic-Rideable-Analysis.png">
+When looking at the number of rides, casual riders show a dramatic predisposition to favor weekend for biking. Meanwhile, annual members are overall consitent in how many rides they take throughout the week; their highest usage day occurs midweek.
+
+**Ride Length**
+
+Saturday and Sunday are favored by both groups for longer rides, revealing a U-shape pattern when ride duration decreases during the week. Moreover, just like during the *monthly analysis*, casual riders have nearly double the ride time of members.
+
+**Insight**
+
+Despite their high inclination towards riding during week, casual riders still take plentiful bike trips during week. This shows promise when attempting to convert to members. Of course, usage time plays a role in their conversion rate. Shorter trips indicate a purposeful usage (of knowing where you are going), while longer trips can be associete with exploring or touring. But with so many riders, Cyclistic is bound gain notably more members by targetting those key individuals. 
+
+**Targetting Group**
+
+Casual Riders with ride times whose average ride duration nears that of members (~15mins) and uses the Cyclistic bikeshare program consistently.
+
+**Potential Secondary Marketting Campaign**
+
+Due to casual riders being more prominent during the weekend, a potential way to increase the number Cyclistic users is by inviting even more casual riders. Specific bonus packages can be tailure for leasure riders, such a Museum pass, beach activities, coastal group rides, discounts using Cyclistic for certain activities, and more!
+
+<img src="images/story/story-p3-weekly-trends.png">
 
 
+### Daily Analysis
+
+Knowing when riders take trips is important in determining Cyclistic use cases, so we take a deeper dive into how often riders take trips throughout the week, except we consider their experience on an hour-to-hour basis.
+
+**Popular Times**
+
+During the week, Cyclistic experiences peak usage times at *8AM & 5PM*, hours associated with commuting to-and-from work. During the weekend, popular times occur from *11AM* to *5PM* suggesting that rides are taken for leasure. 
+
+**Insights**
+
+Members most likely use Cyclistic bikes to comute, and while casual riders favor weekends, there are plenty of users who take trips during similar periods as members. These casual riders are already using Cyclistic services similar to members, and thus have a higher chance of being converted.
 
 
+<img src="images/story/story-p4-daily-trends.png">
 
-<!--- useless little text (but can be fixed later) --->
-<a class="top-link hide" href="#top">↑</a>
+### Geographical Analysis
 
-[<img src="images/buttons/up-button.png" height="25" width="25" align="right" style="float">](#top)
+Majority of trips are taken downtown Chicago, regardless of user type. However, stations with more activy from casual users are near the pier or spreadout across stations. Popular stations not near the pier and near the downtown area are dominated by annual members.
+
+This means that near the pier, there are a lot of riders leasurely spending their time. Still, plenty of casual riders exist along the cost line and within stations with numerious trips (downtown) which holds promise in conversion. 
+
+**Insights**
+The prior two targetting groups still hold promise in increasing the number users. Moreover, if Cyclistic invents a *leasure member* group we can convert casual riders who enjoy weekend rides into members. This is of couse in addition to casual riders who share the use cases with current annual members (of 2020).
+
+<img src="images/story/story-p5-geo-trends.png">
+
+
+### Conclusion
+
+<img src="images/story/story-p6-conclusion.png">
+
+### Recommendations
+
+By focusing on seasonality, usage time, and usage case, we can formulate successful marketting strategies to convert casual riders to members.
+
+
+**Seasonality**
+
+In Spring the demand by casual riders increases, peaking during the summer. This is an opportune time to host a targeted advertising campaign and promotional activities.
+
+>Launch the marketing campaign in early Spring to draw-in incoming casual riders and run through the summer to convert them into annual members.
+
+Schedule different promotions and offers to highlight the value of becoming an annual member instead of remaining a casual rider. Discounts for signing up now, raise awareness that summer will soon arrive and be ready.
+
+
+**Usage Time**
+
+Daily usage revealed that both groups peak during the evening (*~5PM*), however in the morning only members showed high activity. This could mean that most casual riders are not aware of the potential benefits of using Cyclistic rides for commuting early in the morning.
+
+>Use a digital media campaign to raise awareness about the benefits of using Cyclistic bikeshare for morning and evening comutes.
+
+The goal is to get casual riders to spend more time on Cyclistic bikes, increasing the odds of upgrading their membership status.
+
+
+**Usage Case**
+
+Many casual riders share the pattern of enjoying leasure rides during the weekends. Proof is their drastic change in number of rides when compared to weekdays. So why not tap into that potential?
+
+>Create a new package deal for annual members, catoring to customers who want to spend leasure time riding Cyclistic Bikes. 
+
+Adding these new benefits, for members and incoming casual riders, specifically tailored to entertainment and joyful activites will improve conversion rate and member retention in the longer.
+
+Use digital channels to market and promote these new benefits. Possibly hosting summer events to guide casual riders into how they can enjoy leasure rides with others.
+
+-------
+
+
+## Final Thoughts
+
+From the Cyclistic case study, the analysis results showed that casual riders could be categorized into two groups: those that shared similarities with members and those that used Cyclistic bikes for leasure or entertainment. 
+
+The marketting campaign holds promise in converting casual users to annual members. Though not easy, with targetted advertising via email and social media, Cyclistic can improve the conversion rate by raising awareness of their benefits and tailuring new benefits to bring more riders
+<br><br>
+
+---
+### Thank you for taking the time to read this case study
+
+---
+
+Working on the capstone project was a good opportunity to learn about the real-world data analysis process. I learned a ton about data preparation and cleaning by actually working on those processes. Checking for data integrity and reliability is crucial before anything. 
+
+It's been fun finding out how data analysis can inform business decisions and lead to effect actions. Until next time, have fun analyzing!
+
 
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<!---- [Testing Inline Img Buttons] ---->
+
+<!-- [![Back Back Button]]()
+[![Back Button]]()
+[![Next Button]]()
+[![Next Next Button]]()
+[![Previous Heading Button]]()
+[![Top Button]]()
+[![Next Heading Button]]() -->
+
+<!-- <p align="left">
+    <a href="">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="">
+        <img src="images/buttons/next-heading-button.png" style="float" align="right">
+    </a>
+    <a href="">
+        <img src="images/buttons/top-button.png" style="float" align="right">
+    </a>
+    <a href="">
+        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+    </a>
+</p> -->
 
 
-<!--------------------------------------[Buttons]------------------------------------------------>
-[Previous Button]: images/buttons/previous-button.png
+<!---- [Buttons] ---->
+[Back Back Button]: images/buttons/back-back-button.png
+[Back Button]: images/buttons/back-button.png
 [Next Button]: images/buttons/next-button.png
-[Next Heading Button]: images/buttons/next-next-button3.png
+[Next Next Button]: images/buttons/next-next-button.png
+[Top Button]: images/buttons/top-button.png
+[Previous Heading Button]: images/buttons/previous-heading-button.png
+[Next Heading Button]: images/buttons/next-heading-button.png
+<br>
 
-<!------------------------------[Failed Buttons - NoImg]--------------------------------->
-[Previous Button2]: <img src="images/buttons/previous-button.png" height="25" width="25">
-[Next Button2]: <img src="images/buttons/next-button.png" height="25" width="25">
-[Next Heading Button2]: <img src="images/buttons/next-next-button3.png" height="25" width="30"> 
+
+<!-- Old Buttons -->
+
+<!-- Previous Button: h:25 w:25 <img src="images/original buttons/previous-button.png" height="25" width="25"> <br>
+Next Button: h:25 2:25 <img src="images/original buttons/next-button.png" height="25" width="25"> <br>
+Back-Back Button: h:25 w:30 <img src="images/original buttons/back-back-button-3.png" height="25" width="30"> <br>
+Next-Next Button: h:25 w:30 <img src="images/original buttons/next-next-button3.png" height="25" width="30"> <br>
+Top Button: h:25 w:25 <img src="images/original buttons/up-button.png" height="25" width="25"> <br>
+Previous-Heading: h:25 w:30 <img src="images/original buttons/back-back-button.png" height="25" width="30"> <br>
+Next-Heading Button: h:25 w:25 <img src="images/original buttons/next-next-button.png" height="25" width="25" > <br> -->
 
 
 
