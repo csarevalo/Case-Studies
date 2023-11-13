@@ -64,7 +64,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
       - [Combine Trip Data](#combine-trip-data)
       - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
     - [Step 3: Clean Up and Add Data to Prepare for Analysis ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
-      - [***Key Problems and Solutions***](#key-problems-and-solutions)
+      - [Key Problems and Solutions](#key-problems-and-solutions)
       - [Checking For Missing Data](#checking-for-missing-data)
       - [Checking For Duplicate Data](#checking-for-duplicate-data)
       - [Creating Table About Stations](#creating-table-about-stations)
@@ -448,7 +448,7 @@ There is still a need to check for nulls or missing values.
     </a>
 </p>
 
-#### ***Key Problems and Solutions***
+#### Key Problems and Solutions
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -1109,7 +1109,29 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
     </a>
 </p>
 
-Members and casual riders concentrate their trips on different destinations.
+Members and casual riders concentrate their trips on different destinations. Members spreadout throughout Chicago, meanwhile casual users are more focus near the pier.  Moreover, when looking at the starting stations, riders follow a notable trend based on their start
+
+Riders appear to follow notable trends based on the start of their trips. During the monthly analysis, we scrutinize the following parameters:
+
+* Station Name
+
+* Station Id
+
+* Latitude & longitude
+
+* Total Trips From Station
+
+* Trips By Annual Members
+
+* Trips By Casual Users
+
+* Fraction of Members From Daily Trips At Station (normalized to 1)
+
+* Fraction of Casual Riders From Daily Trips At Station (normalized to 1)
+
+**Resulting Table**
+
+This table is available for [download here](tables/analysis_of/analysis_by_stations.csv).
 
 
 ## Data Summary
@@ -1120,7 +1142,7 @@ Members and casual riders concentrate their trips on different destinations.
     <a href="#cyclistic-geographic-analysis">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#key-findings">
+    <a href="#data-story">
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#data-story">
