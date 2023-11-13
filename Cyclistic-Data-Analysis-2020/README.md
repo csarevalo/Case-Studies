@@ -1,3 +1,15 @@
+<html>   
+        <head>
+                <base href="/Case-Studies/Cyclistic-Data-Analysis-2020/">
+                <meta charset="UTF-8">
+                <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+                <title>Cyclistic Bikeshare Analysis 2020</title>
+                <meta name="description" content="To exhibit my case studies.">
+                <link rel="icon" type="image/png" href="images/logo/cyclist1.png"/>
+                <link rel="stylesheet" href="style.css">
+        </head>
+</html>
+
 <a href="#top" id="top"></a>
 
 # Cyclistic Case Study Analysis 2020 <a href="#the-title" id="the-title"></a>
