@@ -149,11 +149,14 @@ if __name__ == '__main__':
     project_id = "case-study1-bike-share"
     ## TODO: Set table_id to the full destination table ID.
     # ----> table_id = 'project.dataset.table'
-    table_id = 'case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_12'
+    dataset_name = "divvy_trips_2020_data"
+    table_name = input('Please name the table you wish to create table?\n') #"divvy_trips_2020_12"
+    table_name = table_name.strip() #remove leading & trailing whitespaces
+    table_id = project_id + '.' + dataset_name + '.' + table_name
     #=======================================================================
     ## TODO: Set path of csv/folder to upload
-    path = r"C:\Users\csare\Documents\Coursera Docs\Data Analytics\Case Studies\Case Study 1\Cyclist Bike Share Data\divvy-tripdata-1\Divvy_Trips_2020_Q2Q3Q4"
-    path = path + r"\202012-divvy-tripdata.csv"
+    path = r"C:\Users\Cristian Arevalo\Downloads\Divvy_Trips_2020_Bucket"
+    path = path + r"\Divvy_Trips_2020_Q1"
     path_type = check_path(path) #just to see
     # print('\n----\npath_type = ' + str(path_type) + ' (csv=1, csv_gzip=2, folder = 0)\n----')
     #=======================================================================
