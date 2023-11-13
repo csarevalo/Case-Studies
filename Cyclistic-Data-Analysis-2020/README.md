@@ -24,6 +24,8 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 
 ## Table of Contents
+<hr>
+
 <p align="left">
     <a href="#the-title">
         <img src="images/buttons/back-button.png">
@@ -63,7 +65,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
     - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
     - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
     - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
-      - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
+    - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
   - [Data Summary](#data-summary)
   - [Data Story: Cyclistic Bikeshare Analysis of 2020 ](#data-story-cyclistic-bikeshare-analysis-of-2020-)
     - [Customer Usage](#customer-usage)
@@ -78,6 +80,8 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 
 ## About This Project
+<hr>
+
 <p align="left">
     <a href="#table-of-contents">
         <img src="images/buttons/back-button.png">
@@ -112,6 +116,8 @@ A more in-depth breakdown of the case study scenario is included below, followed
 
 
 ## Introduction 
+<hr>
+
 <p align="left">
     <a href="#about-this-project">
         <img src="images/buttons/back-button.png">
@@ -142,6 +148,8 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 
 
 ## Defining The Problem
+<hr>
+
 <p align="left">
     <a href="#introduction">
         <img src="images/buttons/back-button.png">
@@ -185,6 +193,8 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 
 ## About Data Sources
+<hr>
+
 <p align="left">
     <a href="#business-task">
         <img src="images/buttons/back-button.png">
@@ -208,6 +218,8 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 
 ## Prep Work
+<hr>
+
 <p align="left">
     <a href="#about-data-sources">
         <img src="images/buttons/back-button.png">
@@ -228,6 +240,8 @@ The data is downloaded, skimmed, prepared, cleaned, and manipulated. This sectio
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary) or if you want a brief peak at how the analysis is performed please check out [Performing Analysis](#prep-work-step-4).
 
 ## Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
+<hr>
+
 <p align="left">
     <a href="#prep-work">
         <img src="images/buttons/back-button.png">
@@ -254,6 +268,8 @@ If you are more interested with the analysis, and results, you can jump ahead to
 
 
 ## Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
+<hr>
+
 <p align="left">
     <a href="#prep-work-step-1">
         <img src="images/buttons/back-back-button.png">
@@ -412,6 +428,8 @@ There is still a need to check for nulls or missing values.
 
 
 ## Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
+<hr>
+
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -789,6 +807,8 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 ## Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
+<hr>
+
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -1072,7 +1092,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
 
 
 
-#### Cyclistic Geographic Analysis
+### Cyclistic Geographic Analysis
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -1120,6 +1140,8 @@ This table is available for [download here](tables/analysis_of/analysis_by_stati
 
 
 ## Data Summary
+<hr>
+
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -1174,7 +1196,7 @@ The data can be summarized as below:
 
 
 ## Data Story: Cyclistic Bikeshare Analysis of 2020 <a href="#data-story" id="data-story"></a>
-
+<hr>
 
 
 For the full interactive Tableau Story please [visit here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story2?:language=en-US&:display_count=n&:origin=viz_share_link "Cyclistic Bikeshare Analysis of 2020").
@@ -1263,7 +1285,9 @@ The prior two targetting groups still hold promise in increasing the number user
 
 <img src="images/story/story-p6-conclusion.png">
 
+
 ## Recommendations
+<hr>
 
 By focusing on seasonality, usage time, and usage case, we can formulate successful marketting strategies to convert casual riders to members.
 
@@ -1272,7 +1296,7 @@ By focusing on seasonality, usage time, and usage case, we can formulate success
 
 In Spring the demand by casual riders increases, peaking during the summer. This is an opportune time to host a targeted advertising campaign and promotional activities.
 
->Launch the marketing campaign in early Spring to draw-in incoming casual riders and run through the summer to convert them into annual members.
+> **Launch the marketing campaign in early Spring to draw-in incoming casual riders and run through the summer to convert them into annual members.**
 
 Schedule different promotions and offers to highlight the value of becoming an annual member instead of remaining a casual rider. Discounts for signing up now, raise awareness that summer will soon arrive and be ready.
 
@@ -1281,7 +1305,7 @@ Schedule different promotions and offers to highlight the value of becoming an a
 
 Daily usage revealed that both groups peak during the evening (*~5PM*), however in the morning only members showed high activity. This could mean that most casual riders are not aware of the potential benefits of using Cyclistic rides for commuting early in the morning.
 
->Use a digital media campaign to raise awareness about the benefits of using Cyclistic bikeshare for morning and evening comutes.
+> **Use digital media to raise awareness about the benefits of using Cyclistic bikeshare for morning and evening comutes.**
 
 The goal is to get casual riders to spend more time on Cyclistic bikes, increasing the odds of upgrading their membership status.
 
@@ -1300,27 +1324,20 @@ Use digital channels to market and promote these new benefits. Possibly hosting 
 
 
 ## Final Thoughts
+<hr>
 
 From the Cyclistic case study, the analysis results showed that casual riders could be categorized into two groups: those that shared similarities with members and those that used Cyclistic bikes for leasure or entertainment. 
 
 The marketting campaign holds promise in converting casual users to annual members. Though not easy, with targetted advertising via email and social media, Cyclistic can improve the conversion rate by raising awareness of their benefits and tailuring new benefits to bring more riders
-<br><br>
+<br>
 
----
 ### Thank you for taking the time to read this case study
-
----
 
 Working on the capstone project was a good opportunity to learn about the real-world data analysis process. I learned a ton about data preparation and cleaning by actually working on those processes. Checking for data integrity and reliability is crucial before anything. 
 
 It's been fun finding out how data analysis can inform business decisions and lead to effect actions. Until next time, have fun analyzing!
 
-<br><br><br><br><br><br><br>
-
-
-
-
-
+<br><br><br>
 
 
 <!---- [Testing Inline Img Buttons] ---->
@@ -1366,7 +1383,4 @@ It's been fun finding out how data analysis can inform business decisions and le
 [Top Button]: images/buttons/top-button.png
 [Previous Heading Button]: images/buttons/previous-heading-button.png
 [Next Heading Button]: images/buttons/next-heading-button.png
-
-
-
 
