@@ -18,7 +18,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p> 
 
@@ -32,7 +32,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p> 
 
@@ -45,24 +45,24 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
     - [Business Task](#business-task)
   - [About Data Sources](#about-data-sources)
   - [Prep Work](#prep-work)
-    - [Step 1: Collect Data ](#step-1-collect-data-)
-    - [Step 2: Wrangle Data and Combine into a Single Table ](#step-2-wrangle-data-and-combine-into-a-single-table-)
-      - [Preliminary Inspection](#preliminary-inspection)
-      - [Fixing Column Data Type](#fixing-column-data-type)
-      - [Combine Trip Data](#combine-trip-data)
-      - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
-    - [Step 3: Clean Up and Add Data to Prepare for Analysis ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
-      - [Key Problems and Solutions](#key-problems-and-solutions)
-      - [Checking For Missing Data](#checking-for-missing-data)
-      - [Checking For Duplicate Data](#checking-for-duplicate-data)
-      - [Creating Table About Stations](#creating-table-about-stations)
-      - [Cleaning Operations](#cleaning-operations)
-      - [Manipulating Data](#manipulating-data)
-    - [Step 4: Perform Analysis ](#step-4-perform-analysis-)
-      - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
-      - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
-      - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
-      - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
+  - [Step 1: Collect Data ](#step-1-collect-data-)
+  - [Step 2: Wrangle Data and Combine into a Single Table ](#step-2-wrangle-data-and-combine-into-a-single-table-)
+    - [Preliminary Inspection](#preliminary-inspection)
+    - [Fixing Column Data Type](#fixing-column-data-type)
+    - [Combine Trip Data](#combine-trip-data)
+    - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
+  - [Step 3: Clean Up and Add Data to Prepare for Analysis ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
+    - [Key Problems and Solutions](#key-problems-and-solutions)
+    - [Checking For Missing Data](#checking-for-missing-data)
+    - [Checking For Duplicate Data](#checking-for-duplicate-data)
+    - [Creating Table About Stations](#creating-table-about-stations)
+    - [Cleaning Operations](#cleaning-operations)
+    - [Manipulating Data](#manipulating-data)
+  - [Step 4: Perform Analysis ](#step-4-perform-analysis-)
+    - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
+    - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
+    - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
+    - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
       - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
   - [Data Summary](#data-summary)
   - [Data Story: Cyclistic Bikeshare Analysis of 2020 ](#data-story-cyclistic-bikeshare-analysis-of-2020-)
@@ -72,7 +72,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
     - [Daily Analysis](#daily-analysis)
     - [Geographical Analysis](#geographical-analysis)
     - [Conclusion](#conclusion)
-    - [Recommendations](#recommendations)
+  - [Recommendations](#recommendations)
   - [Final Thoughts](#final-thoughts)
     - [Thank you for taking the time to read this case study](#thank-you-for-taking-the-time-to-read-this-case-study)
 
@@ -86,7 +86,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
 
@@ -104,8 +104,7 @@ The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
 
 A more in-depth breakdown of the case study scenario is included below, followed by my full report.
 
-> [!NOTE]
->
+
 > The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
 > 
 > Additionally, all data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
@@ -121,7 +120,7 @@ A more in-depth breakdown of the case study scenario is included below, followed
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
 
@@ -151,7 +150,7 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
 
@@ -178,12 +177,10 @@ By looking at the data, we will be able to first get a broad sense of certain pa
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
 
-
-> [!IMPORTANT]
 > **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
 
 
@@ -193,7 +190,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
         <img src="images/buttons/back-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
         <img src="images/buttons/next-button.png">
@@ -219,10 +216,10 @@ By looking at the data, we will be able to first get a broad sense of certain pa
         <img src="images/buttons/next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#data-summary">
-        <img src="images/buttons/next-heading-button.png" style="float" align="right">
+        <img src="images/buttons/next-heading-button.png" align="right">
     </a>
 </p>
 
@@ -230,7 +227,7 @@ The data is downloaded, skimmed, prepared, cleaned, and manipulated. This sectio
 
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary) or if you want a brief peak at how the analysis is performed please check out [Performing Analysis](#prep-work-step-4).
 
-### Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
+## Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 <p align="left">
     <a href="#prep-work">
         <img src="images/buttons/back-button.png">
@@ -242,10 +239,10 @@ If you are more interested with the analysis, and results, you can jump ahead to
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -256,7 +253,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 * Files that were too large were uploaded via this python script ([shown here](python-code/upload_df_to_gbq_v5.py)).
 
 
-### Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
+## Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
 <p align="left">
     <a href="#prep-work-step-1">
         <img src="images/buttons/back-back-button.png">
@@ -271,14 +268,14 @@ If you are more interested with the analysis, and results, you can jump ahead to
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
-#### Preliminary Inspection
+### Preliminary Inspection
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -293,10 +290,10 @@ If you are more interested with the analysis, and results, you can jump ahead to
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -312,7 +309,7 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
   - There is also a need for new and unique ids for the stations.
 
-#### Fixing Column Data Type
+### Fixing Column Data Type
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -327,10 +324,10 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -347,7 +344,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
   FROM `project.dataset.table`);
 ```
 
-#### Combine Trip Data
+### Combine Trip Data
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -362,10 +359,10 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -379,7 +376,7 @@ CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_analysis.div
 SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
-#### Inspecting Combined Trip Data
+### Inspecting Combined Trip Data
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -394,10 +391,10 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -414,7 +411,7 @@ Briefly skiming the new table shows that:
 There is still a need to check for nulls or missing values.
 
 
-### Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
+## Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
 <p align="left">
     <a href="#prep-work-step-2">
         <img src="images/buttons/back-back-button.png">
@@ -429,14 +426,14 @@ There is still a need to check for nulls or missing values.
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
-#### Key Problems and Solutions
+### Key Problems and Solutions
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -451,10 +448,10 @@ There is still a need to check for nulls or missing values.
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -503,7 +500,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 7. Some crucial data is missing in columns with Null values.
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
-#### Checking For Missing Data
+### Checking For Missing Data
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -518,10 +515,10 @@ The first part of tidying data is look for issues/concerns regarding the data. H
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -553,7 +550,7 @@ The table below showcases which columns have missing information and how many ro
 | end_lng            | 4255         |
 
 
-#### Checking For Duplicate Data 
+### Checking For Duplicate Data 
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -568,10 +565,10 @@ The table below showcases which columns have missing information and how many ro
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -609,7 +606,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
-#### Creating Table About Stations
+### Creating Table About Stations
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -624,10 +621,10 @@ Below are two primary examples showcasing duplicates by either having the differ
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -664,7 +661,7 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 | Aberdeen St & Randolph St  | 6          | 41.884114663376479 | -87.654270784691533 |
 
 
-#### Cleaning Operations
+### Cleaning Operations
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -679,10 +676,10 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -754,7 +751,7 @@ From the following stations:
 | Watson Testing - Divvy                 | 633        |
 
 
-#### Manipulating Data
+### Manipulating Data
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -769,10 +766,10 @@ From the following stations:
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -791,7 +788,7 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 
-### Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
+## Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
 <p align="left">
     <a href="#prep-work-step-3">
         <img src="images/buttons/back-back-button.png">
@@ -806,10 +803,10 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -827,7 +824,7 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 5. And geographically
 
-#### Cyclistic Weekly Analysis
+### Cyclistic Weekly Analysis
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -842,10 +839,10 @@ Specifically, we are interested in analyzing user behavior in the following ways
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -887,7 +884,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 | member        | 7           | Sat     | 1036              | 00:17:16     | 23:59:43     | 00:01:01     | 292739    | 0.087901796116621467 |
 
 
-#### Cyclistic Monthly Analysis
+### Cyclistic Monthly Analysis
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -902,10 +899,10 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -958,7 +955,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 | member        | 12        | Dec            | 748               | 00:12:28     | 22:49:28     | 00:01:01     | 88054     | 0.026440292394429805  |
 
 
-#### Cyclistic Time of Day Analysis
+### Cyclistic Time of Day Analysis
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -973,10 +970,10 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -1027,7 +1024,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 
 
-#### Cyclistic Rideable Analysis
+### Cyclistic Rideable Analysis
 <p align="left">
     <a href="#prep-work-step-4">
         <img src="images/buttons/back-back-button.png">
@@ -1042,10 +1039,10 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -1090,10 +1087,10 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -1137,10 +1134,10 @@ This table is available for [download here](tables/analysis_of/analysis_by_stati
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="#top">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="#prep-work">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
@@ -1266,7 +1263,7 @@ The prior two targetting groups still hold promise in increasing the number user
 
 <img src="images/story/story-p6-conclusion.png">
 
-### Recommendations
+## Recommendations
 
 By focusing on seasonality, usage time, and usage case, we can formulate successful marketting strategies to convert casual riders to members.
 
@@ -1293,7 +1290,7 @@ The goal is to get casual riders to spend more time on Cyclistic bikes, increasi
 
 Many casual riders share the pattern of enjoying leasure rides during the weekends. Proof is their drastic change in number of rides when compared to weekdays. So why not tap into that potential?
 
->Create a new package deal for annual members, catoring to customers who want to spend leasure time riding Cyclistic Bikes. 
+>**Create a new package deal for annual members, catoring to customers who want to spend leasure time riding Cyclistic Bikes.**
 
 Adding these new benefits, for members and incoming casual riders, specifically tailored to entertainment and joyful activites will improve conversion rate and member retention in the longer.
 
@@ -1318,10 +1315,13 @@ Working on the capstone project was a good opportunity to learn about the real-w
 
 It's been fun finding out how data analysis can inform business decisions and lead to effect actions. Until next time, have fun analyzing!
 
+<br><br><br><br><br><br><br>
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
 
 <!---- [Testing Inline Img Buttons] ---->
 
@@ -1347,13 +1347,13 @@ It's been fun finding out how data analysis can inform business decisions and le
         <img src="images/buttons/next-next-button.png">
     </a>
     <a href="">
-        <img src="images/buttons/next-heading-button.png" style="float" align="right">
+        <img src="images/buttons/next-heading-button.png" align="right">
     </a>
     <a href="">
-        <img src="images/buttons/top-button.png" style="float" align="right">
+        <img src="images/buttons/top-button.png" align="right">
     </a>
     <a href="">
-        <img src="images/buttons/previous-heading-button.png" style="float" align="right">
+        <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p> -->
 
@@ -1366,21 +1366,6 @@ It's been fun finding out how data analysis can inform business decisions and le
 [Top Button]: images/buttons/top-button.png
 [Previous Heading Button]: images/buttons/previous-heading-button.png
 [Next Heading Button]: images/buttons/next-heading-button.png
-<br>
-
-
-<!-- Old Buttons -->
-
-<!-- Previous Button: h:25 w:25 <img src="images/original buttons/previous-button.png" height="25" width="25"> <br>
-Next Button: h:25 2:25 <img src="images/original buttons/next-button.png" height="25" width="25"> <br>
-Back-Back Button: h:25 w:30 <img src="images/original buttons/back-back-button-3.png" height="25" width="30"> <br>
-Next-Next Button: h:25 w:30 <img src="images/original buttons/next-next-button3.png" height="25" width="30"> <br>
-Top Button: h:25 w:25 <img src="images/original buttons/up-button.png" height="25" width="25"> <br>
-Previous-Heading: h:25 w:30 <img src="images/original buttons/back-back-button.png" height="25" width="30"> <br>
-Next-Heading Button: h:25 w:25 <img src="images/original buttons/next-next-button.png" height="25" width="25" > <br> -->
-
-
-
 
 
 
