@@ -1,6 +1,6 @@
 <html>   
         <head>
-                <base href="/Case-Studies/">
+                <base href="/Case-Studies/Cyclistic-Data-Analysis-2020/">
                 <meta charset="UTF-8">
                 <meta content="IE=Edge" http-equiv="X-UA-Compatible">
                 <title>Cyclistic Bikeshare Analysis 2020</title>
