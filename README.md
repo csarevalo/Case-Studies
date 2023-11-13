@@ -5,5 +5,5 @@ Hello *wave emoji* and welcome to my repository of case studies where I intend t
 Below you will find those currently available.
 
 
-## [Cyclistic Case Study Analysis 2020 ](/Cyclistic-Data-Analysis-2020)
+## [Cyclistic Case Study Analysis 2020 ](/Case-Studies/Cyclistic-Data-Analysis-2020)
 
