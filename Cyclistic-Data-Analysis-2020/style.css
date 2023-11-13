@@ -5,6 +5,11 @@
   }
 }
 
+/* Add background color */
+body {
+    background-color: lightgray;
+}
+
 /* Style the button */
 .top-link {
   transition:       all .25s ease-in-out;
