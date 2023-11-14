@@ -1,8 +1,8 @@
-<div class="page-header" style="padding: 5px; margin: 0;">
+<div class="github-content-header" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 5px; margin: 0;">
     <a href="/Case-Studies/" class="btn" style="margin: 0;"><strong>My Case Studies</strong></a>
 </div>
 
-<a href="/Case-Studies/" class="btn" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); margin: 3px;"><strong>My Case Studies</strong></a>
+<!-- <a href="/Case-Studies/" class="btn" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); margin: 3px;"><strong>My Case Studies</strong></a> -->
 
 # **Cyclistic Case Study Analysis 2020** <a href="#the-title" id="the-title"></a>
 Using Spreadsheets, Google Bigquery (SQL), and Tableau
