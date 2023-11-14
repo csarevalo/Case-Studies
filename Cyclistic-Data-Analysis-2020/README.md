@@ -1,15 +1,9 @@
-<!-- <h1 style="display: none">Cyclistic Case Study</h1> -->
 <a href="#top" id="top"></a>
-
-<!-- <div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 1rem; padding-bottom: 0;">
+<div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 0; margin-top: 0;">
     <a href="/Case-Studies/" class="btn">My Case Studies</a>
-</div> -->
+</div>
 
 <a href="/Case-Studies/" class="btn" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); margin: 0;"><strong>My Case Studies</strong></a>
-
-<span style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
-    <a href="/Case-Studies/" class="btn" style="margin: 0;"><strong>My Case Studies</strong></a>
-</span>
 
 # **Cyclistic Case Study Analysis 2020** <a href="#the-title" id="the-title"></a>
 Using Spreadsheets, Google Bigquery (SQL), and Tableau
