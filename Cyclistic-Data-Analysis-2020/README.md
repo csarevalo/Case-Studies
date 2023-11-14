@@ -1,5 +1,4 @@
-<a href="#top" id="top"></a>
-<div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 0; margin-top: 0;">
+<div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 0; margin-top: 0; margin-bottom: 0; display: flex;">
     <a href="/Case-Studies/" class="btn">My Case Studies</a>
 </div>
 
