@@ -1,6 +1,6 @@
 <a href="#top" id="top"></a>
 
-# Cyclistic Case Study Analysis 2020 <a href="#the-title" id="the-title"></a>
+# **Cyclistic Case Study Analysis 2020** <a href="#the-title" id="the-title"></a>
 Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
 **By** Cristian Arevalo 
@@ -23,7 +23,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 </p> 
 
 
-## Table of Contents
+## **Table of Contents**
 <hr>
 
 <p align="left">
@@ -39,47 +39,47 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 </p> 
 
 
-- [Cyclistic Case Study Analysis 2020 ](#cyclistic-case-study-analysis-2020-)
-  - [Table of Contents](#table-of-contents)
-  - [About This Project](#about-this-project)
-  - [Introduction](#introduction)
-  - [Defining The Problem](#defining-the-problem)
+- [**Cyclistic Case Study Analysis 2020** ](#cyclistic-case-study-analysis-2020-)
+  - [**Table of Contents**](#table-of-contents)
+  - [**About This Project**](#about-this-project)
+  - [**Introduction**](#introduction)
+  - [**Defining The Problem**](#defining-the-problem)
     - [**Business Task**](#business-task)
-  - [About Data Sources](#about-data-sources)
-  - [Prep Work](#prep-work)
-  - [Step 1: Collect Data ](#step-1-collect-data-)
-  - [Step 2: Wrangle Data and Combine into a Single Table ](#step-2-wrangle-data-and-combine-into-a-single-table-)
-    - [Preliminary Inspection](#preliminary-inspection)
-    - [Fixing Column Data Type](#fixing-column-data-type)
-    - [Combine Trip Data](#combine-trip-data)
-    - [Inspecting Combined Trip Data](#inspecting-combined-trip-data)
-  - [Step 3: Clean Up and Add Data to Prepare for Analysis ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
-    - [Key Problems and Solutions](#key-problems-and-solutions)
-    - [Checking For Missing Data](#checking-for-missing-data)
-    - [Checking For Duplicate Data](#checking-for-duplicate-data)
-    - [Creating Table About Stations](#creating-table-about-stations)
-    - [Cleaning Operations](#cleaning-operations)
-    - [Manipulating Data](#manipulating-data)
-  - [Step 4: Perform Analysis ](#step-4-perform-analysis-)
-    - [Cyclistic Weekly Analysis](#cyclistic-weekly-analysis)
-    - [Cyclistic Monthly Analysis](#cyclistic-monthly-analysis)
-    - [Cyclistic Time of Day Analysis](#cyclistic-time-of-day-analysis)
-    - [Cyclistic Rideable Analysis](#cyclistic-rideable-analysis)
-    - [Cyclistic Geographic Analysis](#cyclistic-geographic-analysis)
-  - [Data Summary](#data-summary)
-  - [Data Story: Cyclistic Bikeshare Analysis of 2020 ](#data-story-cyclistic-bikeshare-analysis-of-2020-)
-    - [Customer Usage](#customer-usage)
-    - [Monthly Analysis](#monthly-analysis)
-    - [Weekly Analysis](#weekly-analysis)
-    - [Daily Analysis](#daily-analysis)
-    - [Geographical Analysis](#geographical-analysis)
-    - [Conclusion](#conclusion)
-  - [Recommendations](#recommendations)
-  - [Final Thoughts](#final-thoughts)
-    - [Thank you for taking the time to read this case study ](#thank-you-for-taking-the-time-to-read-this-case-study-)
+  - [**About Data Sources**](#about-data-sources)
+  - [**Prep Work**](#prep-work)
+  - [**Step 1: Collect Data** ](#step-1-collect-data-)
+  - [**Step 2: Wrangle Data and Combine into a Single Table** ](#step-2-wrangle-data-and-combine-into-a-single-table-)
+    - [**Preliminary Inspection**](#preliminary-inspection)
+    - [**Fixing Column Data Type**](#fixing-column-data-type)
+    - [**Combine Trip Data**](#combine-trip-data)
+    - [**Inspecting Combined Trip Data**](#inspecting-combined-trip-data)
+  - [**Step 3: Clean Up and Add Data to Prepare for Analysis** ](#step-3-clean-up-and-add-data-to-prepare-for-analysis-)
+    - [**Key Problems and Solutions**](#key-problems-and-solutions)
+    - [**Checking For Missing Data**](#checking-for-missing-data)
+    - [**Checking For Duplicate Data**](#checking-for-duplicate-data)
+    - [**Creating Table About Stations**](#creating-table-about-stations)
+    - [**Cleaning Operations**](#cleaning-operations)
+    - [**Manipulating Data**](#manipulating-data)
+  - [**Step 4: Perform Analysis** ](#step-4-perform-analysis-)
+    - [**Cyclistic Weekly Analysis**](#cyclistic-weekly-analysis)
+    - [**Cyclistic Monthly Analysis**](#cyclistic-monthly-analysis)
+    - [**Cyclistic Time of Day Analysis**](#cyclistic-time-of-day-analysis)
+    - [**Cyclistic Rideable Analysis**](#cyclistic-rideable-analysis)
+    - [**Cyclistic Geographic Analysis**](#cyclistic-geographic-analysis)
+  - [**Data Summary**](#data-summary)
+  - [**Data Story: Cyclistic Bikeshare Analysis of 2020** ](#data-story-cyclistic-bikeshare-analysis-of-2020-)
+    - [**Customer Usage**](#customer-usage)
+    - [**Monthly Analysis**](#monthly-analysis)
+    - [**Weekly Analysis**](#weekly-analysis)
+    - [**Daily Analysis**](#daily-analysis)
+    - [**Geographical Analysis**](#geographical-analysis)
+    - [**Conclusion**](#conclusion)
+  - [**Recommendations**](#recommendations)
+  - [**Final Thoughts**](#final-thoughts)
+    - [**Thank you for taking the time to read this case study** ](#thank-you-for-taking-the-time-to-read-this-case-study-)
 
 
-## About This Project
+## **About This Project**
 <hr>
 
 <p align="left">
@@ -114,7 +114,7 @@ A more in-depth breakdown of the case study scenario is included below, followed
 > Additionally, all data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
 
 
-## Introduction 
+## **Introduction** 
 <hr>
 
 <p align="left">
@@ -146,7 +146,7 @@ Until now, Cyclistic's marketing strategy relied on building general awareness a
 Although pricing flexibility helps in attracking new customers, Cyclistic's finance analyst have concluded that annual members are much more profitable than casual riders. The director of marketting (Lily Moreno) believes that increasing the number of annual members will be the key to future growth. Since casual riders have chosen Cyclistic for their mobility needs and are already aware of the annual membership program, a marketing strategy aimed at converting casual riders into members is to be held.
 
 
-## Defining The Problem
+## **Defining The Problem**
 <hr>
 
 <p align="left">
@@ -191,7 +191,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 > **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
 
 
-## About Data Sources
+## **About Data Sources**
 <hr>
 
 <p align="left">
@@ -216,7 +216,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 * The data collected contains ride ids, rideable type, start/end timestamps, station names & ids, latitude & longitude, and usertype. Overall, 13 parameters.
 
 
-## Prep Work
+## **Prep Work**
 <hr>
 
 <p align="left">
@@ -238,7 +238,7 @@ The data is downloaded, skimmed, prepared, cleaned, and manipulated. This sectio
 
 If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](#data-summary) or if you want a brief peak at how the analysis is performed please check out [Performing Analysis](#prep-work-step-4).
 
-## Step 1: Collect Data <a href="#prep-work-step-1" id="prep-work-step-1"></a>
+## **Step 1: Collect Data** <a href="#prep-work-step-1" id="prep-work-step-1"></a>
 <hr>
 
 <p align="left">
@@ -266,7 +266,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
 * Files that were too large were uploaded via this python script ([shown here](python-code/upload_df_to_gbq_v5.py)).
 
 
-## Step 2: Wrangle Data and Combine into a Single Table <a href="#prep-work-step-2" id="prep-work-step-2"></a>
+## **Step 2: Wrangle Data and Combine into a Single Table** <a href="#prep-work-step-2" id="prep-work-step-2"></a>
 <hr>
 
 <p align="left">
@@ -290,7 +290,7 @@ If you are more interested with the analysis, and results, you can jump ahead to
     </a>
 </p>
 
-### Preliminary Inspection
+### **Preliminary Inspection**
 <p align="left">
     <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -324,7 +324,7 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
   - There is also a need for new and unique ids for the stations.
 
-### Fixing Column Data Type
+### **Fixing Column Data Type**
 <p align="left">
     <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -359,7 +359,7 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
   FROM `project.dataset.table`);
 ```
 
-### Combine Trip Data
+### **Combine Trip Data**
 <p align="left">
     <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -391,7 +391,7 @@ CREATE TABLE IF NOT EXISTS `case-study1-bike-share.divvy_trips_2020_analysis.div
 SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 ```
 
-### Inspecting Combined Trip Data
+### **Inspecting Combined Trip Data**
 <p align="left">
     <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -426,7 +426,7 @@ Briefly skiming the new table shows that:
 There is still a need to check for nulls or missing values.
 
 
-## Step 3: Clean Up and Add Data to Prepare for Analysis <a href="prep-work-step-3" id="prep-work-step-3"></a>
+## **Step 3: Clean Up and Add Data to Prepare for Analysis** <a href="prep-work-step-3" id="prep-work-step-3"></a>
 <hr>
 
 <p align="left">
@@ -450,7 +450,7 @@ There is still a need to check for nulls or missing values.
     </a>
 </p>
 
-### Key Problems and Solutions
+### **Key Problems and Solutions**
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -517,7 +517,7 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 7. Some crucial data is missing in columns with Null values.
     * These instances are represented by Null values and it is important to be aware of them for data cleaning.
 
-### Checking For Missing Data
+### **Checking For Missing Data**
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -567,7 +567,7 @@ The table below showcases which columns have missing information and how many ro
 | end_lng            | 4255         |
 
 
-### Checking For Duplicate Data 
+### **Checking For Duplicate Data** 
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -623,7 +623,7 @@ Below are two primary examples showcasing duplicates by either having the differ
 | Wentworth Ave & Cermak Rd (Temp)	| 120 |
 
 
-### Creating Table About Stations
+### **Creating Table About Stations**
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -678,7 +678,7 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 | Aberdeen St & Randolph St  | 6          | 41.884114663376479 | -87.654270784691533 |
 
 
-### Cleaning Operations
+### **Cleaning Operations**
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -768,7 +768,7 @@ From the following stations:
 | Watson Testing - Divvy                 | 633        |
 
 
-### Manipulating Data
+### **Manipulating Data**
 <p align="left">
     <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -805,7 +805,7 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 
 
 
-## Step 4: Perform Analysis <a href="#prep-work-step-4" id="prep-work-step-4"></a>
+## **Step 4: Perform Analysis** <a href="#prep-work-step-4" id="prep-work-step-4"></a>
 <hr>
 
 <p align="left">
@@ -843,7 +843,7 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 5. And geographically
 
-### Cyclistic Weekly Analysis
+### **Cyclistic Weekly Analysis**
 <p align="left">
     <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -903,7 +903,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 | member        | 7           | Sat     | 1036              | 00:17:16     | 23:59:43     | 00:01:01     | 292739    | 0.087901796116621467 |
 
 
-### Cyclistic Monthly Analysis
+### **Cyclistic Monthly Analysis**
 <p align="left">
     <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -974,7 +974,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 | member        | 12        | Dec            | 748               | 00:12:28     | 22:49:28     | 00:01:01     | 88054     | 0.026440292394429805  |
 
 
-### Cyclistic Time of Day Analysis
+### **Cyclistic Time of Day Analysis**
 <p align="left">
     <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1043,7 +1043,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 
 
-### Cyclistic Rideable Analysis
+### **Cyclistic Rideable Analysis**
 <p align="left">
     <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1091,7 +1091,7 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
 
 
 
-### Cyclistic Geographic Analysis
+### **Cyclistic Geographic Analysis**
 <p align="left">
     <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1138,7 +1138,7 @@ Riders appear to follow notable trends based on the start of their trips. During
 This table is available for [download here](tables/analysis_of/analysis_by_stations.csv).
 
 
-## Data Summary
+## **Data Summary**
 <hr>
 
 <p align="left">
@@ -1194,7 +1194,7 @@ The data can be summarized as below:
 
 
 
-## Data Story: Cyclistic Bikeshare Analysis of 2020 <a href="#data-story" id="data-story"></a>
+## **Data Story: Cyclistic Bikeshare Analysis of 2020** <a href="#data-story" id="data-story"></a>
 <hr>
 
 <p align="left">
@@ -1217,7 +1217,7 @@ For the full interactive Tableau Story please [visit here!](https://public.table
 
 Below you will find key insights pertaining to each dashboard within the story, you are more than welcome to have a look.
 
-### Customer Usage
+### **Customer Usage**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1246,7 +1246,7 @@ It is also important to note user preference when it comes to which rideable pop
 <img src="images/story/story-p1-customer-usage.png">
 
 
-### Monthly Analysis
+### **Monthly Analysis**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1279,7 +1279,7 @@ Since we know that riders prefer biking during summer time and we see a large in
 <img src="images/story/story-p2-monthly-trends.png">
 
 
-### Weekly Analysis
+### **Weekly Analysis**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1322,7 +1322,7 @@ Due to casual riders being more prominent during the weekend, a potential way to
 <img src="images/story/story-p3-weekly-trends.png">
 
 
-### Daily Analysis
+### **Daily Analysis**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1355,7 +1355,7 @@ Members most likely use Cyclistic bikes to comute, and while casual riders favor
 
 <img src="images/story/story-p4-daily-trends.png">
 
-### Geographical Analysis
+### **Geographical Analysis**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1385,7 +1385,7 @@ The prior two targetting groups still hold promise in increasing the number user
 <img src="images/story/story-p5-geo-trends.png">
 
 
-### Conclusion
+### **Conclusion**
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
@@ -1408,7 +1408,7 @@ The prior two targetting groups still hold promise in increasing the number user
 <img src="images/story/story-p6-conclusion.png">
 
 
-## Recommendations
+## **Recommendations**
 <hr>
 
 <p align="left">
@@ -1464,7 +1464,7 @@ Use digital channels to market and promote these new benefits. Possibly hosting 
 -------
 
 
-## Final Thoughts
+## **Final Thoughts**
 <hr>
 
 <p align="left">
@@ -1491,7 +1491,7 @@ From the Cyclistic case study, the analysis results showed that casual riders co
 The marketting campaign holds promise in converting casual users to annual members. Though not easy, with targetted advertising via email and social media, Cyclistic can improve the conversion rate by raising awareness of their benefits and tailuring new benefits to bring more riders
 <br>
 
-### Thank you for taking the time to read this case study <a href="#thank-you" id="thank-you"></a>
+### **Thank you for taking the time to read this case study** <a href="#thank-you" id="thank-you"></a>
 <p align="left">
     <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
