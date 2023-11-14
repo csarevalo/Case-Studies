@@ -8,16 +8,16 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 **Last Updated** November 13, 2023
 
 <p align="left">
-    <a href="#the-title">
+    <a href="#the-title" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#table-of-contents">
+    <a href="#table-of-contents" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#about-this-project">
+    <a href="#about-this-project" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p> 
@@ -27,13 +27,13 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
 <hr>
 
 <p align="left">
-    <a href="#the-title">
+    <a href="#the-title" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#about-this-project">
+    <a href="#about-this-project" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p> 
@@ -76,20 +76,20 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
     - [Conclusion](#conclusion)
   - [Recommendations](#recommendations)
   - [Final Thoughts](#final-thoughts)
-    - [Thank you for taking the time to read this case study](#thank-you-for-taking-the-time-to-read-this-case-study)
+    - [Thank you for taking the time to read this case study ](#thank-you-for-taking-the-time-to-read-this-case-study-)
 
 
 ## About This Project
 <hr>
 
 <p align="left">
-    <a href="#table-of-contents">
+    <a href="#table-of-contents" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#introduction">
+    <a href="#introduction" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
@@ -109,23 +109,22 @@ The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
 A more in-depth breakdown of the case study scenario is included below, followed by my full report.
 
 
-> The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))
-> 
+> **The analysis is based on the Divvy case study "'Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman ([found here]( https://artscience.blog/home/divvy-dataviz-case-study))**
+ 
 > Additionally, all data cleaning and analysis is accomplish through the use of *SQL* in *Google CLoud BigQuery (Sandbox Edition)*. Python is used to upload large datasets (over 10MBs), the rest are manually uploaded through the site from csv files. Spreadsheets (Excel) is used to inspect data closely after being broken down through SQL queries. Finally, Tableau is used to provided compelling visuals.
->
 
 
 ## Introduction 
 <hr>
 
 <p align="left">
-    <a href="#about-this-project">
+    <a href="#about-this-project" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#defining-the-problem">
+    <a href="#defining-the-problem" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
@@ -151,13 +150,13 @@ Although pricing flexibility helps in attracking new customers, Cyclistic's fina
 <hr>
 
 <p align="left">
-    <a href="#introduction">
+    <a href="#introduction" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#business-task">
+    <a href="#business-task" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
@@ -178,31 +177,31 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 
 ### Business Task
 <p align="left">
-    <a href="#defining-the-problem">
+    <a href="#defining-the-problem" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#about-data-sources">
+    <a href="#about-data-sources" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
 </p>
 
-> **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
+**Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
 
 
 ## About Data Sources
 <hr>
 
 <p align="left">
-    <a href="#business-task">
+    <a href="#business-task" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
 </p>
@@ -221,16 +220,16 @@ By looking at the data, we will be able to first get a broad sense of certain pa
 <hr>
 
 <p align="left">
-    <a href="#about-data-sources">
+    <a href="#about-data-sources" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
     <a href="#prep-work-step-1">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-heading-button.png" align="right">
     </a>
 </p>
@@ -243,19 +242,19 @@ If you are more interested with the analysis, and results, you can jump ahead to
 <hr>
 
 <p align="left">
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -271,44 +270,44 @@ If you are more interested with the analysis, and results, you can jump ahead to
 <hr>
 
 <p align="left">
-    <a href="#prep-work-step-1">
+    <a href="#prep-work-step-1" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#prep-work-step-1">
+    <a href="#prep-work-step-1" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#preliminary-inspection">
+    <a href="#preliminary-inspection" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
 ### Preliminary Inspection
 <p align="left">
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#fixing-column-data-type">
+    <a href="#fixing-column-data-type" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -327,22 +326,22 @@ Once data is uploaded, it is important to compare schemas (e.g. column names and
 
 ### Fixing Column Data Type
 <p align="left">
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#preliminary-inspection">
+    <a href="#preliminary-inspection" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#combine-trip-data">
+    <a href="#combine-trip-data" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -362,22 +361,22 @@ CREATE OR REPLACE TABLE `project.dataset.table` AS (
 
 ### Combine Trip Data
 <p align="left">
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#fixing-column-data-type">
+    <a href="#fixing-column-data-type" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#inspecting-combined-trip-data">
+    <a href="#inspecting-combined-trip-data" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -394,22 +393,22 @@ SELECT * FROM `case-study1-bike-share.divvy_trips_2020_data.divvy_trips_2020_*`;
 
 ### Inspecting Combined Trip Data
 <p align="left">
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#combine-trip-data">
+    <a href="#combine-trip-data" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -431,44 +430,44 @@ There is still a need to check for nulls or missing values.
 <hr>
 
 <p align="left">
-    <a href="#prep-work-step-2">
+    <a href="#prep-work-step-2" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#inspecting-combined-trip-data">
+    <a href="#inspecting-combined-trip-data" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#key-problems-and-solutions">
+    <a href="#key-problems-and-solutions" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
 
 ### Key Problems and Solutions
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#checking-for-missing-data">
+    <a href="#checking-for-missing-data" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -520,22 +519,22 @@ The first part of tidying data is look for issues/concerns regarding the data. H
 
 ### Checking For Missing Data
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#key-problems-and-solutions">
+    <a href="#key-problems-and-solutions" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#checking-for-duplicate-data">
+    <a href="#checking-for-duplicate-data" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -570,22 +569,22 @@ The table below showcases which columns have missing information and how many ro
 
 ### Checking For Duplicate Data 
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#checking-for-missing-data">
+    <a href="#checking-for-missing-data" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#creating-table-about-stations">
+    <a href="#creating-table-about-stations" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -626,22 +625,22 @@ Below are two primary examples showcasing duplicates by either having the differ
 
 ### Creating Table About Stations
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#checking-for-duplicate-data">
+    <a href="#checking-for-duplicate-data" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cleaning-operations">
+    <a href="#cleaning-operations" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -681,22 +680,22 @@ The full table is available here: [cleaned](tables/divvy_stations_2020_cleaned.c
 
 ### Cleaning Operations
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#creating-table-about-stations">
+    <a href="#creating-table-about-stations" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#manipulating-data">
+    <a href="#manipulating-data" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -771,22 +770,22 @@ From the following stations:
 
 ### Manipulating Data
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cleaning-operations">
+    <a href="#cleaning-operations" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -810,22 +809,22 @@ After the cleaning operation, our data is nearly ready for analysis. But before 
 <hr>
 
 <p align="left">
-    <a href="#prep-work-step-3">
+    <a href="#prep-work-step-3" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#manipulating-data">
+    <a href="#manipulating-data" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cyclistic-weekly-analysis">
+    <a href="#cyclistic-weekly-analysis" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -846,22 +845,22 @@ Specifically, we are interested in analyzing user behavior in the following ways
 
 ### Cyclistic Weekly Analysis
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cyclistic-monthly-analysis">
+    <a href="#cyclistic-monthly-analysis" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -906,22 +905,22 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 ### Cyclistic Monthly Analysis
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cyclistic-weekly-analysis">
+    <a href="#cyclistic-weekly-analysis" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cyclistic-time-of-day-analysis">
+    <a href="#cyclistic-time-of-day-analysis" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -977,22 +976,22 @@ This table is available for [download here](tables/analysis_of/ride_data_by_mont
 
 ### Cyclistic Time of Day Analysis
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cyclistic-monthly-analysis">
+    <a href="#cyclistic-monthly-analysis" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cyclistic-rideable-analysis">
+    <a href="#cyclistic-rideable-analysis" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -1046,22 +1045,22 @@ This table is available for [download here](tables/analysis_of/ride_data_by_week
 
 ### Cyclistic Rideable Analysis
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cyclistic-time-of-day-analysis">
+    <a href="#cyclistic-time-of-day-analysis" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#cyclistic-geographic-analysis">
+    <a href="#cyclistic-geographic-analysis" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -1094,22 +1093,22 @@ This table is available for [download here](tables/analysis_of/ride_data_by_ride
 
 ### Cyclistic Geographic Analysis
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cyclistic-geographic-analysis">
+    <a href="#cyclistic-geographic-analysis" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-summary">
+    <a href="#data-summary" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -1143,22 +1142,22 @@ This table is available for [download here](tables/analysis_of/analysis_by_stati
 <hr>
 
 <p align="left">
-    <a href="#prep-work-step-4">
+    <a href="#prep-work-step-4" style="text-decoration: none">
         <img src="images/buttons/back-back-button.png">
     </a>
-    <a href="#cyclistic-geographic-analysis">
+    <a href="#cyclistic-geographic-analysis" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
     </a>
-    <a href="#data-story">
+    <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/next-button.png">
     </a>
-    <a href="#data-story">
+    <a href="#data-story" style="text-decoration: none">
         <img src="images/buttons/next-next-button.png">
     </a>
-    <a href="#top">
+    <a href="#top" style="text-decoration: none">
         <img src="images/buttons/top-button.png" align="right">
     </a>
-    <a href="#prep-work">
+    <a href="#prep-work" style="text-decoration: none">
         <img src="images/buttons/previous-heading-button.png" align="right">
     </a>
 </p>
@@ -1198,12 +1197,45 @@ The data can be summarized as below:
 ## Data Story: Cyclistic Bikeshare Analysis of 2020 <a href="#data-story" id="data-story"></a>
 <hr>
 
+<p align="left">
+    <a href="#data-summary" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#customer-usage" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 For the full interactive Tableau Story please [visit here!](https://public.tableau.com/views/CyclisticAnalysis2020/Story2?:language=en-US&:display_count=n&:origin=viz_share_link "Cyclistic Bikeshare Analysis of 2020").
 
 Below you will find key insights pertaining to each dashboard within the story, you are more than welcome to have a look.
 
 ### Customer Usage
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#monthly-analysis" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 Seasonal trends played a major role in the number of rides Cyclistic experienced. *During the year 2020, **casual riders accounted for 38.4% of total rides** while **member riders made up** a whopping **61.6% of total trips***. Summer time brought a huge increase in the number of casual riders, in addition to overall ridership. Meanwhile, during winter time, by far the least popular season, there is a major drop-off in rides. This makes sense because bike riding is more suited for warm weather, however it important to plan out events, activities, or promotional content during Cyclistic's most popular time: summer. 
 
@@ -1215,6 +1247,24 @@ It is also important to note user preference when it comes to which rideable pop
 
 
 ### Monthly Analysis
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#customer-usage" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#weekly-analysis" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 Taking a deeper dive into how customers use Cyclistic bikes throughout the year, we consider the number of trips taken & their average ride length on a month-to-month basis.
 
@@ -1230,6 +1280,24 @@ Since we know that riders prefer biking during summer time and we see a large in
 
 
 ### Weekly Analysis
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#monthly-analysis" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#daily-analysis" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 **Number of Rides**
 
@@ -1255,6 +1323,24 @@ Due to casual riders being more prominent during the weekend, a potential way to
 
 
 ### Daily Analysis
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#weekly-analysis" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#geographical-analysis" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 Knowing when riders take trips is important in determining Cyclistic use cases, so we take a deeper dive into how often riders take trips throughout the week, except we consider their experience on an hour-to-hour basis.
 
@@ -1270,6 +1356,24 @@ Members most likely use Cyclistic bikes to comute, and while casual riders favor
 <img src="images/story/story-p4-daily-trends.png">
 
 ### Geographical Analysis
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#daily-analysis" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#conclusion" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 Majority of trips are taken downtown Chicago, regardless of user type. However, stations with more activy from casual users are near the pier or spreadout across stations. Popular stations not near the pier and near the downtown area are dominated by annual members.
 
@@ -1282,12 +1386,49 @@ The prior two targetting groups still hold promise in increasing the number user
 
 
 ### Conclusion
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#geographical-analysis" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 <img src="images/story/story-p6-conclusion.png">
 
 
 ## Recommendations
 <hr>
+
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#conclusion" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#final-thoughts" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#final-thoughts" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 By focusing on seasonality, usage time, and usage case, we can formulate successful marketting strategies to convert casual riders to members.
 
@@ -1326,12 +1467,43 @@ Use digital channels to market and promote these new benefits. Possibly hosting 
 ## Final Thoughts
 <hr>
 
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#recommendations" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#thank-you" style="text-decoration: none">
+        <img src="images/buttons/next-button.png">
+    </a>
+    <a href="#thank-you" style="text-decoration: none">
+        <img src="images/buttons/next-next-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
+
 From the Cyclistic case study, the analysis results showed that casual riders could be categorized into two groups: those that shared similarities with members and those that used Cyclistic bikes for leasure or entertainment. 
 
 The marketting campaign holds promise in converting casual users to annual members. Though not easy, with targetted advertising via email and social media, Cyclistic can improve the conversion rate by raising awareness of their benefits and tailuring new benefits to bring more riders
 <br>
 
-### Thank you for taking the time to read this case study
+### Thank you for taking the time to read this case study <a href="#thank-you" id="thank-you"></a>
+<p align="left">
+    <a href="#data-story" style="text-decoration: none">
+        <img src="images/buttons/back-back-button.png">
+    </a>
+    <a href="#final-thoughts" style="text-decoration: none">
+        <img src="images/buttons/back-button.png">
+    </a>
+    <a href="#top" style="text-decoration: none">
+        <img src="images/buttons/top-button.png" align="right">
+    </a>
+</p>
+
 
 Working on the capstone project was a good opportunity to learn about the real-world data analysis process. I learned a ton about data preparation and cleaning by actually working on those processes. Checking for data integrity and reliability is crucial before anything. 
 
