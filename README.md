@@ -9,11 +9,6 @@ A collection of currently available data analysis and case studies.
 
 <br>
 
-<div style="display: flex; align-items: center; width: 40%;">
-    <img src="images/Data_Analytics_Process.png" height="" style="vertical-align: middle;">
-    <img src="images/Data_Analytics.png" height="" style="vertical-align: middle;">
-</div>
-
 > **Below you will find those currently available. I intend to add more in the future.**
 
 
