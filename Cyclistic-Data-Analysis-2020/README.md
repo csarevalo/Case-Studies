@@ -3,7 +3,7 @@
 # **Cyclistic Case Study Analysis 2020** <a href="#the-title" id="the-title"></a>
 Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
-**By** Cristian Arevalo **From** [Case Studies](/Case-Studies)
+**By** Cristian Arevalo 
 
 **Last Updated** November 14, 2023
 
