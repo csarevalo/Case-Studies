@@ -1,15 +1,13 @@
-<div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 1rem; padding-bottom: 0;">
-    <a href="/Case-Studies/" class="btn">My Case Studies</a>
-</div>
+# **Welcome To My Case Studies**
 
-# **My Case Studies**
+A collection of currently available data analysis and case studies.
 
-Hello *wave emoji* and welcome to my repository of case studies where I intend to add any future case studies here. 
-
-Below you will find those currently available.
+Below you will find those currently available. I intend to add more in the future. 
 
 
-## [**Cyclistic Case Study Analysis 2020**](Cyclistic-Data-Analysis-2020)
+## [**Cyclistic Case Study 2020**](Cyclistic-Data-Analysis-2020)
 
-## <a href="Cyclistic Case Study Analysis 2020" class="btn"><strong>Cyclistic Case Study Analysis 2020</strong></a>
+## <a href="Cyclistic Case Study Analysis 2020" class="btn" style="color: #159957;"><strong>Cyclistic Case Study 2020</strong></a>
+
+## <a href="Cyclistic Case Study Analysis 2020" class="btn" style="color: #159957; text-decoration: none"><strong>Cyclistic Case Study 2020</strong></a>
 
