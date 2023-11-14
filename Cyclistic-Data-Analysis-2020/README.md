@@ -44,7 +44,7 @@ Using Spreadsheets, Google Bigquery (SQL), and Tableau
   - [About This Project](#about-this-project)
   - [Introduction](#introduction)
   - [Defining The Problem](#defining-the-problem)
-    - [Business Task](#business-task)
+    - [**Business Task**](#business-task)
   - [About Data Sources](#about-data-sources)
   - [Prep Work](#prep-work)
   - [Step 1: Collect Data ](#step-1-collect-data-)
@@ -175,7 +175,7 @@ Specifically, my focus will revolve around on ***how do annual members and casua
 
 By looking at the data, we will be able to first get a broad sense of certain patterns that are occurring in the two different groups. Understanding the differences will provide more accurate customer profiles for each group. These insights will help the marketing analytics team design high quality targeted marketing for converting casual riders into members. For the Cyclistic executive team, these insights will help Cyclistic maximize the number of annual members and will fuel future growth for the company.
 
-### Business Task
+### **Business Task**
 <p align="left">
     <a href="#defining-the-problem" style="text-decoration: none">
         <img src="images/buttons/back-button.png">
@@ -188,7 +188,7 @@ By looking at the data, we will be able to first get a broad sense of certain pa
     </a>
 </p>
 
-**Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
+> **Analyze historical bike trip data to identify trends in how annual members and casual riders use Cyclistic bikes differently.**
 
 
 ## About Data Sources
