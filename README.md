@@ -1,4 +1,5 @@
 <h1 style="display: none">My Case Studies</h1>
+
 # **Welcome to My Case Studies** 👋
 
 A collection of currently available data analysis and case studies.
