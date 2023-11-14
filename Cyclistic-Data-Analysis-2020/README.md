@@ -1,5 +1,7 @@
-<div class="github-content-header" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 5px; margin: 0;">
+<div class="github-content-header" style="background-color: lightcyan; padding: 5px; margin: 0;">
+    <span style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
     <a href="/Case-Studies/" class="btn" style="margin: 0;"><strong>My Case Studies</strong></a>
+    </span>
 </div>
 
 <!-- <a href="/Case-Studies/" class="btn" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); margin: 3px;"><strong>My Case Studies</strong></a> -->
