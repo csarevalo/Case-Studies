@@ -3,9 +3,9 @@
 # **Cyclistic Case Study Analysis 2020** <a href="#the-title" id="the-title"></a>
 Using Spreadsheets, Google Bigquery (SQL), and Tableau
 
-**By** Cristian Arevalo 
+**By** Cristian Arevalo **From** [Case Studies](/Case-Studies)
 
-**Last Updated** November 13, 2023
+**Last Updated** November 14, 2023
 
 <p align="left">
     <a href="#the-title" style="text-decoration: none">
@@ -98,13 +98,11 @@ This case study is my capstone project for the Google Data Analatics Professiona
 
 Here, I assume the role of a junior data analyst working in a marketing analyst team at Cylistic, a fictional bike-share company stationed in Chicago based on [Divvy](https://divvybikes.com) bikes. The objective is to understand how casual riders and annual members use Cyclistic bikes differently by identifying trends and more. These insights will help the marketing team to develop new marketting strategies to convert casual riders into annual members. But first, Cyclistic executives must be compelled with data insights and professional data visualizations.
 
-The main tools I use are spreadsheets, SQL and Tableau. Here are the highlights:
+The main tools I use are spreadsheets/excel, SQL and Tableau. Here are the highlights:
 
 * [Github: Cyclistic Data Analysis, Summary, and Story](#data-summary)
 
 * [Tableau Story: Cyclistic Bikeshare in Chicago](#data-story)
-
-* [Slides: Converting Casual Riders to Cyclistic Members] (link)
 
 A more in-depth breakdown of the case study scenario is included below, followed by my full report.
 
