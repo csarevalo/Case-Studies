@@ -1,5 +1,5 @@
-<div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 2px; margin: 0; display: flex;">
-    <a href="/Case-Studies/" class="btn" style="margin: 0">My Case Studies</a>
+<div class="page-header" style="padding: 5px; margin: 0;">
+    <a href="/Case-Studies/" class="btn" style="margin: 0;"><strong>My Case Studies</strong></a>
 </div>
 
 <a href="/Case-Studies/" class="btn" style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); margin: 3px;"><strong>My Case Studies</strong></a>
