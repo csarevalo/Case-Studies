@@ -1,3 +1,4 @@
+<h1 style="display: none">Cyclistic Case Study</h1>
 <a href="#top" id="top"></a>
 <div style="background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957); padding: 1rem; padding-bottom: 0;">
     <a href="/Case-Studies/" class="btn">My Case Studies</a>
