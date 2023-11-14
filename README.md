@@ -14,8 +14,8 @@ A collection of currently available data analysis and case studies.
 
 ## [**Cyclistic Case Study 2020**](Cyclistic-Data-Analysis-2020)
 
-## <a href="/Cyclistic Case Study Analysis 2020" style="color: #159957;"><strong>Cyclistic Case Study 2020</strong></a>
+## <a href="/Case-Studies/Cyclistic-Case-Study-Analysis-2020" style="color: #159957;"><strong>Cyclistic Case Study 2020</strong></a>
 
-## <a href="/Cyclistic Case Study Analysis 2020" style="color: #159957; text-decoration: none;"><img src="Cyclistic-Data-Analysis-2020/images/logo/cyclist1.png" height="48px" style="vertical-align: middle"><strong> Cyclistic Case Study 2020</strong></a>
+## <a href="Cyclistic-Case-Study-Analysis-2020" style="color: #159957; text-decoration: none;"><img src="Cyclistic-Data-Analysis-2020/images/logo/cyclist1.png" height="48px" style="vertical-align: middle"><strong> Cyclistic Case Study 2020</strong></a>
 
 
