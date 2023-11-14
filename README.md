@@ -2,7 +2,7 @@
 
 A collection of currently available data analysis and case studies.
 
-<div style="display: flex; width: 40%;">
+<div style="display: flex; width: 50%;">
     <img src="images/Data_Analytics_Process.png" height="" style="vertical-align: middle;">
     <img src="images/Data_Analytics.png" height="" style="vertical-align: middle;">
 </div>
