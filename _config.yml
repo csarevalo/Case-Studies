@@ -1,3 +1,6 @@
+title: My Case Studies
+description: Showcasing my data analysis skills
+
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
@@ -14,5 +17,3 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
-title: My Case Studies
-description: Showcasing my data analysis skills
