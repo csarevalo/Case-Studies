@@ -13,10 +13,10 @@ A collection of currently available data analysis and case studies.
 > **Below you will find those currently available. I intend to add more in the future.**
 
 
-## [**Cyclistic Case Study 2020**](Cyclistic-Data-Analysis-2020)
+<!-- ## [**Cyclistic Case Study 2020**](Cyclistic-Data-Analysis-2020) -->
 
-## <a href="/Case-Studies/Cyclistic-Data-Analysis-2020" style="color: #159957;"><strong>Cyclistic Case Study 2020</strong></a>
+## <a href="Cyclistic-Data-Analysis-2020" style="color: #159957; text-decoration: none;"><img src="Cyclistic-Data-Analysis-2020/images/logo/cyclist1.png" height="48px" style="vertical-align: middle"><strong> Cyclistic Case Study (2020)</strong></a>
 
-## <a href="Cyclistic-Data-Analysis-2020" style="color: #159957; text-decoration: none;"><img src="Cyclistic-Data-Analysis-2020/images/logo/cyclist1.png" height="48px" style="vertical-align: middle"><strong> Cyclistic Case Study 2020</strong></a>
+**Description:** An analysis of how Cyclistic Bikeshare program users behave different to develop business decisions on realiable data. 
 
 
