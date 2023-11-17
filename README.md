@@ -1,5 +1,5 @@
 <h1 style="display: none">My Case Studies</h1>
-
+<p style="display: none">Please visit my website below, where I showcase the same content from this repository but on a more user friendly level.</p>
 <div>
     <span style="display: inline-flex; border-radius: 5px; background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
         <a href="https://csarevalo.github.io/Case-Studies/" class="btn" style="margin: 0; padding: 0.6rem 0.9rem;"><strong>My Case Studies</strong></a>
