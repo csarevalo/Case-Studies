@@ -26,6 +26,8 @@ A collection of currently available data analysis and case studies.
 
 ## <a href="Cyclistic-Data-Analysis-2020" style="color: #159957; text-decoration: none;"><img src="Cyclistic-Data-Analysis-2020/images/logo/cyclist1.png" height="48px" style="vertical-align: middle"><strong> Cyclistic Case Study (2020)</strong></a>
 
-**Description:** An analysis of how Cyclistic Bikeshare program users behave different to develop business decisions on realiable data. 
+**Description:** An insightful analysis exploring the distinct behaviors of Cyclistic Bikeshare program users, aimed at informing strategic business decisions based on reliable data.
+
+**Overview:** Delve into the nuanced behaviors exhibited by cyclists, uncovering invaluable insights to drive informed business decisions. From understanding user patterns to optimizing customer conversion into loyal members, this analysis promises to pave the way for enhanced profitability and sustainable growth.
 
 
